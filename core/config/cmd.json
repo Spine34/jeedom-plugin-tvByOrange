@@ -1,0 +1,82 @@
+[
+	{
+		"logicalId": "refresh",
+		"name": "Refresh",
+		"type": "action",
+		"subType": "other"
+	},
+	{
+		"logicalId": "download",
+		"name": "Download",
+		"type": "info",
+		"subType": "numeric",
+		"unite": "Mbps",
+		"configuration": {
+			"calculValueOffset": "#value#\/125000",
+			"historizeRound": "2"
+		},
+		"template": {
+			"dashboard": "speedtestByOokla::download",
+			"mobile": "speedtestByOokla::download"
+		}
+	},
+	{
+		"logicalId": "upload",
+		"name": "Upload",
+		"type": "info",
+		"subType": "numeric",
+		"unite": "Mbps",
+		"configuration": {
+			"calculValueOffset": "#value#\/125000",
+			"historizeRound": "2"
+		},
+		"template": {
+			"dashboard": "speedtestByOokla::upload",
+			"mobile": "speedtestByOokla::upload"
+		}
+	},
+	{
+		"logicalId": "ping",
+		"name": "Ping",
+		"type": "info",
+		"subType": "numeric",
+		"unite": "ms",
+		"configuration": {
+			"historizeRound": "2"
+		},
+		"template": {
+			"dashboard": "speedtestByOokla::ping",
+			"mobile": "speedtestByOokla::ping"
+		}
+	},
+	{
+		"logicalId": "isp",
+		"name": "ISP",
+		"type": "info",
+		"subType": "string"
+	},
+	{
+		"logicalId": "internalIp",
+		"name": "Internal IP",
+		"type": "info",
+		"subType": "string"
+	},
+	{
+		"logicalId": "externalIp",
+		"name": "External IP",
+		"type": "info",
+		"subType": "string"
+	},
+	{
+		"logicalId": "server",
+		"name": "Server",
+		"type": "info",
+		"subType": "string"
+	},
+	{
+		"logicalId": "timestamp",
+		"name": "Timestamp",
+		"type": "info",
+		"subType": "string"
+	}
+]
