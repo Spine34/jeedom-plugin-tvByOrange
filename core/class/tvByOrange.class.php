@@ -120,58 +120,58 @@ class tvByOrange extends eqLogic
 	// Fonction exécutée automatiquement après la sauvegarde (création ou mise à jour) de l'équipement
 	public function postSave()
 	{
-		$commands = json_decode(file_get_contents(dirname(__FILE__) . '/../config/cmd.json'), true);
+		$cmdsArray = json_decode(file_get_contents(dirname(__FILE__) . '/../config/cmd.json'), true);
 		$order = 0;
-		log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $commands : ' . json_encode($commands));
-		foreach ($commands as $command) {
-			log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $command : ' . json_encode($command));
-			$cmd = $this->getCmd(null, $command['logicalId']);
+		log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $cmdsArray : ' . json_encode($cmdsArray));
+		foreach ($cmdsArray as $cmdArray) {
+			log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $cmdArray : ' . json_encode($cmdArray));
+			$cmd = $this->getCmd(null, $cmdArray['logicalId']);
 			if (!is_object($cmd)) {
-				log::add(__CLASS__, 'info', $this->getHumanName() . ' : Command [' . $command['name'] . '] created');
+				log::add(__CLASS__, 'info', $this->getHumanName() . ' : Commande [' . $cmdArray['name'] . '] créée');
 				$cmd = (new speedtestByOoklaCmd);
-				if (isset($command['logicalId'])) {
-					$cmd->setLogicalId($command['logicalId']);
+				if (isset($cmdArray['logicalId'])) {
+					$cmd->setLogicalId($cmdArray['logicalId']);
 				}
-				if (isset($command['generic_type'])) {
-					$cmd->setGeneric_type($command['generic_type']);
+				if (isset($cmdArray['generic_type'])) {
+					$cmd->setGeneric_type($cmdArray['generic_type']);
 				}
-				if (isset($command['name'])) {
-					$cmd->setName($command['name']);
+				if (isset($cmdArray['name'])) {
+					$cmd->setName($cmdArray['name']);
 				}
 				$cmd->setOrder($order++);
-				if (isset($command['type'])) {
-					$cmd->setType($command['type']);
+				if (isset($cmdArray['type'])) {
+					$cmd->setType($cmdArray['type']);
 				}
-				if (isset($command['subType'])) {
-					$cmd->setSubType($command['subType']);
+				if (isset($cmdArray['subType'])) {
+					$cmd->setSubType($cmdArray['subType']);
 				}
 				$cmd->setEqLogic_id($this->getId());
-				if (isset($command['isHistorized'])) {
-					$cmd->setIsHistorized($command['isHistorized']);
+				if (isset($cmdArray['isHistorized'])) {
+					$cmd->setIsHistorized($cmdArray['isHistorized']);
 				}
-				if (isset($command['unite'])) {
-					$cmd->setUnite($command['unite']);
+				if (isset($cmdArray['unite'])) {
+					$cmd->setUnite($cmdArray['unite']);
 				}
-				if (isset($command['configuration'])) {
-					foreach ($command['configuration'] as $key => $value) {
+				if (isset($cmdArray['configuration'])) {
+					foreach ($cmdArray['configuration'] as $key => $value) {
 						$cmd->setConfiguration($key, $value);
 					}
 				}
-				if (isset($command['template'])) {
-					foreach ($command['template'] as $key => $value) {
+				if (isset($cmdArray['template'])) {
+					foreach ($cmdArray['template'] as $key => $value) {
 						$cmd->setTemplate($key, $value);
 					}
 				}
-				if (isset($command['display'])) {
-					foreach ($command['display'] as $key => $value) {
+				if (isset($cmdArray['display'])) {
+					foreach ($cmdArray['display'] as $key => $value) {
 						$cmd->setDisplay($key, $value);
 					}
 				}
-				if (isset($command['value'])) {
-					$cmd->setValue($this->getCmd(null, $command['value'])->getId());
+				if (isset($cmdArray['value'])) {
+					$cmd->setValue($this->getCmd(null, $cmdArray['value'])->getId());
 				}
-				if (isset($command['isVisible'])) {
-					$cmd->setIsVisible($command['isVisible']);
+				if (isset($cmdArray['isVisible'])) {
+					$cmd->setIsVisible($cmdArray['isVisible']);
 				}
 				$cmd->save();
 			}
