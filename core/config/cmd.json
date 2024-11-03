@@ -1,82 +1,458 @@
 [
 	{
-		"logicalId": "refresh",
+		"name": "Etat Decodeur",
+		"logicalId": "etat_decodeur",
+		"type": "info",
+		"subType": "binary",
+		"order": 1,
+		"isVisible": true,
+		"configuration": {
+			"tab_name": "tab_touche",
+			"etat_decodeur": 0
+		},
+		"generic_type": "GENERIC_STATE"
+	},
+	{
+		"name": "Chaine Actuelle",
+		"logicalId": "chaine_actuelle",
+		"type": "info",
+		"subType": "string",
+		"order": 2,
+		"isVisible": true,
+		"configuration": {
+			"tab_name": "tab_touche",
+			"chaine_actuelle": "blank",
+			"id_chaine_actuelle": -1
+		},
+		"generic_type": "GENERIC_STATE"
+	},
+	{
+		"name": "Fonction",
+		"logicalId": "fonction",
+		"type": "info",
+		"subType": "string",
+		"order": 3,
+		"isVisible": true,
+		"configuration": {
+			"tab_name": "tab_touche",
+			"fonction": "aucune"
+		},
+		"generic_type": "GENERIC_STATE"
+	},
+	{
 		"name": "Refresh",
+		"logicalId": "refresh",
 		"type": "action",
-		"subType": "other"
+		"subType": "other",
+		"order": 4,
+		"isVisible": true,
+		"generic_type": "GENERIC_ACTION",
+		"forceReturnLineAfter": "0"
 	},
 	{
-		"logicalId": "download",
-		"name": "Download",
-		"type": "info",
-		"subType": "numeric",
-		"unite": "Mbps",
+		"name": "ON-OFF",
+		"logicalId": "touche",
+		"type": "action",
+		"subType": "other",
+		"order": 5,
+		"isVisible": true,
 		"configuration": {
-			"calculValueOffset": "#value#\/125000",
-			"historizeRound": "2"
+			"tab_name": "tab_touche",
+			"code_touche": "116"
 		},
-		"template": {
-			"dashboard": "speedtestByOokla::download",
-			"mobile": "speedtestByOokla::download"
-		}
+		"generic_type": "GENERIC_ACTION",
+		"forceReturnLineAfter": "1"
 	},
 	{
-		"logicalId": "upload",
-		"name": "Upload",
-		"type": "info",
-		"subType": "numeric",
-		"unite": "Mbps",
+		"name": "1",
+		"logicalId": "touche",
+		"type": "action",
+		"subType": "other",
+		"order": 6,
+		"isVisible": true,
 		"configuration": {
-			"calculValueOffset": "#value#\/125000",
-			"historizeRound": "2"
+			"tab_name": "tab_touche",
+			"code_touche": "513"
 		},
-		"template": {
-			"dashboard": "speedtestByOokla::upload",
-			"mobile": "speedtestByOokla::upload"
-		}
+		"generic_type": "GENERIC_ACTION",
+		"forceReturnLineAfter": "0"
 	},
 	{
-		"logicalId": "ping",
-		"name": "Ping",
-		"type": "info",
-		"subType": "numeric",
-		"unite": "ms",
+		"name": "2",
+		"logicalId": "touche",
+		"type": "action",
+		"subType": "other",
+		"order": 7,
+		"isVisible": true,
 		"configuration": {
-			"historizeRound": "2"
+			"tab_name": "tab_touche",
+			"code_touche": "514"
 		},
-		"template": {
-			"dashboard": "speedtestByOokla::ping",
-			"mobile": "speedtestByOokla::ping"
-		}
+		"generic_type": "GENERIC_ACTION",
+		"forceReturnLineAfter": "0"
 	},
 	{
-		"logicalId": "isp",
-		"name": "ISP",
-		"type": "info",
-		"subType": "string"
+		"name": "3",
+		"logicalId": "touche",
+		"type": "action",
+		"subType": "other",
+		"order": 8,
+		"isVisible": true,
+		"configuration": {
+			"tab_name": "tab_touche",
+			"code_touche": "515"
+		},
+		"generic_type": "GENERIC_ACTION",
+		"forceReturnLineAfter": "0"
 	},
 	{
-		"logicalId": "internalIp",
-		"name": "Internal IP",
-		"type": "info",
-		"subType": "string"
+		"name": "4",
+		"logicalId": "touche",
+		"type": "action",
+		"subType": "other",
+		"order": 9,
+		"isVisible": true,
+		"configuration": {
+			"tab_name": "tab_touche",
+			"code_touche": "516"
+		},
+		"generic_type": "GENERIC_ACTION",
+		"forceReturnLineAfter": "0"
 	},
 	{
-		"logicalId": "externalIp",
-		"name": "External IP",
-		"type": "info",
-		"subType": "string"
+		"name": "5",
+		"logicalId": "touche",
+		"type": "action",
+		"subType": "other",
+		"order": 10,
+		"isVisible": true,
+		"configuration": {
+			"tab_name": "tab_touche",
+			"code_touche": "517"
+		},
+		"generic_type": "GENERIC_ACTION",
+		"forceReturnLineAfter": "1"
 	},
 	{
-		"logicalId": "server",
-		"name": "Server",
-		"type": "info",
-		"subType": "string"
+		"name": "6",
+		"logicalId": "touche",
+		"type": "action",
+		"subType": "other",
+		"order": 11,
+		"isVisible": true,
+		"configuration": {
+			"tab_name": "tab_touche",
+			"code_touche": "518"
+		},
+		"generic_type": "GENERIC_ACTION",
+		"forceReturnLineAfter": "0"
 	},
 	{
-		"logicalId": "timestamp",
-		"name": "Timestamp",
-		"type": "info",
-		"subType": "string"
+		"name": "7",
+		"logicalId": "touche",
+		"type": "action",
+		"subType": "other",
+		"order": 12,
+		"isVisible": true,
+		"configuration": {
+			"tab_name": "tab_touche",
+			"code_touche": "519"
+		},
+		"generic_type": "GENERIC_ACTION",
+		"forceReturnLineAfter": "0"
+	},
+	{
+		"name": "8",
+		"logicalId": "touche",
+		"type": "action",
+		"subType": "other",
+		"order": 13,
+		"isVisible": true,
+		"configuration": {
+			"tab_name": "tab_touche",
+			"code_touche": "520"
+		},
+		"generic_type": "GENERIC_ACTION",
+		"forceReturnLineAfter": "0"
+	},
+	{
+		"name": "9",
+		"logicalId": "touche",
+		"type": "action",
+		"subType": "other",
+		"order": 14,
+		"isVisible": true,
+		"configuration": {
+			"tab_name": "tab_touche",
+			"code_touche": "521"
+		},
+		"generic_type": "GENERIC_ACTION",
+		"forceReturnLineAfter": "0"
+	},
+	{
+		"name": "0",
+		"logicalId": "touche",
+		"type": "action",
+		"subType": "other",
+		"order": 15,
+		"isVisible": true,
+		"configuration": {
+			"tab_name": "tab_touche",
+			"code_touche": "512"
+		},
+		"generic_type": "GENERIC_ACTION",
+		"forceReturnLineAfter": "1"
+	},
+	{
+		"name": "CH+",
+		"logicalId": "touche",
+		"type": "action",
+		"subType": "other",
+		"order": 16,
+		"isVisible": true,
+		"configuration": {
+			"tab_name": "tab_touche",
+			"code_touche": "402"
+		},
+		"generic_type": "GENERIC_ACTION",
+		"forceReturnLineAfter": "0"
+	},
+	{
+		"name": "CH-",
+		"logicalId": "touche",
+		"type": "action",
+		"subType": "other",
+		"order": 17,
+		"isVisible": true,
+		"configuration": {
+			"tab_name": "tab_touche",
+			"code_touche": "403"
+		},
+		"generic_type": "GENERIC_ACTION",
+		"forceReturnLineAfter": "0"
+	},
+	{
+		"name": "VOL+",
+		"logicalId": "touche",
+		"type": "action",
+		"subType": "other",
+		"order": 18,
+		"isVisible": true,
+		"configuration": {
+			"tab_name": "tab_touche",
+			"code_touche": "115"
+		},
+		"generic_type": "GENERIC_ACTION",
+		"forceReturnLineAfter": "0"
+	},
+	{
+		"name": "VOL-",
+		"logicalId": "touche",
+		"type": "action",
+		"subType": "other",
+		"order": 19,
+		"isVisible": true,
+		"configuration": {
+			"tab_name": "tab_touche",
+			"code_touche": "114"
+		},
+		"generic_type": "GENERIC_ACTION",
+		"forceReturnLineAfter": "0"
+	},
+	{
+		"name": "MUTE",
+		"logicalId": "touche",
+		"type": "action",
+		"subType": "other",
+		"order": 20,
+		"isVisible": true,
+		"configuration": {
+			"tab_name": "tab_touche",
+			"code_touche": "113"
+		},
+		"generic_type": "GENERIC_ACTION",
+		"forceReturnLineAfter": "1"
+	},
+	{
+		"name": "UP",
+		"logicalId": "touche",
+		"type": "action",
+		"subType": "other",
+		"order": 21,
+		"isVisible": true,
+		"configuration": {
+			"tab_name": "tab_touche",
+			"code_touche": "103"
+		},
+		"generic_type": "GENERIC_ACTION",
+		"forceReturnLineAfter": "0"
+	},
+	{
+		"name": "DOWN",
+		"logicalId": "touche",
+		"type": "action",
+		"subType": "other",
+		"order": 22,
+		"isVisible": true,
+		"configuration": {
+			"tab_name": "tab_touche",
+			"code_touche": "108"
+		},
+		"generic_type": "GENERIC_ACTION",
+		"forceReturnLineAfter": "0"
+	},
+	{
+		"name": "LEFT",
+		"logicalId": "touche",
+		"type": "action",
+		"subType": "other",
+		"order": 23,
+		"isVisible": true,
+		"configuration": {
+			"tab_name": "tab_touche",
+			"code_touche": "105"
+		},
+		"generic_type": "GENERIC_ACTION",
+		"forceReturnLineAfter": "0"
+	},
+	{
+		"name": "RIGHT",
+		"logicalId": "touche",
+		"type": "action",
+		"subType": "other",
+		"order": 24,
+		"isVisible": true,
+		"configuration": {
+			"tab_name": "tab_touche",
+			"code_touche": "106"
+		},
+		"generic_type": "GENERIC_ACTION",
+		"forceReturnLineAfter": "0"
+	},
+	{
+		"name": "OK",
+		"logicalId": "touche",
+		"type": "action",
+		"subType": "other",
+		"order": 25,
+		"isVisible": true,
+		"configuration": {
+			"tab_name": "tab_touche",
+			"code_touche": "352"
+		},
+		"generic_type": "GENERIC_ACTION",
+		"forceReturnLineAfter": "1"
+	},
+	{
+		"name": "BACK",
+		"logicalId": "touche",
+		"type": "action",
+		"subType": "other",
+		"order": 26,
+		"isVisible": true,
+		"configuration": {
+			"tab_name": "tab_touche",
+			"code_touche": "158"
+		},
+		"generic_type": "GENERIC_ACTION",
+		"forceReturnLineAfter": "0"
+	},
+	{
+		"name": "MENU",
+		"logicalId": "touche",
+		"type": "action",
+		"subType": "other",
+		"order": 27,
+		"isVisible": true,
+		"configuration": {
+			"tab_name": "tab_touche",
+			"code_touche": "139"
+		},
+		"generic_type": "GENERIC_ACTION",
+		"forceReturnLineAfter": "0"
+	},
+	{
+		"name": "PLAY-PAUSE",
+		"logicalId": "touche",
+		"type": "action",
+		"subType": "other",
+		"order": 28,
+		"isVisible": true,
+		"configuration": {
+			"tab_name": "tab_touche",
+			"code_touche": "164"
+		},
+		"generic_type": "GENERIC_ACTION",
+		"forceReturnLineAfter": "0"
+	},
+	{
+		"name": "FBWD",
+		"logicalId": "touche",
+		"type": "action",
+		"subType": "other",
+		"order": 29,
+		"isVisible": true,
+		"configuration": {
+			"tab_name": "tab_touche",
+			"code_touche": "168"
+		},
+		"generic_type": "GENERIC_ACTION",
+		"forceReturnLineAfter": "0"
+	},
+	{
+		"name": "FFWD",
+		"logicalId": "touche",
+		"type": "action",
+		"subType": "other",
+		"order": 30,
+		"isVisible": true,
+		"configuration": {
+			"tab_name": "tab_touche",
+			"code_touche": "159"
+		},
+		"generic_type": "GENERIC_ACTION",
+		"forceReturnLineAfter": "0"
+	},
+	{
+		"name": "STOP",
+		"logicalId": "touche",
+		"type": "action",
+		"subType": "other",
+		"order": 31,
+		"isVisible": true,
+		"configuration": {
+			"tab_name": "tab_touche",
+			"code_touche": "166"
+		},
+		"generic_type": "GENERIC_ACTION",
+		"forceReturnLineAfter": "0"
+	},
+	{
+		"name": "REC",
+		"logicalId": "touche",
+		"type": "action",
+		"subType": "other",
+		"order": 32,
+		"isVisible": true,
+		"configuration": {
+			"tab_name": "tab_touche",
+			"code_touche": "167"
+		},
+		"generic_type": "GENERIC_ACTION",
+		"forceReturnLineAfter": "0"
+	},
+	{
+		"name": "VOD",
+		"logicalId": "touche",
+		"type": "action",
+		"subType": "other",
+		"order": 33,
+		"isVisible": true,
+		"configuration": {
+			"tab_name": "tab_touche",
+			"code_touche": "393"
+		},
+		"generic_type": "GENERIC_ACTION",
+		"forceReturnLineAfter": "1"
 	}
 ]
