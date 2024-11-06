@@ -96,6 +96,17 @@ class tvByOrange extends eqLogic
 	}
 	*/
 
+	public static function update()
+	{
+		foreach (eqLogic::byType(__CLASS__, true) as $eqLogic) {
+			try {
+				$eqLogic->refreshData();
+			} catch (Exception $exc) {
+				log::add(__CLASS__, 'error', $eqLogic->getHumanName() . ' : Erreur : ' . $exc->getMessage());
+			}
+		}
+	}
+
 	/*     * *********************Méthodes d'instance************************* */
 
 	// Fonction exécutée automatiquement avant la création de l'équipement
@@ -213,6 +224,8 @@ class tvByOrange extends eqLogic
 	* Permet de modifier l'affichage du widget (également utilisable par les commandes)
 	public function toHtml($_version = 'dashboard') {}
 	*/
+
+	public function refreshData() {}
 
 	/*     * **********************Getteur Setteur*************************** */
 }
