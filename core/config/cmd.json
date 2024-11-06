@@ -1,11 +1,15 @@
 [
 	{
-		"name": "Etat Decodeur",
+		"logicalId": "refresh",
+		"name": "Refresh",
+		"type": "action",
+		"subType": "other"
+	},
+	{
 		"logicalId": "etat_decodeur",
+		"name": "Etat Decodeur",
 		"type": "info",
 		"subType": "binary",
-		"order": 1,
-		"isVisible": true,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"etat_decodeur": 0
@@ -13,12 +17,10 @@
 		"generic_type": "GENERIC_STATE"
 	},
 	{
-		"name": "Chaine Actuelle",
 		"logicalId": "chaine_actuelle",
+		"name": "Chaine Actuelle",
 		"type": "info",
 		"subType": "string",
-		"order": 2,
-		"isVisible": true,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"chaine_actuelle": "blank",
@@ -27,12 +29,10 @@
 		"generic_type": "GENERIC_STATE"
 	},
 	{
-		"name": "Fonction",
 		"logicalId": "fonction",
+		"name": "Fonction",
 		"type": "info",
 		"subType": "string",
-		"order": 3,
-		"isVisible": true,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"fonction": "aucune"
@@ -40,419 +40,346 @@
 		"generic_type": "GENERIC_STATE"
 	},
 	{
-		"name": "Refresh",
-		"logicalId": "refresh",
-		"type": "action",
-		"subType": "other",
-		"order": 4,
-		"isVisible": true,
-		"generic_type": "GENERIC_ACTION",
-		"forceReturnLineAfter": "0"
-	},
-	{
-		"name": "ON-OFF",
 		"logicalId": "touche",
+		"name": "ON-OFF",
 		"type": "action",
 		"subType": "other",
-		"order": 5,
-		"isVisible": true,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"code_touche": "116"
 		},
-		"generic_type": "GENERIC_ACTION",
-		"forceReturnLineAfter": "1"
+		"generic_type": "GENERIC_ACTION"
 	},
 	{
-		"name": "1",
 		"logicalId": "touche",
+		"name": "1",
 		"type": "action",
 		"subType": "other",
-		"order": 6,
-		"isVisible": true,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"code_touche": "513"
 		},
-		"generic_type": "GENERIC_ACTION",
-		"forceReturnLineAfter": "0"
+		"generic_type": "GENERIC_ACTION"
 	},
 	{
-		"name": "2",
 		"logicalId": "touche",
+		"name": "2",
 		"type": "action",
 		"subType": "other",
-		"order": 7,
-		"isVisible": true,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"code_touche": "514"
 		},
-		"generic_type": "GENERIC_ACTION",
-		"forceReturnLineAfter": "0"
+		"generic_type": "GENERIC_ACTION"
 	},
 	{
-		"name": "3",
 		"logicalId": "touche",
+		"name": "3",
 		"type": "action",
 		"subType": "other",
-		"order": 8,
-		"isVisible": true,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"code_touche": "515"
 		},
-		"generic_type": "GENERIC_ACTION",
-		"forceReturnLineAfter": "0"
+		"generic_type": "GENERIC_ACTION"
 	},
 	{
-		"name": "4",
 		"logicalId": "touche",
+		"name": "4",
 		"type": "action",
 		"subType": "other",
-		"order": 9,
-		"isVisible": true,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"code_touche": "516"
 		},
-		"generic_type": "GENERIC_ACTION",
-		"forceReturnLineAfter": "0"
+		"generic_type": "GENERIC_ACTION"
 	},
 	{
-		"name": "5",
 		"logicalId": "touche",
+		"name": "5",
 		"type": "action",
 		"subType": "other",
-		"order": 10,
-		"isVisible": true,
+		,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"code_touche": "517"
 		},
-		"generic_type": "GENERIC_ACTION",
-		"forceReturnLineAfter": "1"
+		"generic_type": "GENERIC_ACTION"
 	},
 	{
-		"name": "6",
 		"logicalId": "touche",
+		"name": "6",
 		"type": "action",
 		"subType": "other",
-		"order": 11,
-		"isVisible": true,
+		,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"code_touche": "518"
 		},
-		"generic_type": "GENERIC_ACTION",
-		"forceReturnLineAfter": "0"
+		"generic_type": "GENERIC_ACTION"
 	},
 	{
-		"name": "7",
 		"logicalId": "touche",
+		"name": "7",
 		"type": "action",
 		"subType": "other",
-		"order": 12,
-		"isVisible": true,
+		,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"code_touche": "519"
 		},
-		"generic_type": "GENERIC_ACTION",
-		"forceReturnLineAfter": "0"
+		"generic_type": "GENERIC_ACTION"
 	},
 	{
-		"name": "8",
 		"logicalId": "touche",
+		"name": "8",
 		"type": "action",
 		"subType": "other",
-		"order": 13,
-		"isVisible": true,
+		,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"code_touche": "520"
 		},
-		"generic_type": "GENERIC_ACTION",
-		"forceReturnLineAfter": "0"
+		"generic_type": "GENERIC_ACTION"
 	},
 	{
-		"name": "9",
 		"logicalId": "touche",
+		"name": "9",
 		"type": "action",
 		"subType": "other",
-		"order": 14,
-		"isVisible": true,
+		,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"code_touche": "521"
 		},
-		"generic_type": "GENERIC_ACTION",
-		"forceReturnLineAfter": "0"
+		"generic_type": "GENERIC_ACTION"
 	},
 	{
-		"name": "0",
 		"logicalId": "touche",
+		"name": "0",
 		"type": "action",
 		"subType": "other",
-		"order": 15,
-		"isVisible": true,
+		,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"code_touche": "512"
 		},
-		"generic_type": "GENERIC_ACTION",
-		"forceReturnLineAfter": "1"
+		"generic_type": "GENERIC_ACTION"
 	},
 	{
-		"name": "CH+",
 		"logicalId": "touche",
+		"name": "CH+",
 		"type": "action",
 		"subType": "other",
-		"order": 16,
-		"isVisible": true,
+		,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"code_touche": "402"
 		},
-		"generic_type": "GENERIC_ACTION",
-		"forceReturnLineAfter": "0"
+		"generic_type": "GENERIC_ACTION"
 	},
 	{
-		"name": "CH-",
 		"logicalId": "touche",
+		"name": "CH-",
 		"type": "action",
 		"subType": "other",
-		"order": 17,
-		"isVisible": true,
+		,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"code_touche": "403"
 		},
-		"generic_type": "GENERIC_ACTION",
-		"forceReturnLineAfter": "0"
+		"generic_type": "GENERIC_ACTION"
 	},
 	{
-		"name": "VOL+",
 		"logicalId": "touche",
+		"name": "VOL+",
 		"type": "action",
 		"subType": "other",
-		"order": 18,
-		"isVisible": true,
+		,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"code_touche": "115"
 		},
-		"generic_type": "GENERIC_ACTION",
-		"forceReturnLineAfter": "0"
+		"generic_type": "GENERIC_ACTION"
 	},
 	{
-		"name": "VOL-",
 		"logicalId": "touche",
+		"name": "VOL-",
 		"type": "action",
 		"subType": "other",
-		"order": 19,
-		"isVisible": true,
+		,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"code_touche": "114"
 		},
-		"generic_type": "GENERIC_ACTION",
-		"forceReturnLineAfter": "0"
+		"generic_type": "GENERIC_ACTION"
 	},
 	{
-		"name": "MUTE",
 		"logicalId": "touche",
+		"name": "MUTE",
 		"type": "action",
 		"subType": "other",
-		"order": 20,
-		"isVisible": true,
+		,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"code_touche": "113"
 		},
-		"generic_type": "GENERIC_ACTION",
-		"forceReturnLineAfter": "1"
+		"generic_type": "GENERIC_ACTION"
 	},
 	{
-		"name": "UP",
 		"logicalId": "touche",
+		"name": "UP",
 		"type": "action",
 		"subType": "other",
-		"order": 21,
-		"isVisible": true,
+		,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"code_touche": "103"
 		},
-		"generic_type": "GENERIC_ACTION",
-		"forceReturnLineAfter": "0"
+		"generic_type": "GENERIC_ACTION"
 	},
 	{
-		"name": "DOWN",
 		"logicalId": "touche",
+		"name": "DOWN",
 		"type": "action",
 		"subType": "other",
-		"order": 22,
-		"isVisible": true,
+		,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"code_touche": "108"
 		},
-		"generic_type": "GENERIC_ACTION",
-		"forceReturnLineAfter": "0"
+		"generic_type": "GENERIC_ACTION"
 	},
 	{
-		"name": "LEFT",
 		"logicalId": "touche",
+		"name": "LEFT",
 		"type": "action",
 		"subType": "other",
-		"order": 23,
-		"isVisible": true,
+		,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"code_touche": "105"
 		},
-		"generic_type": "GENERIC_ACTION",
-		"forceReturnLineAfter": "0"
+		"generic_type": "GENERIC_ACTION"
 	},
 	{
-		"name": "RIGHT",
 		"logicalId": "touche",
+		"name": "RIGHT",
 		"type": "action",
 		"subType": "other",
-		"order": 24,
-		"isVisible": true,
+		,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"code_touche": "106"
 		},
-		"generic_type": "GENERIC_ACTION",
-		"forceReturnLineAfter": "0"
+		"generic_type": "GENERIC_ACTION"
 	},
 	{
-		"name": "OK",
 		"logicalId": "touche",
+		"name": "OK",
 		"type": "action",
 		"subType": "other",
-		"order": 25,
-		"isVisible": true,
+		,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"code_touche": "352"
 		},
-		"generic_type": "GENERIC_ACTION",
-		"forceReturnLineAfter": "1"
+		"generic_type": "GENERIC_ACTION"
 	},
 	{
-		"name": "BACK",
 		"logicalId": "touche",
+		"name": "BACK",
 		"type": "action",
 		"subType": "other",
-		"order": 26,
-		"isVisible": true,
+		,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"code_touche": "158"
 		},
-		"generic_type": "GENERIC_ACTION",
-		"forceReturnLineAfter": "0"
+		"generic_type": "GENERIC_ACTION"
 	},
 	{
-		"name": "MENU",
 		"logicalId": "touche",
+		"name": "MENU",
 		"type": "action",
 		"subType": "other",
-		"order": 27,
-		"isVisible": true,
+		,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"code_touche": "139"
 		},
-		"generic_type": "GENERIC_ACTION",
-		"forceReturnLineAfter": "0"
+		"generic_type": "GENERIC_ACTION"
 	},
 	{
-		"name": "PLAY-PAUSE",
 		"logicalId": "touche",
+		"name": "PLAY-PAUSE",
 		"type": "action",
 		"subType": "other",
-		"order": 28,
-		"isVisible": true,
+		,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"code_touche": "164"
 		},
-		"generic_type": "GENERIC_ACTION",
-		"forceReturnLineAfter": "0"
+		"generic_type": "GENERIC_ACTION"
 	},
 	{
-		"name": "FBWD",
 		"logicalId": "touche",
+		"name": "FBWD",
 		"type": "action",
 		"subType": "other",
-		"order": 29,
-		"isVisible": true,
+		,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"code_touche": "168"
 		},
-		"generic_type": "GENERIC_ACTION",
-		"forceReturnLineAfter": "0"
+		"generic_type": "GENERIC_ACTION"
 	},
 	{
-		"name": "FFWD",
 		"logicalId": "touche",
+		"name": "FFWD",
 		"type": "action",
 		"subType": "other",
-		"order": 30,
-		"isVisible": true,
+		,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"code_touche": "159"
 		},
-		"generic_type": "GENERIC_ACTION",
-		"forceReturnLineAfter": "0"
+		"generic_type": "GENERIC_ACTION"
 	},
 	{
-		"name": "STOP",
 		"logicalId": "touche",
+		"name": "STOP",
 		"type": "action",
 		"subType": "other",
-		"order": 31,
-		"isVisible": true,
+		,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"code_touche": "166"
 		},
-		"generic_type": "GENERIC_ACTION",
-		"forceReturnLineAfter": "0"
+		"generic_type": "GENERIC_ACTION"
 	},
 	{
-		"name": "REC",
 		"logicalId": "touche",
+		"name": "REC",
 		"type": "action",
 		"subType": "other",
-		"order": 32,
-		"isVisible": true,
+		,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"code_touche": "167"
 		},
-		"generic_type": "GENERIC_ACTION",
-		"forceReturnLineAfter": "0"
+		"generic_type": "GENERIC_ACTION"
 	},
 	{
-		"name": "VOD",
 		"logicalId": "touche",
+		"name": "VOD",
 		"type": "action",
 		"subType": "other",
-		"order": 33,
-		"isVisible": true,
+		,
 		"configuration": {
 			"tab_name": "tab_touche",
 			"code_touche": "393"
 		},
-		"generic_type": "GENERIC_ACTION",
-		"forceReturnLineAfter": "1"
+		"generic_type": "GENERIC_ACTION"
 	}
 ]
