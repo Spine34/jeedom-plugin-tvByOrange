@@ -101,15 +101,21 @@ class tvByOrange extends eqLogic
 	// Fonction exécutée automatiquement avant la création de l'équipement
 	public function preInsert()
 	{
-		$this->setIsEnable(1);
 		$this->setIsVisible(1);
+		$this->setIsEnable(1);
+		$this->setCategory('multimedia', 1);
 	}
 
 	// Fonction exécutée automatiquement après la création de l'équipement
 	public function postInsert() {}
 
 	// Fonction exécutée automatiquement avant la mise à jour de l'équipement
-	public function preUpdate() {}
+	public function preUpdate()
+	{
+		if (empty($this->getConfiguration('ip'))) {
+			throw new Exception(__('L\'adresse IP du décodeur ne peut être vide', __FILE__));
+		}
+	}
 
 	// Fonction exécutée automatiquement après la mise à jour de l'équipement
 	public function postUpdate() {}
@@ -120,6 +126,12 @@ class tvByOrange extends eqLogic
 	// Fonction exécutée automatiquement après la sauvegarde (création ou mise à jour) de l'équipement
 	public function postSave()
 	{
+		if (!is_file(dirname(__FILE__) . '/../config/cmd.json')) {
+			throw new Exception(__('Fichier cmd.json non trouvé', __FILE__));
+		}
+		if (!is_file(dirname(__FILE__) . '/../config/channel.json')) {
+			throw new Exception(__('Fichier channel.json non trouvé', __FILE__));
+		}
 		$cmdsArray = json_decode(file_get_contents(dirname(__FILE__) . '/../config/cmd.json'), true);
 		$channelsArray = json_decode(file_get_contents(dirname(__FILE__) . '/../config/channel.json'), true);
 		$cmdsArray = array_merge($cmdsArray, $channelsArray);

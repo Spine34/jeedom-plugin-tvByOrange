@@ -77,6 +77,14 @@ function addCmdToTableCmd(_cmd) {
 	tr += '<input class="tooltips cmdAttr form-control input-sm" data-l1key="unite" placeholder="Unité" title="{{Unité}}" style="width:30%;max-width:80px;display:inline-block;margin-right:2px;">';
 	tr += '</div>';
 	tr += '</td>';
+	if (typeof _cmd.configuration.key === 'undefined') {
+		tr += '<td>';
+		tr += '</td>';
+	} else {
+		tr += '<td>';
+		tr += '<input class="cmdAttr form-control input-sm" data-l1key="configuration" data-l2key="key" disabled>';
+		tr += '</td>';
+	}
 	tr += '<td>';
 	tr += '<span class="cmdAttr" data-l1key="htmlstate"></span>';
 	tr += '</td>';
@@ -166,6 +174,9 @@ function addCmdToTableChannel(_cmd) {
 	tr += '<td>';
 	tr += '<input class="cmdAttr form-control input-sm" data-l1key="configuration" data-l2key="epg_id">';
 	tr += '</td>';
+	// tr += '<td>';
+	// tr += '<span class="cmdAttr" data-l1key="htmlstate"></span>';
+	// tr += '</td>';
 	tr += '<td>';
 	if (is_numeric(_cmd.id)) {
 		tr += '<a class="btn btn-default btn-xs cmdAction" data-action="configure"><i class="fas fa-cogs"></i></a> ';
