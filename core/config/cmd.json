@@ -9,6 +9,116 @@
 		}
 	},
 	{
+		"logicalId": "osdContext",
+		"generic_type": "GENERIC_STATE",
+		"name": "osdContext",
+		"type": "info",
+		"subType": "string",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "playedMediaType",
+		"generic_type": "GENERIC_STATE",
+		"name": "playedMediaType",
+		"type": "info",
+		"subType": "string",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "playedMediaState",
+		"generic_type": "GENERIC_STATE",
+		"name": "playedMediaState",
+		"type": "info",
+		"subType": "string",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "playedMediaId",
+		"generic_type": "GENERIC_STATE",
+		"name": "playedMediaId",
+		"type": "info",
+		"subType": "string",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "playedMediaContextId",
+		"generic_type": "GENERIC_STATE",
+		"name": "playedMediaContextId",
+		"type": "info",
+		"subType": "string",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "playedMediaPosition",
+		"generic_type": "GENERIC_STATE",
+		"name": "playedMediaPosition",
+		"type": "info",
+		"subType": "string",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "timeShiftingState",
+		"generic_type": "GENERIC_STATE",
+		"name": "timeShiftingState",
+		"type": "info",
+		"subType": "binary",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "macAddress",
+		"generic_type": "GENERIC_STATE",
+		"name": "macAddress",
+		"type": "info",
+		"subType": "string",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "wolSupport",
+		"generic_type": "GENERIC_STATE",
+		"name": "wolSupport",
+		"type": "info",
+		"subType": "string",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "friendlyName",
+		"generic_type": "GENERIC_STATE",
+		"name": "friendlyName",
+		"type": "info",
+		"subType": "string",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "activeStandbyState",
+		"generic_type": "GENERIC_STATE",
+		"name": "activeStandbyState",
+		"type": "info",
+		"subType": "binary",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
 		"logicalId": "etat_decodeur",
 		"generic_type": "GENERIC_STATE",
 		"name": "Etat Decodeur",

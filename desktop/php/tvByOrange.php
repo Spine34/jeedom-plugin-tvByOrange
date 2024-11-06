@@ -156,7 +156,7 @@ $eqLogics = eqLogic::byType($plugin->getId());
 			<!-- Onglet des commandes de l'équipement -->
 			<div role="tabpanel" class="tab-pane" id="commandtab">
 				<!-- <a class="btn btn-default btn-sm pull-right cmdAction" data-action="add" style="margin-top:5px;"><i class="fas fa-plus-circle"></i> {{Ajouter une commande}}</a> -->
-				<!-- <br><br> -->
+				<br><br>
 				<div class="table-responsive">
 					<table id="table_cmd" class="table table-bordered table-condensed">
 						<thead>
@@ -176,10 +176,10 @@ $eqLogics = eqLogic::byType($plugin->getId());
 				</div>
 			</div><!-- /.tabpanel #commandtab-->
 
-			<!-- Onglet des commandes de l'équipement -->
+			<!-- Onglet des chaînes de l'équipement -->
 			<div role="tabpanel" class="tab-pane" id="channeltab">
-				<!-- <a class="btn btn-default btn-sm pull-right cmdAction" data-action="add" style="margin-top:5px;"><i class="fas fa-plus-circle"></i> {{Ajouter une commande}}</a> -->
-				<!-- <br><br> -->
+				<a class="btn btn-default btn-sm pull-right cmdAction" data-action="add2" style="margin-top:5px;" id="toto"><i class="fas fa-plus-circle"></i> {{Ajouter une commande}}</a>
+				<br><br>
 				<div class="table-responsive">
 					<table id="table_channel" class="table table-bordered table-condensed">
 						<thead>

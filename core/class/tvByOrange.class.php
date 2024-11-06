@@ -273,7 +273,38 @@ class tvByOrange extends eqLogic
 
 	public function refreshData()
 	{
-		log::add(__CLASS__, 'debug', $this->getHumanName() . ' : test');
+		$url = 'http://' . $this->getConfiguration('ip') . ':8080/remoteControl/cmd?operation=10';
+
+		log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $url : ' . $url);
+
+		$ch = curl_init();
+
+		// Configuration des options de cURL
+		curl_setopt($ch, CURLOPT_URL, $url);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		curl_setopt($ch, CURLOPT_TIMEOUT, 5); // Durée maximale d'exécution en secondes
+
+		$result = curl_exec($ch);
+
+		if (curl_errno($ch)) {
+			log::add(__CLASS__, 'error', $this->getHumanName() . ' : Erreur cURL : ' . curl_error($ch));
+		} else {
+			log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $result : ' . $result);
+			$result = json_decode($result, true);
+			$this->checkAndUpdateCmd('osdContext', $result['result']['data']['osdContext']);
+			$this->checkAndUpdateCmd('playedMediaType', $result['result']['data']['playedMediaType']);
+			$this->checkAndUpdateCmd('playedMediaState', $result['result']['data']['playedMediaState']);
+			$this->checkAndUpdateCmd('playedMediaId', $result['result']['data']['playedMediaId']);
+			$this->checkAndUpdateCmd('playedMediaContextId', $result['result']['data']['playedMediaContextId']);
+			$this->checkAndUpdateCmd('playedMediaPosition', $result['result']['data']['playedMediaPosition']);
+			$this->checkAndUpdateCmd('timeShiftingState', $result['result']['data']['timeShiftingState']);
+			$this->checkAndUpdateCmd('macAddress', $result['result']['data']['macAddress']);
+			$this->checkAndUpdateCmd('wolSupport', $result['result']['data']['wolSupport']);
+			$this->checkAndUpdateCmd('friendlyName', $result['result']['data']['friendlyName']);
+			$this->checkAndUpdateCmd('activeStandbyState', $result['result']['data']['activeStandbyState']);
+		}
+
+		curl_close($ch);
 	}
 
 	/*     * **********************Getteur Setteur*************************** */
@@ -300,7 +331,12 @@ class tvByOrangeCmd extends cmd
 	*/
 
 	// Exécution d'une commande
-	public function execute($_options = array()) {}
+	public function execute($_options = array())
+	{
+		if ($this->getLogicalId() == 'refresh') {
+			$this->getEqLogic()->refreshData();
+		}
+	}
 
 	/*     * **********************Getteur Setteur*************************** */
 }
