@@ -192,6 +192,7 @@ $eqLogics = eqLogic::byType($plugin->getId());
 								<th>{{ID EPG}}</th>
 								<!-- <th>{{Etat}}</th> -->
 								<th style="min-width:80px;width:200px;">{{Actions}}</th>
+								<th style="display:none;">{{display:none;}}</th>
 							</tr>
 						</thead>
 						<tbody>
