@@ -121,6 +121,8 @@ class tvByOrange extends eqLogic
 	public function postSave()
 	{
 		$cmdsArray = json_decode(file_get_contents(dirname(__FILE__) . '/../config/cmd.json'), true);
+		$channelsArray = json_decode(file_get_contents(dirname(__FILE__) . '/../config/channel.json'), true);
+		$cmdsArray = array_merge($cmdsArray, $channelsArray);
 		$order = 0;
 		log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $cmdsArray : ' . json_encode($cmdsArray));
 		foreach ($cmdsArray as $cmdArray) {

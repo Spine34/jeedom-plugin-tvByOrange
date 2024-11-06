@@ -1,0 +1,629 @@
+[
+	{
+		"logicalId": "tf1",
+		"name": "TF1",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "1",
+			"epg_id": "192"
+		}
+	},
+	{
+		"logicalId": "france2",
+		"name": "France 2",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "2",
+			"epg_id": "4"
+		}
+	},
+	{
+		"logicalId": "france3",
+		"name": "France 3",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "3",
+			"epg_id": "80"
+		}
+	},
+	{
+		"logicalId": "canalPlus",
+		"name": "Canal +",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "4",
+			"epg_id": "34"
+		}
+	},
+	{
+		"logicalId": "france5",
+		"name": "France 5",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "5",
+			"epg_id": "47"
+		}
+	},
+	{
+		"logicalId": "m6",
+		"name": "M6",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "6",
+			"epg_id": "118"
+		}
+	},
+	{
+		"logicalId": "arte",
+		"name": "Arte",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "7",
+			"epg_id": "111"
+		}
+	},
+	{
+		"logicalId": "c8",
+		"name": "C8",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "8",
+			"epg_id": "445"
+		}
+	},
+	{
+		"logicalId": "w9",
+		"name": "W9",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "9",
+			"epg_id": "119"
+		}
+	},
+	{
+		"logicalId": "tmc",
+		"name": "TMC",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "10",
+			"epg_id": "195"
+		}
+	},
+	{
+		"logicalId": "nt1",
+		"name": "NT1",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "11",
+			"epg_id": "446"
+		}
+	},
+	{
+		"logicalId": "nrj12",
+		"name": "NRJ12",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "12",
+			"epg_id": "444"
+		}
+	},
+	{
+		"logicalId": "lcp",
+		"name": "LCP",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "13",
+			"epg_id": "234"
+		}
+	},
+	{
+		"logicalId": "france4",
+		"name": "France 4",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "14",
+			"epg_id": "78"
+		}
+	},
+	{
+		"logicalId": "bfmTv",
+		"name": "BFM TV",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "15",
+			"epg_id": "481"
+		}
+	},
+	{
+		"logicalId": "cnews",
+		"name": "CNEWS",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "16",
+			"epg_id": "226"
+		}
+	},
+	{
+		"logicalId": "cStar",
+		"name": "CStar",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "17",
+			"epg_id": "-1"
+		}
+	},
+	{
+		"logicalId": "gulli",
+		"name": "Gulli",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "18",
+			"epg_id": "-1"
+		}
+	},
+	{
+		"logicalId": "franceO",
+		"name": "France Ô",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "19",
+			"epg_id": "160"
+		}
+	},
+	{
+		"logicalId": "hd1",
+		"name": "HD1",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "20",
+			"epg_id": "1404"
+		}
+	},
+	{
+		"logicalId": "lequipe21",
+		"name": "L'équipe 21",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "21",
+			"epg_id": "1401"
+		}
+	},
+	{
+		"logicalId": "6ter",
+		"name": "6ter",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "22",
+			"epg_id": "1403"
+		}
+	},
+	{
+		"logicalId": "numero23",
+		"name": "Numéro 23",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "23",
+			"epg_id": "1402"
+		}
+	},
+	{
+		"logicalId": "rmcDecouverte",
+		"name": "RMC Découverte",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "24",
+			"epg_id": "1400"
+		}
+	},
+	{
+		"logicalId": "cherie25",
+		"name": "Chérie 25",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "25",
+			"epg_id": "1399"
+		}
+	},
+	{
+		"logicalId": "lci",
+		"name": "LCI",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "26",
+			"epg_id": "112"
+		}
+	},
+	{
+		"logicalId": "franceInfo",
+		"name": "France Info",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "27",
+			"epg_id": "2111"
+		}
+	},
+	{
+		"logicalId": "tv5Monde",
+		"name": "TV5 Monde",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "33",
+			"epg_id": "20205"
+		}
+	},
+	{
+		"logicalId": "teva",
+		"name": "Teva",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "34",
+			"epg_id": "191"
+		}
+	},
+	{
+		"logicalId": "disneyChannel",
+		"name": "Disney Channel",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "86",
+			"epg_id": "58"
+		}
+	},
+	{
+		"logicalId": "campagnesTv",
+		"name": "Campagnes Tv",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "110",
+			"epg_id": "1451"
+		}
+	},
+	{
+		"logicalId": "myZen",
+		"name": "MyZen",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "135",
+			"epg_id": "829"
+		}
+	},
+	{
+		"logicalId": "noLife",
+		"name": "No Life",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "138",
+			"epg_id": "787"
+		}
+	},
+	{
+		"logicalId": "ginx",
+		"name": "GINX",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "140",
+			"epg_id": "-1"
+		}
+	},
+	{
+		"logicalId": "traceUrban",
+		"name": "Trace Urban",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "150",
+			"epg_id": "325"
+		}
+	},
+	{
+		"logicalId": "nrjHitsTv",
+		"name": "NRJ Hits TV",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "151",
+			"epg_id": "605"
+		}
+	},
+	{
+		"logicalId": "virginRadioTv",
+		"name": "Virgin Radio Tv",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "152",
+			"epg_id": "-1"
+		}
+	},
+	{
+		"logicalId": "clubbing",
+		"name": "Clubbing",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "153",
+			"epg_id": "-1"
+		}
+	},
+	{
+		"logicalId": "oFive",
+		"name": "OFive",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "154",
+			"epg_id": "-1"
+		}
+	},
+	{
+		"logicalId": "bBlackClassik",
+		"name": "BBlack Classik",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "155",
+			"epg_id": "-1"
+		}
+	},
+	{
+		"logicalId": "bBlackCaribbean",
+		"name": "BBlack Caribbean",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "156",
+			"epg_id": "-1"
+		}
+	},
+	{
+		"logicalId": "equidiaLife",
+		"name": "Equidia LIFE",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "173",
+			"epg_id": "64"
+		}
+	},
+	{
+		"logicalId": "equidiaLive",
+		"name": "Equidia LIVE",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "174",
+			"epg_id": "1146"
+		}
+	},
+	{
+		"logicalId": "luckyJack",
+		"name": "Lucky Jack",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "211",
+			"epg_id": "1061"
+		}
+	},
+	{
+		"logicalId": "fashionTv",
+		"name": "Fashion Tv",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "214",
+			"epg_id": "1996"
+		}
+	},
+	{
+		"logicalId": "luxeTv",
+		"name": "Luxe Tv",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "215",
+			"epg_id": "531"
+		}
+	},
+	{
+		"logicalId": "maChaineEtudiante",
+		"name": "Ma chaine étudiante",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "217",
+			"epg_id": "987"
+		}
+	},
+	{
+		"logicalId": "demain",
+		"name": "Demain !",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "219",
+			"epg_id": "57"
+		}
+	},
+	{
+		"logicalId": "publicSenat",
+		"name": "Public Sénat",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "226",
+			"epg_id": "-1"
+		}
+	},
+	{
+		"logicalId": "france24",
+		"name": "France 24",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "227",
+			"epg_id": "529"
+		}
+	},
+	{
+		"logicalId": "bfmBusiness",
+		"name": "BFM Business",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "228",
+			"epg_id": "1073"
+		}
+	},
+	{
+		"logicalId": "france24English",
+		"name": "France 24 English",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "232",
+			"epg_id": "671"
+		}
+	},
+	{
+		"logicalId": "cnn",
+		"name": "CNN",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "234",
+			"epg_id": "53"
+		}
+	},
+	{
+		"logicalId": "cnbc",
+		"name": "CNBC",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "235",
+			"epg_id": "51"
+		}
+	},
+	{
+		"logicalId": "bloomberg",
+		"name": "Bloomberg",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "236",
+			"epg_id": "410"
+		}
+	},
+	{
+		"logicalId": "telesud",
+		"name": "TéléSud",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "252",
+			"epg_id": "449"
+		}
+	},
+	{
+		"logicalId": "kto",
+		"name": "Kto",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "585",
+			"epg_id": "449"
+		}
+	}
+]

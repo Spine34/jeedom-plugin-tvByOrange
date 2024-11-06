@@ -3,383 +3,362 @@
 		"logicalId": "refresh",
 		"name": "Refresh",
 		"type": "action",
-		"subType": "other"
+		"subType": "other",
+		"configuration": {
+			"table": "cmd"
+		}
 	},
 	{
 		"logicalId": "etat_decodeur",
+		"generic_type": "GENERIC_STATE",
 		"name": "Etat Decodeur",
 		"type": "info",
 		"subType": "binary",
 		"configuration": {
-			"tab_name": "tab_touche",
+			"table": "cmd",
 			"etat_decodeur": 0
-		},
-		"generic_type": "GENERIC_STATE"
+		}
 	},
 	{
 		"logicalId": "chaine_actuelle",
+		"generic_type": "GENERIC_STATE",
 		"name": "Chaine Actuelle",
 		"type": "info",
 		"subType": "string",
 		"configuration": {
-			"tab_name": "tab_touche",
+			"table": "cmd",
 			"chaine_actuelle": "blank",
 			"id_chaine_actuelle": -1
-		},
-		"generic_type": "GENERIC_STATE"
+		}
 	},
 	{
 		"logicalId": "fonction",
+		"generic_type": "GENERIC_STATE",
 		"name": "Fonction",
 		"type": "info",
 		"subType": "string",
 		"configuration": {
-			"tab_name": "tab_touche",
+			"table": "cmd",
 			"fonction": "aucune"
-		},
-		"generic_type": "GENERIC_STATE"
+		}
 	},
 	{
-		"logicalId": "touche",
+		"logicalId": "onOff",
+		"generic_type": "GENERIC_ACTION",
 		"name": "ON-OFF",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
-			"tab_name": "tab_touche",
+			"table": "cmd",
 			"code_touche": "116"
-		},
-		"generic_type": "GENERIC_ACTION"
+		}
 	},
 	{
-		"logicalId": "touche",
+		"logicalId": "0",
+		"generic_type": "GENERIC_ACTION",
+		"name": "0",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"code_touche": "512"
+		}
+	},
+	{
+		"logicalId": "1",
+		"generic_type": "GENERIC_ACTION",
 		"name": "1",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
-			"tab_name": "tab_touche",
+			"table": "cmd",
 			"code_touche": "513"
-		},
-		"generic_type": "GENERIC_ACTION"
+		}
 	},
 	{
-		"logicalId": "touche",
+		"logicalId": "2",
+		"generic_type": "GENERIC_ACTION",
 		"name": "2",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
-			"tab_name": "tab_touche",
+			"table": "cmd",
 			"code_touche": "514"
-		},
-		"generic_type": "GENERIC_ACTION"
+		}
 	},
 	{
-		"logicalId": "touche",
+		"logicalId": "3",
+		"generic_type": "GENERIC_ACTION",
 		"name": "3",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
-			"tab_name": "tab_touche",
+			"table": "cmd",
 			"code_touche": "515"
-		},
-		"generic_type": "GENERIC_ACTION"
+		}
 	},
 	{
-		"logicalId": "touche",
+		"logicalId": "4",
+		"generic_type": "GENERIC_ACTION",
 		"name": "4",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
-			"tab_name": "tab_touche",
+			"table": "cmd",
 			"code_touche": "516"
-		},
-		"generic_type": "GENERIC_ACTION"
+		}
 	},
 	{
-		"logicalId": "touche",
+		"logicalId": "5",
+		"generic_type": "GENERIC_ACTION",
 		"name": "5",
 		"type": "action",
 		"subType": "other",
-		,
 		"configuration": {
-			"tab_name": "tab_touche",
+			"table": "cmd",
 			"code_touche": "517"
-		},
-		"generic_type": "GENERIC_ACTION"
+		}
 	},
 	{
-		"logicalId": "touche",
+		"logicalId": "6",
+		"generic_type": "GENERIC_ACTION",
 		"name": "6",
 		"type": "action",
 		"subType": "other",
-		,
 		"configuration": {
-			"tab_name": "tab_touche",
+			"table": "cmd",
 			"code_touche": "518"
-		},
-		"generic_type": "GENERIC_ACTION"
+		}
 	},
 	{
-		"logicalId": "touche",
+		"logicalId": "7",
+		"generic_type": "GENERIC_ACTION",
 		"name": "7",
 		"type": "action",
 		"subType": "other",
-		,
 		"configuration": {
-			"tab_name": "tab_touche",
+			"table": "cmd",
 			"code_touche": "519"
-		},
-		"generic_type": "GENERIC_ACTION"
+		}
 	},
 	{
-		"logicalId": "touche",
+		"logicalId": "8",
+		"generic_type": "GENERIC_ACTION",
 		"name": "8",
 		"type": "action",
 		"subType": "other",
-		,
 		"configuration": {
-			"tab_name": "tab_touche",
+			"table": "cmd",
 			"code_touche": "520"
-		},
-		"generic_type": "GENERIC_ACTION"
+		}
 	},
 	{
-		"logicalId": "touche",
+		"logicalId": "9",
+		"generic_type": "GENERIC_ACTION",
 		"name": "9",
 		"type": "action",
 		"subType": "other",
-		,
 		"configuration": {
-			"tab_name": "tab_touche",
+			"table": "cmd",
 			"code_touche": "521"
-		},
-		"generic_type": "GENERIC_ACTION"
+		}
 	},
 	{
-		"logicalId": "touche",
-		"name": "0",
-		"type": "action",
-		"subType": "other",
-		,
-		"configuration": {
-			"tab_name": "tab_touche",
-			"code_touche": "512"
-		},
-		"generic_type": "GENERIC_ACTION"
-	},
-	{
-		"logicalId": "touche",
+		"logicalId": "ch+",
+		"generic_type": "GENERIC_ACTION",
 		"name": "CH+",
 		"type": "action",
 		"subType": "other",
-		,
 		"configuration": {
-			"tab_name": "tab_touche",
+			"table": "cmd",
 			"code_touche": "402"
-		},
-		"generic_type": "GENERIC_ACTION"
+		}
 	},
 	{
-		"logicalId": "touche",
+		"logicalId": "ch-",
+		"generic_type": "GENERIC_ACTION",
 		"name": "CH-",
 		"type": "action",
 		"subType": "other",
-		,
 		"configuration": {
-			"tab_name": "tab_touche",
+			"table": "cmd",
 			"code_touche": "403"
-		},
-		"generic_type": "GENERIC_ACTION"
+		}
 	},
 	{
-		"logicalId": "touche",
+		"logicalId": "vol+",
+		"generic_type": "GENERIC_ACTION",
 		"name": "VOL+",
 		"type": "action",
 		"subType": "other",
-		,
 		"configuration": {
-			"tab_name": "tab_touche",
+			"table": "cmd",
 			"code_touche": "115"
-		},
-		"generic_type": "GENERIC_ACTION"
+		}
 	},
 	{
-		"logicalId": "touche",
+		"logicalId": "vol-",
+		"generic_type": "GENERIC_ACTION",
 		"name": "VOL-",
 		"type": "action",
 		"subType": "other",
-		,
 		"configuration": {
-			"tab_name": "tab_touche",
+			"table": "cmd",
 			"code_touche": "114"
-		},
-		"generic_type": "GENERIC_ACTION"
+		}
 	},
 	{
-		"logicalId": "touche",
+		"logicalId": "mute",
+		"generic_type": "GENERIC_ACTION",
 		"name": "MUTE",
 		"type": "action",
 		"subType": "other",
-		,
 		"configuration": {
-			"tab_name": "tab_touche",
+			"table": "cmd",
 			"code_touche": "113"
-		},
-		"generic_type": "GENERIC_ACTION"
+		}
 	},
 	{
-		"logicalId": "touche",
+		"logicalId": "up",
+		"generic_type": "GENERIC_ACTION",
 		"name": "UP",
 		"type": "action",
 		"subType": "other",
-		,
 		"configuration": {
-			"tab_name": "tab_touche",
+			"table": "cmd",
 			"code_touche": "103"
-		},
-		"generic_type": "GENERIC_ACTION"
+		}
 	},
 	{
-		"logicalId": "touche",
+		"logicalId": "down",
+		"generic_type": "GENERIC_ACTION",
 		"name": "DOWN",
 		"type": "action",
 		"subType": "other",
-		,
 		"configuration": {
-			"tab_name": "tab_touche",
+			"table": "cmd",
 			"code_touche": "108"
-		},
-		"generic_type": "GENERIC_ACTION"
+		}
 	},
 	{
-		"logicalId": "touche",
+		"logicalId": "left",
+		"generic_type": "GENERIC_ACTION",
 		"name": "LEFT",
 		"type": "action",
 		"subType": "other",
-		,
 		"configuration": {
-			"tab_name": "tab_touche",
+			"table": "cmd",
 			"code_touche": "105"
-		},
-		"generic_type": "GENERIC_ACTION"
+		}
 	},
 	{
-		"logicalId": "touche",
+		"logicalId": "right",
+		"generic_type": "GENERIC_ACTION",
 		"name": "RIGHT",
 		"type": "action",
 		"subType": "other",
-		,
 		"configuration": {
-			"tab_name": "tab_touche",
+			"table": "cmd",
 			"code_touche": "106"
-		},
-		"generic_type": "GENERIC_ACTION"
+		}
 	},
 	{
-		"logicalId": "touche",
+		"logicalId": "ok",
+		"generic_type": "GENERIC_ACTION",
 		"name": "OK",
 		"type": "action",
 		"subType": "other",
-		,
 		"configuration": {
-			"tab_name": "tab_touche",
+			"table": "cmd",
 			"code_touche": "352"
-		},
-		"generic_type": "GENERIC_ACTION"
+		}
 	},
 	{
-		"logicalId": "touche",
+		"logicalId": "back",
+		"generic_type": "GENERIC_ACTION",
 		"name": "BACK",
 		"type": "action",
 		"subType": "other",
-		,
 		"configuration": {
-			"tab_name": "tab_touche",
+			"table": "cmd",
 			"code_touche": "158"
-		},
-		"generic_type": "GENERIC_ACTION"
+		}
 	},
 	{
-		"logicalId": "touche",
+		"logicalId": "menu",
+		"generic_type": "GENERIC_ACTION",
 		"name": "MENU",
 		"type": "action",
 		"subType": "other",
-		,
 		"configuration": {
-			"tab_name": "tab_touche",
+			"table": "cmd",
 			"code_touche": "139"
-		},
-		"generic_type": "GENERIC_ACTION"
+		}
 	},
 	{
-		"logicalId": "touche",
+		"logicalId": "playPause",
+		"generic_type": "GENERIC_ACTION",
 		"name": "PLAY-PAUSE",
 		"type": "action",
 		"subType": "other",
-		,
 		"configuration": {
-			"tab_name": "tab_touche",
+			"table": "cmd",
 			"code_touche": "164"
-		},
-		"generic_type": "GENERIC_ACTION"
+		}
 	},
 	{
-		"logicalId": "touche",
+		"logicalId": "fbwd",
+		"generic_type": "GENERIC_ACTION",
 		"name": "FBWD",
 		"type": "action",
 		"subType": "other",
-		,
 		"configuration": {
-			"tab_name": "tab_touche",
+			"table": "cmd",
 			"code_touche": "168"
-		},
-		"generic_type": "GENERIC_ACTION"
+		}
 	},
 	{
-		"logicalId": "touche",
+		"logicalId": "ffwd",
+		"generic_type": "GENERIC_ACTION",
 		"name": "FFWD",
 		"type": "action",
 		"subType": "other",
-		,
 		"configuration": {
-			"tab_name": "tab_touche",
+			"table": "cmd",
 			"code_touche": "159"
-		},
-		"generic_type": "GENERIC_ACTION"
+		}
 	},
 	{
-		"logicalId": "touche",
-		"name": "STOP",
-		"type": "action",
-		"subType": "other",
-		,
-		"configuration": {
-			"tab_name": "tab_touche",
-			"code_touche": "166"
-		},
-		"generic_type": "GENERIC_ACTION"
-	},
-	{
-		"logicalId": "touche",
+		"logicalId": "rec",
+		"generic_type": "GENERIC_ACTION",
 		"name": "REC",
 		"type": "action",
 		"subType": "other",
-		,
 		"configuration": {
-			"tab_name": "tab_touche",
+			"table": "cmd",
 			"code_touche": "167"
-		},
-		"generic_type": "GENERIC_ACTION"
+		}
 	},
 	{
-		"logicalId": "touche",
+		"logicalId": "vod",
+		"generic_type": "GENERIC_ACTION",
 		"name": "VOD",
 		"type": "action",
 		"subType": "other",
-		,
 		"configuration": {
-			"tab_name": "tab_touche",
+			"table": "cmd",
 			"code_touche": "393"
-		},
-		"generic_type": "GENERIC_ACTION"
+		}
+	},
+	{
+		"logicalId": "stop",
+		"generic_type": "GENERIC_ACTION",
+		"name": "STOP",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"code_touche": "166"
+		}
 	}
 ]
