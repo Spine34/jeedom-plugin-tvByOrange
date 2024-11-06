@@ -13,7 +13,7 @@
 	},
 	"category": "multimedia",
 	"hasDependency": false,
-	"hasOwnDeamon": false,
+	"hasOwnDeamon": true,
 	"maxDependancyInstallTime": 0,
 	"changelog_beta": "https:\/\/spine34.github.io\/jeedom-plugin-tvByOrange\/#language#\/changelog_beta",
 	"changelog": "https:\/\/spine34.github.io\/jeedom-plugin-tvByOrange\/#language#\/changelog",

@@ -28,7 +28,7 @@ function tvByOrange_install()
 		$cron->setEnable(1);
 		$cron->setDeamon(1);
 		$cron->setSchedule('* * * * *');
-		$cron->setTimeout(2);
+		$cron->setTimeout(1440);
 		$cron->setDeamonSleepTime(5);
 		$cron->save();
 	}
@@ -45,10 +45,11 @@ function tvByOrange_update()
 	$cron->setFunction('update');
 	$cron->setEnable(1);
 	$cron->setDeamon(1);
-	$cron->setTimeout(2);
+	$cron->setTimeout(1440);
 	$cron->setSchedule('* * * * *');
 	$cron->setDeamonSleepTime(5);
 	$cron->save();
+	tvByOrange::deamon_start();
 }
 
 // Fonction exécutée automatiquement après la suppression du plugin

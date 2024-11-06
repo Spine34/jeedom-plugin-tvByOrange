@@ -96,10 +96,57 @@ class tvByOrange extends eqLogic
 	}
 	*/
 
+	public static function deamon_info()
+	{
+		$return = array();
+		$return['log'] = '';
+		$return['state'] = 'nok';
+		$cron = cron::byClassAndFunction(__CLASS__, 'update');
+		if (is_object($cron) && $cron->running()) {
+			$return['state'] = 'ok';
+		}
+		$return['launchable'] = 'ok';
+		return $return;
+	}
+
+	public static function deamon_start()
+	{
+		self::deamon_stop();
+		$deamon_info = self::deamon_info();
+		if ($deamon_info['launchable'] != 'ok') {
+			throw new Exception(__('Veuillez vérifier la configuration', __FILE__));
+		}
+		$cron = cron::byClassAndFunction(__CLASS__, 'update');
+		if (!is_object($cron)) {
+			throw new Exception(__('Tache cron introuvable', __FILE__));
+		}
+		$cron->run();
+	}
+
+	public static function deamon_stop()
+	{
+		$cron = cron::byClassAndFunction(__CLASS__, 'update');
+		if (!is_object($cron)) {
+			throw new Exception(__('Tache cron introuvable', __FILE__));
+		}
+		$cron->halt();
+	}
+
+	public static function deamon_changeAutoMode($_mode)
+	{
+		$cron = cron::byClassAndFunction(__CLASS__, 'update');
+		if (!is_object($cron)) {
+			throw new Exception(__('Tache cron introuvable', __FILE__));
+		}
+		$cron->setEnable($_mode);
+		$cron->save();
+	}
+
 	public static function update()
 	{
 		foreach (eqLogic::byType(__CLASS__, true) as $eqLogic) {
 			try {
+				log::add(__CLASS__, 'debug', $this->getHumanName() . ' : test');
 				$eqLogic->refreshData();
 			} catch (Exception $exc) {
 				log::add(__CLASS__, 'error', $eqLogic->getHumanName() . ' : Erreur : ' . $exc->getMessage());
@@ -225,7 +272,10 @@ class tvByOrange extends eqLogic
 	public function toHtml($_version = 'dashboard') {}
 	*/
 
-	public function refreshData() {}
+	public function refreshData()
+	{
+		log::add(__CLASS__, 'debug', $this->getHumanName() . ' : test');
+	}
 
 	/*     * **********************Getteur Setteur*************************** */
 }
