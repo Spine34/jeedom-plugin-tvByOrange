@@ -8,7 +8,8 @@
 			"table": "channel",
 			"number": "1",
 			"epg_id": "192"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "france2",
@@ -19,7 +20,8 @@
 			"table": "channel",
 			"number": "2",
 			"epg_id": "4"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "france3",
@@ -30,7 +32,8 @@
 			"table": "channel",
 			"number": "3",
 			"epg_id": "80"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "canalPlus",
@@ -41,7 +44,8 @@
 			"table": "channel",
 			"number": "4",
 			"epg_id": "34"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "france5",
@@ -52,7 +56,8 @@
 			"table": "channel",
 			"number": "5",
 			"epg_id": "47"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "m6",
@@ -63,7 +68,8 @@
 			"table": "channel",
 			"number": "6",
 			"epg_id": "118"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "arte",
@@ -74,7 +80,8 @@
 			"table": "channel",
 			"number": "7",
 			"epg_id": "111"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "c8",
@@ -85,7 +92,8 @@
 			"table": "channel",
 			"number": "8",
 			"epg_id": "445"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "w9",
@@ -96,7 +104,8 @@
 			"table": "channel",
 			"number": "9",
 			"epg_id": "119"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "tmc",
@@ -107,7 +116,8 @@
 			"table": "channel",
 			"number": "10",
 			"epg_id": "195"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "nt1",
@@ -118,7 +128,8 @@
 			"table": "channel",
 			"number": "11",
 			"epg_id": "446"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "nrj12",
@@ -129,7 +140,8 @@
 			"table": "channel",
 			"number": "12",
 			"epg_id": "444"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "lcp",
@@ -140,7 +152,8 @@
 			"table": "channel",
 			"number": "13",
 			"epg_id": "234"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "france4",
@@ -151,7 +164,8 @@
 			"table": "channel",
 			"number": "14",
 			"epg_id": "78"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "bfmTv",
@@ -162,7 +176,8 @@
 			"table": "channel",
 			"number": "15",
 			"epg_id": "481"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "cnews",
@@ -173,7 +188,8 @@
 			"table": "channel",
 			"number": "16",
 			"epg_id": "226"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "cStar",
@@ -184,7 +200,8 @@
 			"table": "channel",
 			"number": "17",
 			"epg_id": "-1"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "gulli",
@@ -195,7 +212,8 @@
 			"table": "channel",
 			"number": "18",
 			"epg_id": "-1"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "franceO",
@@ -206,7 +224,8 @@
 			"table": "channel",
 			"number": "19",
 			"epg_id": "160"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "hd1",
@@ -217,7 +236,8 @@
 			"table": "channel",
 			"number": "20",
 			"epg_id": "1404"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "lequipe21",
@@ -228,7 +248,8 @@
 			"table": "channel",
 			"number": "21",
 			"epg_id": "1401"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "6ter",
@@ -239,7 +260,8 @@
 			"table": "channel",
 			"number": "22",
 			"epg_id": "1403"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "numero23",
@@ -250,7 +272,8 @@
 			"table": "channel",
 			"number": "23",
 			"epg_id": "1402"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "rmcDecouverte",
@@ -261,7 +284,8 @@
 			"table": "channel",
 			"number": "24",
 			"epg_id": "1400"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "cherie25",
@@ -272,7 +296,8 @@
 			"table": "channel",
 			"number": "25",
 			"epg_id": "1399"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "lci",
@@ -283,7 +308,8 @@
 			"table": "channel",
 			"number": "26",
 			"epg_id": "112"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "franceInfo",
@@ -294,7 +320,8 @@
 			"table": "channel",
 			"number": "27",
 			"epg_id": "2111"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "tv5Monde",
@@ -305,7 +332,8 @@
 			"table": "channel",
 			"number": "33",
 			"epg_id": "20205"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "teva",
@@ -316,7 +344,8 @@
 			"table": "channel",
 			"number": "34",
 			"epg_id": "191"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "disneyChannel",
@@ -327,7 +356,8 @@
 			"table": "channel",
 			"number": "86",
 			"epg_id": "58"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "campagnesTv",
@@ -338,7 +368,8 @@
 			"table": "channel",
 			"number": "110",
 			"epg_id": "1451"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "myZen",
@@ -349,7 +380,8 @@
 			"table": "channel",
 			"number": "135",
 			"epg_id": "829"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "noLife",
@@ -360,7 +392,8 @@
 			"table": "channel",
 			"number": "138",
 			"epg_id": "787"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "ginx",
@@ -371,7 +404,8 @@
 			"table": "channel",
 			"number": "140",
 			"epg_id": "-1"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "traceUrban",
@@ -382,7 +416,8 @@
 			"table": "channel",
 			"number": "150",
 			"epg_id": "325"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "nrjHitsTv",
@@ -393,7 +428,8 @@
 			"table": "channel",
 			"number": "151",
 			"epg_id": "605"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "virginRadioTv",
@@ -404,7 +440,8 @@
 			"table": "channel",
 			"number": "152",
 			"epg_id": "-1"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "clubbing",
@@ -415,7 +452,8 @@
 			"table": "channel",
 			"number": "153",
 			"epg_id": "-1"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "oFive",
@@ -426,7 +464,8 @@
 			"table": "channel",
 			"number": "154",
 			"epg_id": "-1"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "bBlackClassik",
@@ -437,7 +476,8 @@
 			"table": "channel",
 			"number": "155",
 			"epg_id": "-1"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "bBlackCaribbean",
@@ -448,7 +488,8 @@
 			"table": "channel",
 			"number": "156",
 			"epg_id": "-1"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "equidiaLife",
@@ -459,7 +500,8 @@
 			"table": "channel",
 			"number": "173",
 			"epg_id": "64"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "equidiaLive",
@@ -470,7 +512,8 @@
 			"table": "channel",
 			"number": "174",
 			"epg_id": "1146"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "luckyJack",
@@ -481,7 +524,8 @@
 			"table": "channel",
 			"number": "211",
 			"epg_id": "1061"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "fashionTv",
@@ -492,7 +536,8 @@
 			"table": "channel",
 			"number": "214",
 			"epg_id": "1996"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "luxeTv",
@@ -503,7 +548,8 @@
 			"table": "channel",
 			"number": "215",
 			"epg_id": "531"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "maChaineEtudiante",
@@ -514,7 +560,8 @@
 			"table": "channel",
 			"number": "217",
 			"epg_id": "987"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "demain",
@@ -525,7 +572,8 @@
 			"table": "channel",
 			"number": "219",
 			"epg_id": "57"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "publicSenat",
@@ -536,7 +584,8 @@
 			"table": "channel",
 			"number": "226",
 			"epg_id": "-1"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "france24",
@@ -547,7 +596,8 @@
 			"table": "channel",
 			"number": "227",
 			"epg_id": "529"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "bfmBusiness",
@@ -558,7 +608,8 @@
 			"table": "channel",
 			"number": "228",
 			"epg_id": "1073"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "france24English",
@@ -569,7 +620,8 @@
 			"table": "channel",
 			"number": "232",
 			"epg_id": "671"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "cnn",
@@ -580,7 +632,8 @@
 			"table": "channel",
 			"number": "234",
 			"epg_id": "53"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "cnbc",
@@ -591,7 +644,8 @@
 			"table": "channel",
 			"number": "235",
 			"epg_id": "51"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "bloomberg",
@@ -602,7 +656,8 @@
 			"table": "channel",
 			"number": "236",
 			"epg_id": "410"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "telesud",
@@ -613,7 +668,8 @@
 			"table": "channel",
 			"number": "252",
 			"epg_id": "449"
-		}
+		},
+		"isVisible": 0
 	},
 	{
 		"logicalId": "kto",
@@ -624,6 +680,7 @@
 			"table": "channel",
 			"number": "585",
 			"epg_id": "449"
-		}
+		},
+		"isVisible": 0
 	}
 ]
