@@ -50,7 +50,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"code_touche": "116"
+			"key": "116"
 		}
 	},
 	{
@@ -61,7 +61,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"code_touche": "512"
+			"key": "512"
 		}
 	},
 	{
@@ -72,7 +72,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"code_touche": "513"
+			"key": "513"
 		}
 	},
 	{
@@ -83,7 +83,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"code_touche": "514"
+			"key": "514"
 		}
 	},
 	{
@@ -94,7 +94,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"code_touche": "515"
+			"key": "515"
 		}
 	},
 	{
@@ -105,7 +105,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"code_touche": "516"
+			"key": "516"
 		}
 	},
 	{
@@ -116,7 +116,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"code_touche": "517"
+			"key": "517"
 		}
 	},
 	{
@@ -127,7 +127,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"code_touche": "518"
+			"key": "518"
 		}
 	},
 	{
@@ -138,7 +138,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"code_touche": "519"
+			"key": "519"
 		}
 	},
 	{
@@ -149,7 +149,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"code_touche": "520"
+			"key": "520"
 		}
 	},
 	{
@@ -160,7 +160,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"code_touche": "521"
+			"key": "521"
 		}
 	},
 	{
@@ -171,7 +171,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"code_touche": "402"
+			"key": "402"
 		}
 	},
 	{
@@ -182,7 +182,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"code_touche": "403"
+			"key": "403"
 		}
 	},
 	{
@@ -193,7 +193,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"code_touche": "115"
+			"key": "115"
 		}
 	},
 	{
@@ -204,7 +204,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"code_touche": "114"
+			"key": "114"
 		}
 	},
 	{
@@ -215,7 +215,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"code_touche": "113"
+			"key": "113"
 		}
 	},
 	{
@@ -226,7 +226,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"code_touche": "103"
+			"key": "103"
 		}
 	},
 	{
@@ -237,7 +237,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"code_touche": "108"
+			"key": "108"
 		}
 	},
 	{
@@ -248,7 +248,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"code_touche": "105"
+			"key": "105"
 		}
 	},
 	{
@@ -259,7 +259,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"code_touche": "106"
+			"key": "106"
 		}
 	},
 	{
@@ -270,7 +270,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"code_touche": "352"
+			"key": "352"
 		}
 	},
 	{
@@ -281,7 +281,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"code_touche": "158"
+			"key": "158"
 		}
 	},
 	{
@@ -292,7 +292,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"code_touche": "139"
+			"key": "139"
 		}
 	},
 	{
@@ -303,7 +303,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"code_touche": "164"
+			"key": "164"
 		}
 	},
 	{
@@ -314,7 +314,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"code_touche": "168"
+			"key": "168"
 		}
 	},
 	{
@@ -325,7 +325,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"code_touche": "159"
+			"key": "159"
 		}
 	},
 	{
@@ -336,7 +336,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"code_touche": "167"
+			"key": "167"
 		}
 	},
 	{
@@ -347,7 +347,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"code_touche": "393"
+			"key": "393"
 		}
 	},
 	{
@@ -358,7 +358,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"code_touche": "166"
+			"key": "166"
 		}
 	}
 ]

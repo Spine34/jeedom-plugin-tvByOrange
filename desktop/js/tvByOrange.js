@@ -161,16 +161,10 @@ function addCmdToTableChannel(_cmd) {
 	tr += '</div>';
 	tr += '</td>';
 	tr += '<td>';
-	// tr += '<span class="cmdAttr" data-l1key="htmlstate"></span>';
-
 	tr += '<input class="cmdAttr form-control input-sm" data-l1key="configuration" data-l2key="number">';
-
 	tr += '</td>';
 	tr += '<td>';
-	// tr += '<span class="cmdAttr" data-l1key="htmlstate"></span>';
-
 	tr += '<input class="cmdAttr form-control input-sm" data-l1key="configuration" data-l2key="epg_id">';
-
 	tr += '</td>';
 	tr += '<td>';
 	if (is_numeric(_cmd.id)) {
