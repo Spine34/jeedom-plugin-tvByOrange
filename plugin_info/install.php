@@ -31,6 +31,7 @@ function tvByOrange_install()
 		$cron->setTimeout(1440);
 		$cron->setDeamonSleepTime(5);
 		$cron->save();
+		tvByOrange::deamon_start();
 	}
 }
 
