@@ -128,7 +128,7 @@ class tvByOrange extends eqLogic
 			$cmd = $this->getCmd(null, $cmdArray['logicalId']);
 			if (!is_object($cmd)) {
 				log::add(__CLASS__, 'info', $this->getHumanName() . ' : Commande [' . $cmdArray['name'] . '] créée');
-				$cmd = (new speedtestByOoklaCmd);
+				$cmd = (new tvByOrangeCmd);
 				if (isset($cmdArray['logicalId'])) {
 					$cmd->setLogicalId($cmdArray['logicalId']);
 				}
