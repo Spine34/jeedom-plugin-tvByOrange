@@ -146,7 +146,6 @@ class tvByOrange extends eqLogic
 	{
 		foreach (eqLogic::byType(__CLASS__, true) as $eqLogic) {
 			try {
-				log::add(__CLASS__, 'debug', $this->getHumanName() . ' : test');
 				$eqLogic->refreshData();
 			} catch (Exception $exc) {
 				log::add(__CLASS__, 'error', $eqLogic->getHumanName() . ' : Erreur : ' . $exc->getMessage());
