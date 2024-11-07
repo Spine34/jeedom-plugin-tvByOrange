@@ -130,8 +130,7 @@ function addCmdToTable(_cmd) {
 				jeedom.cmd.changeType(newRow, init(_cmd.subType));
 			}
 		});
-	}
-	if (_cmd.configuration['table'] == 'channel') {
+	} else if (_cmd.configuration['table'] == 'channel') {
 		var tr = '<tr class="cmd" data-cmd_id="' + init(_cmd.id) + '">';
 		tr += '<td class="hidden-xs">';
 		tr += '<span class="cmdAttr" data-l1key="id"></span>';
