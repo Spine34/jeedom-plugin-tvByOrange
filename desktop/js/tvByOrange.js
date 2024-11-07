@@ -217,7 +217,7 @@ function addCmdToTable(_cmd) {
 	}
 }
 
-document.getElementById('addCmd').addEventListener('click', function (event) {
+document.getElementById('addChannel').addEventListener('click', function (event) {
 	addCmdToTable({ type: 'action', subType: 'other', configuration: { table: 'channel' } });
 	modifyWithoutSave = true;
 });

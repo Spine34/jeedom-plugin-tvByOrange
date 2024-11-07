@@ -178,7 +178,7 @@ $eqLogics = eqLogic::byType($plugin->getId());
 
 			<!-- Onglet des chaînes de l'équipement -->
 			<div role="tabpanel" class="tab-pane" id="channeltab">
-				<a class="btn btn-default btn-sm pull-right cmdAction" style="margin-top:5px;" id="addCmd"><i class="fas fa-plus-circle"></i> {{Ajouter une commande}}</a>
+				<a class="btn btn-default btn-sm pull-right cmdAction" style="margin-top:5px;" id="addChannel"><i class="fas fa-plus-circle"></i> {{Ajouter une chaîne}}</a>
 				<br><br>
 				<div class="table-responsive">
 					<table id="table_channel" class="table table-bordered table-condensed">
