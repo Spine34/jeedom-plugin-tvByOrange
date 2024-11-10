@@ -249,6 +249,21 @@ class tvByOrange extends eqLogic
 		}
 	}
 
+	public function postAjax()
+	{
+		$cmds = $this->getCmd('action');
+		foreach ($cmds as $cmd) {
+			if ($cmd->getConfiguration('table') == 'channel') {
+				$listValue .= $cmd->getConfiguration('epg_id') . '|' . $cmd->getName() . ';';
+			}
+		}
+		$listValue = rtrim($listValue, ';');
+		log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $listValue : ' . $listValue);
+		$cmd = $this->getCmd('action', 'channelList');
+		$cmd->setConfiguration('listValue', $listValue);
+		$cmd->save();
+	}
+
 	// Fonction exécutée automatiquement avant la suppression de l'équipement
 	public function preRemove() {}
 
@@ -273,88 +288,94 @@ class tvByOrange extends eqLogic
 
 	public function refreshData()
 	{
-		$url = 'http://' . $this->getConfiguration('ip') . ':8080/remoteControl/cmd?operation=10';
+		if (!empty($this->getConfiguration('ip'))) {
+			$url = 'http://' . $this->getConfiguration('ip') . ':8080/remoteControl/cmd?operation=10';
 
-		log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $url : ' . $url);
+			log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $url : ' . $url);
 
-		$ch = curl_init();
+			$ch = curl_init();
 
-		// Configuration des options de cURL
-		curl_setopt($ch, CURLOPT_URL, $url);
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-		curl_setopt($ch, CURLOPT_TIMEOUT, 5); // Durée maximale d'exécution en secondes
+			// Configuration des options de cURL
+			curl_setopt($ch, CURLOPT_URL, $url);
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+			curl_setopt($ch, CURLOPT_TIMEOUT, 5); // Durée maximale d'exécution en secondes
 
-		$result = curl_exec($ch);
+			$result = curl_exec($ch);
 
-		if (curl_errno($ch)) {
-			log::add(__CLASS__, 'error', $this->getHumanName() . ' : Erreur cURL : ' . curl_error($ch));
-		} else {
-			log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $result : ' . $result);
-			$result = json_decode($result, true);
-			$this->checkAndUpdateCmd('osdContext', $result['result']['data']['osdContext']);
-			$this->checkAndUpdateCmd('playedMediaType', $result['result']['data']['playedMediaType']);
-			$this->checkAndUpdateCmd('playedMediaState', $result['result']['data']['playedMediaState']);
-			$this->checkAndUpdateCmd('playedMediaId', $result['result']['data']['playedMediaId']);
-			$this->checkAndUpdateCmd('playedMediaContextId', $result['result']['data']['playedMediaContextId']);
-			$this->checkAndUpdateCmd('playedMediaPosition', $result['result']['data']['playedMediaPosition']);
-			$this->checkAndUpdateCmd('timeShiftingState', $result['result']['data']['timeShiftingState']);
-			$this->checkAndUpdateCmd('macAddress', $result['result']['data']['macAddress']);
-			$this->checkAndUpdateCmd('wolSupport', $result['result']['data']['wolSupport']);
-			$this->checkAndUpdateCmd('friendlyName', $result['result']['data']['friendlyName']);
-			$this->checkAndUpdateCmd('activeStandbyState', $result['result']['data']['activeStandbyState']);
+			if (curl_errno($ch)) {
+				log::add(__CLASS__, 'error', $this->getHumanName() . ' : Erreur cURL : ' . curl_error($ch));
+			} else {
+				log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $result : ' . $result);
+				$result = json_decode($result, true);
+				$this->checkAndUpdateCmd('osdContext', $result['result']['data']['osdContext']);
+				$this->checkAndUpdateCmd('playedMediaType', $result['result']['data']['playedMediaType']);
+				$this->checkAndUpdateCmd('playedMediaState', $result['result']['data']['playedMediaState']);
+				$this->checkAndUpdateCmd('playedMediaId', $result['result']['data']['playedMediaId']);
+				$this->checkAndUpdateCmd('playedMediaContextId', $result['result']['data']['playedMediaContextId']);
+				$this->checkAndUpdateCmd('playedMediaPosition', $result['result']['data']['playedMediaPosition']);
+				$this->checkAndUpdateCmd('timeShiftingState', $result['result']['data']['timeShiftingState']);
+				$this->checkAndUpdateCmd('macAddress', $result['result']['data']['macAddress']);
+				$this->checkAndUpdateCmd('wolSupport', $result['result']['data']['wolSupport']);
+				$this->checkAndUpdateCmd('friendlyName', $result['result']['data']['friendlyName']);
+				$this->checkAndUpdateCmd('activeStandbyState', $result['result']['data']['activeStandbyState']);
+			}
+
+			curl_close($ch);
 		}
-
-		curl_close($ch);
 	}
 
 	public function sendCmd($key)
 	{
-		$url = 'http://' . $this->getConfiguration('ip') . ':8080/remoteControl/cmd?operation=01&key=' . $key . '&mode=0';
+		if (!empty($this->getConfiguration('ip'))) {
+			$url = 'http://' . $this->getConfiguration('ip') . ':8080/remoteControl/cmd?operation=01&key=' . $key . '&mode=0';
 
-		log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $url : ' . $url);
+			log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $url : ' . $url);
 
-		$ch = curl_init();
+			$ch = curl_init();
 
-		// Configuration des options de cURL
-		curl_setopt($ch, CURLOPT_URL, $url);
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-		curl_setopt($ch, CURLOPT_TIMEOUT, 5); // Durée maximale d'exécution en secondes
+			// Configuration des options de cURL
+			curl_setopt($ch, CURLOPT_URL, $url);
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+			curl_setopt($ch, CURLOPT_TIMEOUT, 5); // Durée maximale d'exécution en secondes
 
-		$result = curl_exec($ch);
+			$result = curl_exec($ch);
 
-		if (curl_errno($ch)) {
-			log::add(__CLASS__, 'error', $this->getHumanName() . ' : Erreur cURL : ' . curl_error($ch));
-		} else {
-			log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $result : ' . $result);
+			if (curl_errno($ch)) {
+				log::add(__CLASS__, 'error', $this->getHumanName() . ' : Erreur cURL : ' . curl_error($ch));
+			} else {
+				log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $result : ' . $result);
+			}
+
+			curl_close($ch);
 		}
-
-		curl_close($ch);
 	}
 
 	public function sendChannel($epg_id)
 	{
-		$epg_id = str_pad($epg_id, 10, '*', STR_PAD_LEFT);
+		if (!empty($this->getConfiguration('ip'))) {
+			$epg_id = str_pad($epg_id, 10, '*', STR_PAD_LEFT);
 
-		$url = 'http://' . $this->getConfiguration('ip') . ':8080/remoteControl/cmd?operation=09&epg_id=' . $epg_id . '&uui=1';
+			$url = 'http://' . $this->getConfiguration('ip') . ':8080/remoteControl/cmd?operation=09&epg_id=' . $epg_id . '&uui=1';
 
-		log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $url : ' . $url);
+			log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $url : ' . $url);
 
-		$ch = curl_init();
+			$ch = curl_init();
 
-		// Configuration des options de cURL
-		curl_setopt($ch, CURLOPT_URL, $url);
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-		curl_setopt($ch, CURLOPT_TIMEOUT, 5); // Durée maximale d'exécution en secondes
+			// Configuration des options de cURL
+			curl_setopt($ch, CURLOPT_URL, $url);
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+			curl_setopt($ch, CURLOPT_TIMEOUT, 5); // Durée maximale d'exécution en secondes
 
-		$result = curl_exec($ch);
+			$result = curl_exec($ch);
 
-		if (curl_errno($ch)) {
-			log::add(__CLASS__, 'error', $this->getHumanName() . ' : Erreur cURL : ' . curl_error($ch));
-		} else {
-			log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $result : ' . $result);
+			if (curl_errno($ch)) {
+				log::add(__CLASS__, 'error', $this->getHumanName() . ' : Erreur cURL : ' . curl_error($ch));
+			} else {
+				log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $result : ' . $result);
+			}
+
+			curl_close($ch);
 		}
-
-		curl_close($ch);
 	}
 
 	/*     * **********************Getteur Setteur*************************** */
@@ -386,7 +407,11 @@ class tvByOrangeCmd extends cmd
 		if ($this->getLogicalId() == 'refresh') {
 			$this->getEqLogic()->refreshData();
 		} else if ($this->getConfiguration('table') == 'cmd') {
-			$this->getEqLogic()->sendCmd($this->getConfiguration('key'));
+			if ($this->getLogicalId() == 'channelList') {
+				$this->getEqLogic()->sendChannel($_options['select']);
+			} else {
+				$this->getEqLogic()->sendCmd($this->getConfiguration('key'));
+			}
 		} else if ($this->getConfiguration('table') == 'channel') {
 			$this->getEqLogic()->sendChannel($this->getConfiguration('epg_id'));
 		}

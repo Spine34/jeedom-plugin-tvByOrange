@@ -11,7 +11,7 @@
 	{
 		"logicalId": "osdContext",
 		"generic_type": "GENERIC_STATE",
-		"name": "osdContext",
+		"name": "OSD Context",
 		"type": "info",
 		"subType": "string",
 		"configuration": {
@@ -21,7 +21,7 @@
 	{
 		"logicalId": "playedMediaType",
 		"generic_type": "GENERIC_STATE",
-		"name": "playedMediaType",
+		"name": "Played Media Type",
 		"type": "info",
 		"subType": "string",
 		"configuration": {
@@ -31,7 +31,7 @@
 	{
 		"logicalId": "playedMediaState",
 		"generic_type": "GENERIC_STATE",
-		"name": "playedMediaState",
+		"name": "Played Media State",
 		"type": "info",
 		"subType": "string",
 		"configuration": {
@@ -41,7 +41,7 @@
 	{
 		"logicalId": "playedMediaId",
 		"generic_type": "GENERIC_STATE",
-		"name": "playedMediaId",
+		"name": "Played Media Id",
 		"type": "info",
 		"subType": "string",
 		"configuration": {
@@ -51,7 +51,7 @@
 	{
 		"logicalId": "playedMediaContextId",
 		"generic_type": "GENERIC_STATE",
-		"name": "playedMediaContextId",
+		"name": "Played Media Context Id",
 		"type": "info",
 		"subType": "string",
 		"configuration": {
@@ -61,7 +61,7 @@
 	{
 		"logicalId": "playedMediaPosition",
 		"generic_type": "GENERIC_STATE",
-		"name": "playedMediaPosition",
+		"name": "Played Media Position",
 		"type": "info",
 		"subType": "string",
 		"configuration": {
@@ -71,9 +71,9 @@
 	{
 		"logicalId": "timeShiftingState",
 		"generic_type": "GENERIC_STATE",
-		"name": "timeShiftingState",
+		"name": "Time Shifting State",
 		"type": "info",
-		"subType": "binary",
+		"subType": "string",
 		"configuration": {
 			"table": "cmd"
 		}
@@ -81,7 +81,7 @@
 	{
 		"logicalId": "macAddress",
 		"generic_type": "GENERIC_STATE",
-		"name": "macAddress",
+		"name": "MAC Address",
 		"type": "info",
 		"subType": "string",
 		"configuration": {
@@ -91,7 +91,7 @@
 	{
 		"logicalId": "wolSupport",
 		"generic_type": "GENERIC_STATE",
-		"name": "wolSupport",
+		"name": "WoL Support",
 		"type": "info",
 		"subType": "string",
 		"configuration": {
@@ -101,7 +101,7 @@
 	{
 		"logicalId": "friendlyName",
 		"generic_type": "GENERIC_STATE",
-		"name": "friendlyName",
+		"name": "Friendly Name",
 		"type": "info",
 		"subType": "string",
 		"configuration": {
@@ -110,8 +110,8 @@
 	},
 	{
 		"logicalId": "activeStandbyState",
-		"generic_type": "GENERIC_STATE",
-		"name": "activeStandbyState",
+		"generic_type": "MEDIA_STATE",
+		"name": "Active Standby State",
 		"type": "info",
 		"subType": "binary",
 		"configuration": {
@@ -119,48 +119,39 @@
 		}
 	},
 	{
-		"logicalId": "etat_decodeur",
+		"logicalId": "channelList",
 		"generic_type": "GENERIC_STATE",
-		"name": "Etat Decodeur",
-		"type": "info",
-		"subType": "binary",
+		"name": "channelList",
+		"type": "action",
+		"subType": "select",
 		"configuration": {
-			"table": "cmd",
-			"etat_decodeur": 0
-		}
+			"table": "cmd"
+		},
+		"value": "playedMediaId"
 	},
 	{
-		"logicalId": "chaine_actuelle",
-		"generic_type": "GENERIC_STATE",
-		"name": "Chaine Actuelle",
-		"type": "info",
-		"subType": "string",
-		"configuration": {
-			"table": "cmd",
-			"chaine_actuelle": "blank",
-			"id_chaine_actuelle": -1
-		}
-	},
-	{
-		"logicalId": "fonction",
-		"generic_type": "GENERIC_STATE",
-		"name": "Fonction",
-		"type": "info",
-		"subType": "string",
-		"configuration": {
-			"table": "cmd",
-			"fonction": "aucune"
-		}
-	},
-	{
-		"logicalId": "onOff",
-		"generic_type": "GENERIC_ACTION",
-		"name": "ON-OFF",
+		"logicalId": "on",
+		"generic_type": "MEDIA_ON",
+		"name": "On",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
 			"key": "116"
+		}
+	},
+	{
+		"logicalId": "Off",
+		"generic_type": "MEDIA_OFF",
+		"name": "Off",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "116"
+		},
+		"display": {
+			"forceReturnLineAfter": 1
 		}
 	},
 	{
@@ -276,7 +267,7 @@
 	{
 		"logicalId": "ch+",
 		"generic_type": "GENERIC_ACTION",
-		"name": "CH+",
+		"name": "Ch+",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
@@ -287,7 +278,7 @@
 	{
 		"logicalId": "ch-",
 		"generic_type": "GENERIC_ACTION",
-		"name": "CH-",
+		"name": "Ch-",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
@@ -298,7 +289,7 @@
 	{
 		"logicalId": "vol+",
 		"generic_type": "GENERIC_ACTION",
-		"name": "VOL+",
+		"name": "Vol+",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
@@ -309,7 +300,7 @@
 	{
 		"logicalId": "vol-",
 		"generic_type": "GENERIC_ACTION",
-		"name": "VOL-",
+		"name": "Vol-",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
@@ -320,7 +311,7 @@
 	{
 		"logicalId": "mute",
 		"generic_type": "GENERIC_ACTION",
-		"name": "MUTE",
+		"name": "Mute",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
@@ -331,7 +322,7 @@
 	{
 		"logicalId": "up",
 		"generic_type": "GENERIC_ACTION",
-		"name": "UP",
+		"name": "Up",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
@@ -342,7 +333,7 @@
 	{
 		"logicalId": "down",
 		"generic_type": "GENERIC_ACTION",
-		"name": "DOWN",
+		"name": "Down",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
@@ -353,7 +344,7 @@
 	{
 		"logicalId": "left",
 		"generic_type": "GENERIC_ACTION",
-		"name": "LEFT",
+		"name": "Left",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
@@ -364,7 +355,7 @@
 	{
 		"logicalId": "right",
 		"generic_type": "GENERIC_ACTION",
-		"name": "RIGHT",
+		"name": "Right",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
@@ -375,7 +366,7 @@
 	{
 		"logicalId": "ok",
 		"generic_type": "GENERIC_ACTION",
-		"name": "OK",
+		"name": "Ok",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
@@ -386,7 +377,7 @@
 	{
 		"logicalId": "back",
 		"generic_type": "GENERIC_ACTION",
-		"name": "BACK",
+		"name": "Back",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
@@ -397,7 +388,7 @@
 	{
 		"logicalId": "menu",
 		"generic_type": "GENERIC_ACTION",
-		"name": "MENU",
+		"name": "Menu",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
@@ -406,9 +397,20 @@
 		}
 	},
 	{
-		"logicalId": "playPause",
+		"logicalId": "play",
 		"generic_type": "GENERIC_ACTION",
-		"name": "PLAY-PAUSE",
+		"name": "Play",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "164"
+		}
+	},
+	{
+		"logicalId": "Pause",
+		"generic_type": "GENERIC_ACTION",
+		"name": "Pause",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
@@ -419,7 +421,7 @@
 	{
 		"logicalId": "fbwd",
 		"generic_type": "GENERIC_ACTION",
-		"name": "FBWD",
+		"name": "Fbwd",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
@@ -430,7 +432,7 @@
 	{
 		"logicalId": "ffwd",
 		"generic_type": "GENERIC_ACTION",
-		"name": "FFWD",
+		"name": "Ffwd",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
@@ -441,7 +443,7 @@
 	{
 		"logicalId": "rec",
 		"generic_type": "GENERIC_ACTION",
-		"name": "REC",
+		"name": "Rec",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
@@ -452,7 +454,7 @@
 	{
 		"logicalId": "vod",
 		"generic_type": "GENERIC_ACTION",
-		"name": "VOD",
+		"name": "Vod",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
@@ -463,7 +465,7 @@
 	{
 		"logicalId": "stop",
 		"generic_type": "GENERIC_ACTION",
-		"name": "STOP",
+		"name": "Stop",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
