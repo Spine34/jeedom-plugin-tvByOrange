@@ -31,13 +31,13 @@
 		"configuration": {
 			"table": "channel",
 			"number": "3",
-			"epg_id": "80"
+			"epg_id": "1934"
 		},
 		"isVisible": 0
 	},
 	{
 		"logicalId": "canalPlus",
-		"name": "Canal +",
+		"name": " CANAL+",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
@@ -73,7 +73,7 @@
 	},
 	{
 		"logicalId": "arte",
-		"name": "Arte",
+		"name": "ARTE",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
@@ -120,8 +120,8 @@
 		"isVisible": 0
 	},
 	{
-		"logicalId": "nt1",
-		"name": "NT1",
+		"logicalId": "tfx",
+		"name": "TFX",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
@@ -193,13 +193,13 @@
 	},
 	{
 		"logicalId": "cStar",
-		"name": "CStar",
+		"name": "CSTAR",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
 			"number": "17",
-			"epg_id": "-1"
+			"epg_id": "458"
 		},
 		"isVisible": 0
 	},
@@ -211,25 +211,13 @@
 		"configuration": {
 			"table": "channel",
 			"number": "18",
-			"epg_id": "-1"
+			"epg_id": "482"
 		},
 		"isVisible": 0
 	},
 	{
-		"logicalId": "franceO",
-		"name": "France Ô",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "channel",
-			"number": "19",
-			"epg_id": "160"
-		},
-		"isVisible": 0
-	},
-	{
-		"logicalId": "hd1",
-		"name": "HD1",
+		"logicalId": "tf1SeriesFilms",
+		"name": "TF1 Séries Films",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
@@ -240,8 +228,8 @@
 		"isVisible": 0
 	},
 	{
-		"logicalId": "lequipe21",
-		"name": "L'équipe 21",
+		"logicalId": "laChaineLEquipe",
+		"name": "La chaîne l'Equipe",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
@@ -264,8 +252,8 @@
 		"isVisible": 0
 	},
 	{
-		"logicalId": "numero23",
-		"name": "Numéro 23",
+		"logicalId": "rmcStory",
+		"name": "RMC Story",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
@@ -312,8 +300,8 @@
 		"isVisible": 0
 	},
 	{
-		"logicalId": "franceInfo",
-		"name": "France Info",
+		"logicalId": "franceinfo",
+		"name": "Franceinfo:",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
@@ -331,7 +319,7 @@
 		"configuration": {
 			"table": "channel",
 			"number": "33",
-			"epg_id": "20205"
+			"epg_id": "205"
 		},
 		"isVisible": 0
 	},

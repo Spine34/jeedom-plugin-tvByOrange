@@ -119,15 +119,46 @@
 		}
 	},
 	{
-		"logicalId": "channelList",
+		"logicalId": "channelNumber",
 		"generic_type": "GENERIC_STATE",
-		"name": "channelList",
+		"name": "Channel Number",
+		"type": "info",
+		"subType": "string",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "channelText",
+		"generic_type": "GENERIC_STATE",
+		"name": "Channel Text",
+		"type": "info",
+		"subType": "string",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "channelSelect",
+		"generic_type": "GENERIC_STATE",
+		"name": "Channel Select",
 		"type": "action",
 		"subType": "select",
 		"configuration": {
 			"table": "cmd"
 		},
 		"value": "playedMediaId"
+	},
+	{
+		"logicalId": "channelSlider",
+		"generic_type": "GENERIC_STATE",
+		"name": "Channel Slider",
+		"type": "action",
+		"subType": "slider",
+		"configuration": {
+			"table": "cmd"
+		},
+		"value": "channelNumber"
 	},
 	{
 		"logicalId": "on",

@@ -247,21 +247,24 @@ class tvByOrange extends eqLogic
 				$cmd->save();
 			}
 		}
+		self::deamon_start();
 	}
 
 	public function postAjax()
 	{
-		$cmds = $this->getCmd('action');
-		foreach ($cmds as $cmd) {
-			if ($cmd->getConfiguration('table') == 'channel') {
-				$listValue .= $cmd->getConfiguration('epg_id') . '|' . $cmd->getName() . ';';
+		if (!empty($this->getConfiguration('ip'))) {
+			$cmds = $this->getCmd('action');
+			foreach ($cmds as $cmd) {
+				if ($cmd->getConfiguration('table') == 'channel') {
+					$listValue .= $cmd->getConfiguration('epg_id') . '|' . $cmd->getName() . ';';
+				}
 			}
+			$listValue = rtrim($listValue, ';');
+			log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $listValue : ' . $listValue);
+			$cmd = $this->getCmd('action', 'channelSelect');
+			$cmd->setConfiguration('listValue', $listValue);
+			$cmd->save();
 		}
-		$listValue = rtrim($listValue, ';');
-		log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $listValue : ' . $listValue);
-		$cmd = $this->getCmd('action', 'channelList');
-		$cmd->setConfiguration('listValue', $listValue);
-		$cmd->save();
 	}
 
 	// Fonction exécutée automatiquement avant la suppression de l'équipement
@@ -318,6 +321,26 @@ class tvByOrange extends eqLogic
 				$this->checkAndUpdateCmd('wolSupport', $result['result']['data']['wolSupport']);
 				$this->checkAndUpdateCmd('friendlyName', $result['result']['data']['friendlyName']);
 				$this->checkAndUpdateCmd('activeStandbyState', $result['result']['data']['activeStandbyState']);
+				$cmds = $this->getCmd('action');
+				$epg_id = false;
+				if (preg_match('/[1-9]/', $result['result']['data']['playedMediaId']) === 1) {
+					foreach ($cmds as $cmd) {
+						if ($cmd->getConfiguration('table') == 'channel') {
+							if ($result['result']['data']['playedMediaId'] == $cmd->getConfiguration('epg_id')) {
+								$this->checkAndUpdateCmd('channelNumber', $cmd->getConfiguration('number'));
+								$this->checkAndUpdateCmd('channelText', $cmd->getName('epg_id'));
+								$epg_id = true;
+								break;
+							}
+						}
+					}
+					if (!$epg_id) {
+						log::add(__CLASS__, 'error', $this->getHumanName() . ' : L\'ID EPG ' . $result['result']['data']['playedMediaId'] . ' n\'existe pas dans la liste des chaines');
+					}
+				} else {
+					$this->checkAndUpdateCmd('channelNumber', 'NA');
+					$this->checkAndUpdateCmd('channelText', 'NA');
+				}
 			}
 
 			curl_close($ch);
@@ -407,8 +430,19 @@ class tvByOrangeCmd extends cmd
 		if ($this->getLogicalId() == 'refresh') {
 			$this->getEqLogic()->refreshData();
 		} else if ($this->getConfiguration('table') == 'cmd') {
-			if ($this->getLogicalId() == 'channelList') {
+			if ($this->getLogicalId() == 'channelSelect') {
 				$this->getEqLogic()->sendChannel($_options['select']);
+			} else if ($this->getLogicalId() == 'channelSlider') {
+				// $cmds = $this->getEqLogic()->getCmd('action');
+				// foreach ($cmds as $cmd) {
+				// 	if ($cmd->getConfiguration('table') == 'channel') {
+				// 		if ($_options['slider'] == $cmd->getConfiguration('number')) {
+				// 			$this->getEqLogic()->sendChannel($this->getConfiguration('key'));
+				// 			$toto = true;
+				// 			break;
+				// 		}
+				// 	}
+				// }
 			} else {
 				$this->getEqLogic()->sendCmd($this->getConfiguration('key'));
 			}
