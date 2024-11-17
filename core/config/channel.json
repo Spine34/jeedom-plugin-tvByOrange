@@ -324,92 +324,140 @@
 		"isVisible": 0
 	},
 	{
-		"logicalId": "teva",
-		"name": "Teva",
+		"logicalId": "mtv",
+		"name": "MTV",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "34",
-			"epg_id": "191"
+			"number": "76",
+			"epg_id": "128"
 		},
 		"isVisible": 0
 	},
 	{
-		"logicalId": "disneyChannel",
-		"name": "Disney Channel",
+		"logicalId": "bet",
+		"name": "BET",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "86",
-			"epg_id": "58"
+			"number": "77",
+			"epg_id": "1960"
 		},
 		"isVisible": 0
 	},
 	{
-		"logicalId": "campagnesTv",
-		"name": "Campagnes Tv",
+		"logicalId": "warnerTv",
+		"name": "Warner TV",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "110",
-			"epg_id": "1451"
+			"number": "78",
+			"epg_id": "2334"
 		},
 		"isVisible": 0
 	},
 	{
-		"logicalId": "myZen",
-		"name": "MyZen",
+		"logicalId": "tlc",
+		"name": "TLC",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "135",
-			"epg_id": "829"
+			"number": "79",
+			"epg_id": "1374"
 		},
 		"isVisible": 0
 	},
 	{
-		"logicalId": "noLife",
-		"name": "No Life",
+		"logicalId": "tvPitchoun",
+		"name": "TV Pitchoun",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "138",
-			"epg_id": "787"
+			"number": "91",
+			"epg_id": "2803"
 		},
 		"isVisible": 0
 	},
 	{
-		"logicalId": "ginx",
-		"name": "GINX",
+		"logicalId": "lEspritSorcierTv",
+		"name": "L’Esprit Sorcier TV",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "111",
+			"epg_id": "3561"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "museum",
+		"name": "Museum",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "112",
+			"epg_id": "1072"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "MaisonEtTravauxTv",
+		"name": "Maison et Travaux TV",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "113",
+			"epg_id": "3360"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "TopSanteTv",
+		"name": "Top Santé TV",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "114",
+			"epg_id": "3106"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "discoveryInvestigation",
+		"name": "Discovery Investigation",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "116",
+			"epg_id": "2184"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "mggTv",
+		"name": "MGG TV",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
 			"number": "140",
-			"epg_id": "-1"
+			"epg_id": "2353"
 		},
 		"isVisible": 0
 	},
 	{
-		"logicalId": "traceUrban",
-		"name": "Trace Urban",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "channel",
-			"number": "150",
-			"epg_id": "325"
-		},
-		"isVisible": 0
-	},
-	{
-		"logicalId": "nrjHitsTv",
-		"name": "NRJ Hits TV",
+		"logicalId": "nrjHits",
+		"name": "NRJ Hits",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
@@ -420,254 +468,38 @@
 		"isVisible": 0
 	},
 	{
-		"logicalId": "virginRadioTv",
-		"name": "Virgin Radio Tv",
+		"logicalId": "mtvHits",
+		"name": "MTV Hits",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
 			"number": "152",
-			"epg_id": "-1"
+			"epg_id": "2006"
 		},
 		"isVisible": 0
 	},
 	{
-		"logicalId": "clubbing",
-		"name": "Clubbing",
+		"logicalId": "melodyDAfrique",
+		"name": "Melody d'Afrique",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
 			"number": "153",
-			"epg_id": "-1"
+			"epg_id": "2321"
 		},
 		"isVisible": 0
 	},
 	{
-		"logicalId": "oFive",
-		"name": "OFive",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "channel",
-			"number": "154",
-			"epg_id": "-1"
-		},
-		"isVisible": 0
-	},
-	{
-		"logicalId": "bBlackClassik",
-		"name": "BBlack Classik",
+		"logicalId": "clubbingTv",
+		"name": "Clubbing TV",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
 			"number": "155",
-			"epg_id": "-1"
-		},
-		"isVisible": 0
-	},
-	{
-		"logicalId": "bBlackCaribbean",
-		"name": "BBlack Caribbean",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "channel",
-			"number": "156",
-			"epg_id": "-1"
-		},
-		"isVisible": 0
-	},
-	{
-		"logicalId": "equidiaLife",
-		"name": "Equidia LIFE",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "channel",
-			"number": "173",
-			"epg_id": "64"
-		},
-		"isVisible": 0
-	},
-	{
-		"logicalId": "equidiaLive",
-		"name": "Equidia LIVE",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "channel",
-			"number": "174",
-			"epg_id": "1146"
-		},
-		"isVisible": 0
-	},
-	{
-		"logicalId": "luckyJack",
-		"name": "Lucky Jack",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "channel",
-			"number": "211",
-			"epg_id": "1061"
-		},
-		"isVisible": 0
-	},
-	{
-		"logicalId": "fashionTv",
-		"name": "Fashion Tv",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "channel",
-			"number": "214",
-			"epg_id": "1996"
-		},
-		"isVisible": 0
-	},
-	{
-		"logicalId": "luxeTv",
-		"name": "Luxe Tv",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "channel",
-			"number": "215",
-			"epg_id": "531"
-		},
-		"isVisible": 0
-	},
-	{
-		"logicalId": "maChaineEtudiante",
-		"name": "Ma chaine étudiante",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "channel",
-			"number": "217",
-			"epg_id": "987"
-		},
-		"isVisible": 0
-	},
-	{
-		"logicalId": "demain",
-		"name": "Demain !",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "channel",
-			"number": "219",
-			"epg_id": "57"
-		},
-		"isVisible": 0
-	},
-	{
-		"logicalId": "publicSenat",
-		"name": "Public Sénat",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "channel",
-			"number": "226",
-			"epg_id": "-1"
-		},
-		"isVisible": 0
-	},
-	{
-		"logicalId": "france24",
-		"name": "France 24",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "channel",
-			"number": "227",
-			"epg_id": "529"
-		},
-		"isVisible": 0
-	},
-	{
-		"logicalId": "bfmBusiness",
-		"name": "BFM Business",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "channel",
-			"number": "228",
-			"epg_id": "1073"
-		},
-		"isVisible": 0
-	},
-	{
-		"logicalId": "france24English",
-		"name": "France 24 English",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "channel",
-			"number": "232",
-			"epg_id": "671"
-		},
-		"isVisible": 0
-	},
-	{
-		"logicalId": "cnn",
-		"name": "CNN",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "channel",
-			"number": "234",
-			"epg_id": "53"
-		},
-		"isVisible": 0
-	},
-	{
-		"logicalId": "cnbc",
-		"name": "CNBC",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "channel",
-			"number": "235",
-			"epg_id": "51"
-		},
-		"isVisible": 0
-	},
-	{
-		"logicalId": "bloomberg",
-		"name": "Bloomberg",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "channel",
-			"number": "236",
-			"epg_id": "410"
-		},
-		"isVisible": 0
-	},
-	{
-		"logicalId": "telesud",
-		"name": "TéléSud",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "channel",
-			"number": "252",
-			"epg_id": "449"
-		},
-		"isVisible": 0
-	},
-	{
-		"logicalId": "kto",
-		"name": "Kto",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "channel",
-			"number": "585",
-			"epg_id": "449"
+			"epg_id": "1989"
 		},
 		"isVisible": 0
 	}

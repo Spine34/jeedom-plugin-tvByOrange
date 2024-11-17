@@ -120,7 +120,7 @@
 	},
 	{
 		"logicalId": "channelNumber",
-		"generic_type": "GENERIC_STATE",
+		"generic_type": "CHANNEL",
 		"name": "Channel Number",
 		"type": "info",
 		"subType": "string",
@@ -151,7 +151,7 @@
 	},
 	{
 		"logicalId": "channelSlider",
-		"generic_type": "GENERIC_STATE",
+		"generic_type": "SET_CHANNEL",
 		"name": "Channel Slider",
 		"type": "action",
 		"subType": "slider",
@@ -341,7 +341,7 @@
 	},
 	{
 		"logicalId": "mute",
-		"generic_type": "GENERIC_ACTION",
+		"generic_type": "MEDIA_MUTE",
 		"name": "Mute",
 		"type": "action",
 		"subType": "other",
@@ -440,7 +440,7 @@
 	},
 	{
 		"logicalId": "Pause",
-		"generic_type": "GENERIC_ACTION",
+		"generic_type": "MEDIA_PAUSE",
 		"name": "Pause",
 		"type": "action",
 		"subType": "other",
@@ -495,7 +495,7 @@
 	},
 	{
 		"logicalId": "stop",
-		"generic_type": "GENERIC_ACTION",
+		"generic_type": "MEDIA_STOP",
 		"name": "Stop",
 		"type": "action",
 		"subType": "other",

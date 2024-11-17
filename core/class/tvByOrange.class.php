@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ALL);
 /* This file is part of Jeedom.
 *
 * Jeedom is free software: you can redistribute it and/or modify
@@ -252,6 +253,7 @@ class tvByOrange extends eqLogic
 
 	public function postAjax()
 	{
+		$listValue = '';
 		if (!empty($this->getConfiguration('ip'))) {
 			$cmds = $this->getCmd('action');
 			foreach ($cmds as $cmd) {
