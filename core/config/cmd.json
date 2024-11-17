@@ -10,7 +10,6 @@
 	},
 	{
 		"logicalId": "osdContext",
-		"generic_type": "GENERIC_STATE",
 		"name": "OSD Context",
 		"type": "info",
 		"subType": "string",
@@ -20,7 +19,6 @@
 	},
 	{
 		"logicalId": "playedMediaType",
-		"generic_type": "GENERIC_STATE",
 		"name": "Played Media Type",
 		"type": "info",
 		"subType": "string",
@@ -30,7 +28,6 @@
 	},
 	{
 		"logicalId": "playedMediaState",
-		"generic_type": "GENERIC_STATE",
 		"name": "Played Media State",
 		"type": "info",
 		"subType": "string",
@@ -40,7 +37,6 @@
 	},
 	{
 		"logicalId": "playedMediaId",
-		"generic_type": "GENERIC_STATE",
 		"name": "Played Media Id",
 		"type": "info",
 		"subType": "string",
@@ -50,7 +46,6 @@
 	},
 	{
 		"logicalId": "playedMediaContextId",
-		"generic_type": "GENERIC_STATE",
 		"name": "Played Media Context Id",
 		"type": "info",
 		"subType": "string",
@@ -60,7 +55,6 @@
 	},
 	{
 		"logicalId": "playedMediaPosition",
-		"generic_type": "GENERIC_STATE",
 		"name": "Played Media Position",
 		"type": "info",
 		"subType": "string",
@@ -70,7 +64,6 @@
 	},
 	{
 		"logicalId": "timeShiftingState",
-		"generic_type": "GENERIC_STATE",
 		"name": "Time Shifting State",
 		"type": "info",
 		"subType": "string",
@@ -80,7 +73,6 @@
 	},
 	{
 		"logicalId": "macAddress",
-		"generic_type": "GENERIC_STATE",
 		"name": "MAC Address",
 		"type": "info",
 		"subType": "string",
@@ -90,7 +82,6 @@
 	},
 	{
 		"logicalId": "wolSupport",
-		"generic_type": "GENERIC_STATE",
 		"name": "WoL Support",
 		"type": "info",
 		"subType": "string",
@@ -100,7 +91,6 @@
 	},
 	{
 		"logicalId": "friendlyName",
-		"generic_type": "GENERIC_STATE",
 		"name": "Friendly Name",
 		"type": "info",
 		"subType": "string",
@@ -130,7 +120,6 @@
 	},
 	{
 		"logicalId": "channelText",
-		"generic_type": "GENERIC_STATE",
 		"name": "Channel Text",
 		"type": "info",
 		"subType": "string",
@@ -140,7 +129,6 @@
 	},
 	{
 		"logicalId": "channelSelect",
-		"generic_type": "GENERIC_STATE",
 		"name": "Channel Select",
 		"type": "action",
 		"subType": "select",
@@ -187,7 +175,6 @@
 	},
 	{
 		"logicalId": "0",
-		"generic_type": "GENERIC_ACTION",
 		"name": "0",
 		"type": "action",
 		"subType": "other",
@@ -198,7 +185,6 @@
 	},
 	{
 		"logicalId": "1",
-		"generic_type": "GENERIC_ACTION",
 		"name": "1",
 		"type": "action",
 		"subType": "other",
@@ -209,7 +195,6 @@
 	},
 	{
 		"logicalId": "2",
-		"generic_type": "GENERIC_ACTION",
 		"name": "2",
 		"type": "action",
 		"subType": "other",
@@ -220,7 +205,6 @@
 	},
 	{
 		"logicalId": "3",
-		"generic_type": "GENERIC_ACTION",
 		"name": "3",
 		"type": "action",
 		"subType": "other",
@@ -231,7 +215,6 @@
 	},
 	{
 		"logicalId": "4",
-		"generic_type": "GENERIC_ACTION",
 		"name": "4",
 		"type": "action",
 		"subType": "other",
@@ -242,7 +225,6 @@
 	},
 	{
 		"logicalId": "5",
-		"generic_type": "GENERIC_ACTION",
 		"name": "5",
 		"type": "action",
 		"subType": "other",
@@ -253,7 +235,6 @@
 	},
 	{
 		"logicalId": "6",
-		"generic_type": "GENERIC_ACTION",
 		"name": "6",
 		"type": "action",
 		"subType": "other",
@@ -264,7 +245,6 @@
 	},
 	{
 		"logicalId": "7",
-		"generic_type": "GENERIC_ACTION",
 		"name": "7",
 		"type": "action",
 		"subType": "other",
@@ -275,7 +255,6 @@
 	},
 	{
 		"logicalId": "8",
-		"generic_type": "GENERIC_ACTION",
 		"name": "8",
 		"type": "action",
 		"subType": "other",
@@ -286,7 +265,6 @@
 	},
 	{
 		"logicalId": "9",
-		"generic_type": "GENERIC_ACTION",
 		"name": "9",
 		"type": "action",
 		"subType": "other",
@@ -297,7 +275,6 @@
 	},
 	{
 		"logicalId": "ch+",
-		"generic_type": "GENERIC_ACTION",
 		"name": "Ch+",
 		"type": "action",
 		"subType": "other",
@@ -308,7 +285,6 @@
 	},
 	{
 		"logicalId": "ch-",
-		"generic_type": "GENERIC_ACTION",
 		"name": "Ch-",
 		"type": "action",
 		"subType": "other",
@@ -319,7 +295,6 @@
 	},
 	{
 		"logicalId": "vol+",
-		"generic_type": "GENERIC_ACTION",
 		"name": "Vol+",
 		"type": "action",
 		"subType": "other",
@@ -331,7 +306,6 @@
 	},
 	{
 		"logicalId": "vol-",
-		"generic_type": "GENERIC_ACTION",
 		"name": "Vol-",
 		"type": "action",
 		"subType": "other",
@@ -355,7 +329,6 @@
 	},
 	{
 		"logicalId": "up",
-		"generic_type": "GENERIC_ACTION",
 		"name": "Up",
 		"type": "action",
 		"subType": "other",
@@ -367,7 +340,6 @@
 	},
 	{
 		"logicalId": "down",
-		"generic_type": "GENERIC_ACTION",
 		"name": "Down",
 		"type": "action",
 		"subType": "other",
@@ -379,7 +351,6 @@
 	},
 	{
 		"logicalId": "left",
-		"generic_type": "GENERIC_ACTION",
 		"name": "Left",
 		"type": "action",
 		"subType": "other",
@@ -391,7 +362,6 @@
 	},
 	{
 		"logicalId": "right",
-		"generic_type": "GENERIC_ACTION",
 		"name": "Right",
 		"type": "action",
 		"subType": "other",
@@ -403,7 +373,6 @@
 	},
 	{
 		"logicalId": "ok",
-		"generic_type": "GENERIC_ACTION",
 		"name": "Ok",
 		"type": "action",
 		"subType": "other",
@@ -414,7 +383,6 @@
 	},
 	{
 		"logicalId": "back",
-		"generic_type": "GENERIC_ACTION",
 		"name": "Back",
 		"type": "action",
 		"subType": "other",
@@ -426,7 +394,6 @@
 	},
 	{
 		"logicalId": "menu",
-		"generic_type": "GENERIC_ACTION",
 		"name": "Menu",
 		"type": "action",
 		"subType": "other",
@@ -461,7 +428,6 @@
 	},
 	{
 		"logicalId": "fbwd",
-		"generic_type": "GENERIC_ACTION",
 		"name": "Fbwd",
 		"type": "action",
 		"subType": "other",
@@ -473,7 +439,6 @@
 	},
 	{
 		"logicalId": "ffwd",
-		"generic_type": "GENERIC_ACTION",
 		"name": "Ffwd",
 		"type": "action",
 		"subType": "other",
@@ -485,7 +450,6 @@
 	},
 	{
 		"logicalId": "rec",
-		"generic_type": "GENERIC_ACTION",
 		"name": "Rec",
 		"type": "action",
 		"subType": "other",
@@ -497,7 +461,6 @@
 	},
 	{
 		"logicalId": "vod",
-		"generic_type": "GENERIC_ACTION",
 		"name": "Vod",
 		"type": "action",
 		"subType": "other",
