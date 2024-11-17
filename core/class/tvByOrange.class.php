@@ -1,5 +1,4 @@
 <?php
-error_reporting(E_ALL);
 /* This file is part of Jeedom.
 *
 * Jeedom is free software: you can redistribute it and/or modify
