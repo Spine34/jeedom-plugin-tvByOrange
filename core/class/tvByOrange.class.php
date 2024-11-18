@@ -308,6 +308,7 @@ class tvByOrange extends eqLogic
 
 			if (curl_errno($ch)) {
 				log::add(__CLASS__, 'error', $this->getHumanName() . ' : Erreur cURL : ' . curl_error($ch));
+				$this->checkAndUpdateCmd('online', 0);
 			} else {
 				log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $result : ' . $result);
 				$result = json_decode($result, true);
@@ -342,6 +343,7 @@ class tvByOrange extends eqLogic
 					$this->checkAndUpdateCmd('channelNumber', 'NA');
 					$this->checkAndUpdateCmd('channelText', 'NA');
 				}
+				$this->checkAndUpdateCmd('online', 1);
 			}
 
 			curl_close($ch);
