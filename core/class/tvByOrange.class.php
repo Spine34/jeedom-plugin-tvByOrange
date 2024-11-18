@@ -299,10 +299,9 @@ class tvByOrange extends eqLogic
 
 			$ch = curl_init();
 
-			// Configuration des options de cURL
 			curl_setopt($ch, CURLOPT_URL, $url);
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-			curl_setopt($ch, CURLOPT_TIMEOUT, 5); // Durée maximale d'exécution en secondes
+			curl_setopt($ch, CURLOPT_TIMEOUT, 5);
 
 			$result = curl_exec($ch);
 
@@ -330,14 +329,14 @@ class tvByOrange extends eqLogic
 						if ($cmd->getConfiguration('table') == 'channel') {
 							if ($result['result']['data']['playedMediaId'] == $cmd->getConfiguration('epg_id')) {
 								$this->checkAndUpdateCmd('channelNumber', $cmd->getConfiguration('number'));
-								$this->checkAndUpdateCmd('channelText', $cmd->getName('epg_id'));
+								$this->checkAndUpdateCmd('channelText', $cmd->getName());
 								$epg_id = true;
 								break;
 							}
 						}
 					}
 					if (!$epg_id) {
-						log::add(__CLASS__, 'error', $this->getHumanName() . ' : L\'ID EPG ' . $result['result']['data']['playedMediaId'] . ' n\'existe pas dans la liste des chaines');
+						log::add(__CLASS__, 'error', $this->getHumanName() . ' : L\'ID EPG ' . $result['result']['data']['playedMediaId'] . ' n\'existe pas dans la liste des chaînes');
 					}
 				} else {
 					$this->checkAndUpdateCmd('channelNumber', 'NA');
@@ -359,10 +358,9 @@ class tvByOrange extends eqLogic
 
 			$ch = curl_init();
 
-			// Configuration des options de cURL
 			curl_setopt($ch, CURLOPT_URL, $url);
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-			curl_setopt($ch, CURLOPT_TIMEOUT, 5); // Durée maximale d'exécution en secondes
+			curl_setopt($ch, CURLOPT_TIMEOUT, 5);
 
 			$result = curl_exec($ch);
 
@@ -387,10 +385,9 @@ class tvByOrange extends eqLogic
 
 			$ch = curl_init();
 
-			// Configuration des options de cURL
 			curl_setopt($ch, CURLOPT_URL, $url);
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-			curl_setopt($ch, CURLOPT_TIMEOUT, 5); // Durée maximale d'exécution en secondes
+			curl_setopt($ch, CURLOPT_TIMEOUT, 5);
 
 			$result = curl_exec($ch);
 
@@ -430,22 +427,26 @@ class tvByOrangeCmd extends cmd
 	// Exécution d'une commande
 	public function execute($_options = array())
 	{
-		if ($this->getLogicalId() == 'refresh') {
-			$this->getEqLogic()->refreshData();
-		} else if ($this->getConfiguration('table') == 'cmd') {
-			if ($this->getLogicalId() == 'channelSelect') {
+		if ($this->getConfiguration('table') == 'cmd') {
+			if ($this->getLogicalId() == 'refresh') {
+				$this->getEqLogic()->refreshData();
+			} else if ($this->getLogicalId() == 'channelSelect') {
 				$this->getEqLogic()->sendChannel($_options['select']);
 			} else if ($this->getLogicalId() == 'channelSlider') {
-				// $cmds = $this->getEqLogic()->getCmd('action');
-				// foreach ($cmds as $cmd) {
-				// 	if ($cmd->getConfiguration('table') == 'channel') {
-				// 		if ($_options['slider'] == $cmd->getConfiguration('number')) {
-				// 			$this->getEqLogic()->sendChannel($this->getConfiguration('key'));
-				// 			$toto = true;
-				// 			break;
-				// 		}
-				// 	}
-				// }
+				$cmds = $this->getEqLogic()->getCmd('action');
+				$number = false;
+				foreach ($cmds as $cmd) {
+					if ($cmd->getConfiguration('table') == 'channel') {
+						if ($_options['slider'] == $cmd->getConfiguration('number')) {
+							$this->getEqLogic()->sendChannel($cmd->getConfiguration('epg_id'));
+							$number = true;
+							break;
+						}
+					}
+				}
+				if (!$number) {
+					log::add(__CLASS__, 'error', $this->getHumanName() . ' : Le numéro ' . $_options['slider'] . ' n\'existe pas dans la liste des chaînes');
+				}
 			} else {
 				$this->getEqLogic()->sendCmd($this->getConfiguration('key'));
 			}

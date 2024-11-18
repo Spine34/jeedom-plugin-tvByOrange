@@ -115,9 +115,7 @@
 		"type": "info",
 		"subType": "string",
 		"configuration": {
-			"table": "cmd",
-			"minValue": 1,
-			"maxValue": 999
+			"table": "cmd"
 		}
 	},
 	{
@@ -159,7 +157,8 @@
 			"minValue": 1,
 			"maxValue": 999
 		},
-		"value": "channelNumber"
+		"value": "channelNumber",
+		"isVisible": 1
 	},
 	{
 		"logicalId": "vod",
@@ -184,7 +183,7 @@
 			"key": "103"
 		},
 		"display": {
-			"icon": "<i class='icon fas fa-arrow-up'></i>"
+			"icon": "<i class='icon fas fa-chevron-up'></i>"
 		}
 	},
 	{
@@ -212,7 +211,7 @@
 			"key": "105"
 		},
 		"display": {
-			"icon": "<i class='icon fas fa-arrow-left'></i>"
+			"icon": "<i class='icon fas fa-chevron-left'></i>"
 		}
 	},
 	{
@@ -235,7 +234,7 @@
 			"key": "106"
 		},
 		"display": {
-			"icon": "<i class='icon fas fa-arrow-right'></i>",
+			"icon": "<i class='icon fas fa-chevron-right'></i>",
 			"forceReturnLineAfter": 1
 		}
 	},
@@ -262,7 +261,7 @@
 			"key": "108"
 		},
 		"display": {
-			"icon": "<i class='icon fas fa-arrow-down'></i>"
+			"icon": "<i class='icon fas fa-chevron-down'></i>"
 		}
 	},
 	{
@@ -275,6 +274,7 @@
 			"key": "139"
 		},
 		"display": {
+			"icon": "<i class='icon kiko-hamburger-menu'></i>",
 			"forceReturnLineAfter": 1
 		}
 	},
@@ -331,7 +331,7 @@
 			"key": "402"
 		},
 		"display": {
-			"icon": "<i class='icon fas fa-arrow-up'></i>",
+			"icon": "<i class='icon fas fa-chevron-up'></i>",
 			"forceReturnLineAfter": 1
 		}
 	},
@@ -388,7 +388,7 @@
 			"key": "403"
 		},
 		"display": {
-			"icon": "<i class='icon fas fa-arrow-down'></i>",
+			"icon": "<i class='icon fas fa-chevron-down'></i>",
 			"forceReturnLineAfter": 1
 		}
 	},

@@ -502,5 +502,293 @@
 			"epg_id": "1989"
 		},
 		"isVisible": 0
+	},
+	{
+		"logicalId": "journalDuGolfTv",
+		"name": "Journal du Golf TV",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "172",
+			"epg_id": "3629"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "equidia",
+		"name": "Equidia",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "173",
+			"epg_id": "64"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "sportEnFrance",
+		"name": "Sport en France",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "174",
+			"epg_id": "2837"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "luckyJack",
+		"name": "Lucky Jack",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "211",
+			"epg_id": "1061"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "fashionTvParis",
+		"name": "FashionTV Paris",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "213",
+			"epg_id": "1996"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "luxeTv",
+		"name": "Luxe TV",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "115",
+			"epg_id": "531"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "sqoolTv",
+		"name": "Sqool TV",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "217",
+			"epg_id": "3767"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "demainTv",
+		"name": "Demain TV",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "219",
+			"epg_id": "57"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "kto",
+		"name": "KTO",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "220",
+			"epg_id": "110"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "lcp100Percent",
+		"name": "LCP 100%",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "223",
+			"epg_id": "992"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "france24EnFrancais",
+		"name": "France 24 (en français)",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "225",
+			"epg_id": "529"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "bfmBusiness",
+		"name": "BFM Business",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "228",
+			"epg_id": "1073"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "euronewsFrancais",
+		"name": "Euronews Français",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "229",
+			"epg_id": "140"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "france24EnAnglais",
+		"name": "France 24 (en anglais)",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "232",
+			"epg_id": "671"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "cnn",
+		"name": "CNN",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "234",
+			"epg_id": "53"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "cnbc",
+		"name": "CNBC",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "235",
+			"epg_id": "51"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "bloombergEurope",
+		"name": "Bloomberg Europe",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "236",
+			"epg_id": "410"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "bbcNews",
+		"name": "BBC News",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "237",
+			"epg_id": "19"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "alJazeeraEnAnglais",
+		"name": "Al Jazeera (en anglais)",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "238",
+			"epg_id": "525"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "france24EnArabe",
+		"name": "France 24 (en arabe)",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "240",
+			"epg_id": "3413"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "i24News",
+		"name": "i24 News",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "243",
+			"epg_id": "781"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "nhkWorldJapan",
+		"name": "NHK World Japan",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "244",
+			"epg_id": "830"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "deutscheWelleEnAnglais",
+		"name": "Deutsche Welle (en anglais)",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "245",
+			"epg_id": "61"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "france24EnEspagnol",
+		"name": "France 24 (en espagnol)",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "247",
+			"epg_id": "3562"
+		},
+		"isVisible": 0
 	}
 ]
