@@ -147,20 +147,6 @@
 		"value": "playedMediaId"
 	},
 	{
-		"logicalId": "channelSlider",
-		"generic_type": "SET_CHANNEL",
-		"name": "Channel Slider",
-		"type": "action",
-		"subType": "slider",
-		"configuration": {
-			"table": "cmd",
-			"minValue": 1,
-			"maxValue": 999
-		},
-		"value": "channelNumber",
-		"isVisible": 1
-	},
-	{
 		"logicalId": "vod",
 		"name": "Vod",
 		"type": "action",
@@ -188,7 +174,7 @@
 	},
 	{
 		"logicalId": "onOff",
-		"generic_type": "LIGHT_TOGGLE",
+		"generic_type": "MEDIA_ON",
 		"name": "On Off",
 		"type": "action",
 		"subType": "other",
@@ -515,5 +501,31 @@
 		"display": {
 			"icon": "<i class='icon fas fa-forward'></i>"
 		}
+	},
+	{
+		"logicalId": "off",
+		"generic_type": "MEDIA_OFF",
+		"name": "Off",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "116"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "channelSlider",
+		"generic_type": "SET_CHANNEL",
+		"name": "Channel Slider",
+		"type": "action",
+		"subType": "slider",
+		"configuration": {
+			"table": "cmd",
+			"minValue": 1,
+			"maxValue": 999
+		},
+		"value": "channelNumber",
+		"isVisible": 1
 	}
 ]
