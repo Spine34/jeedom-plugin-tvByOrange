@@ -488,7 +488,7 @@
 	{
 		"logicalId": "playPause",
 		"generic_type": "MEDIA_RESUME",
-		"name": "Play",
+		"name": "Play Pause",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
