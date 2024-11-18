@@ -149,20 +149,35 @@
 		"value": "channelNumber"
 	},
 	{
-		"logicalId": "on",
-		"generic_type": "MEDIA_ON",
-		"name": "On",
+		"logicalId": "vod",
+		"name": "Vod",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"key": "116"
+			"key": "393"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-film'></i>"
 		}
 	},
 	{
-		"logicalId": "Off",
-		"generic_type": "MEDIA_OFF",
-		"name": "Off",
+		"logicalId": "up",
+		"name": "Up",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "103"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-arrow-up'></i>"
+		}
+	},
+	{
+		"logicalId": "onOff",
+		"generic_type": "LIGHT_TOGGLE",
+		"name": "On Off",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
@@ -170,17 +185,97 @@
 			"key": "116"
 		},
 		"display": {
+			"icon": "<i class='icon fas fa-power-off'></i>",
 			"forceReturnLineAfter": 1
 		}
 	},
 	{
-		"logicalId": "0",
-		"name": "0",
+		"logicalId": "left",
+		"name": "Left",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"key": "512"
+			"key": "105"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-arrow-left'></i>"
+		}
+	},
+	{
+		"logicalId": "ok",
+		"name": "OK",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "352"
+		}
+	},
+	{
+		"logicalId": "right",
+		"name": "Right",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "106"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-arrow-right'></i>",
+			"forceReturnLineAfter": 1
+		}
+	},
+	{
+		"logicalId": "back",
+		"name": "Back",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "158"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-undo'></i>"
+		}
+	},
+	{
+		"logicalId": "down",
+		"name": "Down",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "108"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-arrow-down'></i>"
+		}
+	},
+	{
+		"logicalId": "menu",
+		"name": "Menu",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "139"
+		},
+		"display": {
+			"forceReturnLineAfter": 1
+		}
+	},
+	{
+		"logicalId": "volumeUp",
+		"name": "Volume Up",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "115"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-volume-up'></i>"
 		}
 	},
 	{
@@ -214,6 +309,33 @@
 		}
 	},
 	{
+		"logicalId": "channelUp",
+		"name": "Channel Up",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "402"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-arrow-up'></i>",
+			"forceReturnLineAfter": 1
+		}
+	},
+	{
+		"logicalId": "volumeDown",
+		"name": "Volume Down",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "114"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-volume-down'></i>"
+		}
+	},
+	{
 		"logicalId": "4",
 		"name": "4",
 		"type": "action",
@@ -241,6 +363,34 @@
 		"configuration": {
 			"table": "cmd",
 			"key": "518"
+		}
+	},
+	{
+		"logicalId": "channelDown",
+		"name": "Channel Down",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "403"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-arrow-down'></i>",
+			"forceReturnLineAfter": 1
+		}
+	},
+	{
+		"logicalId": "mute",
+		"generic_type": "MEDIA_MUTE",
+		"name": "Mute",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "113"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-volume-mute'></i>"
 		}
 	},
 	{
@@ -274,201 +424,17 @@
 		}
 	},
 	{
-		"logicalId": "ch+",
-		"name": "Ch+",
+		"logicalId": "0",
+		"name": "0",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"key": "402"
+			"key": "512"
+		},
+		"display": {
+			"forceReturnLineAfter": 1
 		}
-	},
-	{
-		"logicalId": "ch-",
-		"name": "Ch-",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "cmd",
-			"key": "403"
-		}
-	},
-	{
-		"logicalId": "vol+",
-		"name": "Vol+",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "cmd",
-			"key": "115"
-		},
-		"display": "<i class='icon fas fa-volume-up'></i>"
-	},
-	{
-		"logicalId": "vol-",
-		"name": "Vol-",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "cmd",
-			"key": "114"
-		},
-		"display": "<i class='icon fas fa-volume-down'></i>"
-	},
-	{
-		"logicalId": "mute",
-		"generic_type": "MEDIA_MUTE",
-		"name": "Mute",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "cmd",
-			"key": "113"
-		},
-		"display": "<i class='icon fas fa-volume-mute'></i>"
-	},
-	{
-		"logicalId": "up",
-		"name": "Up",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "cmd",
-			"key": "103"
-		},
-		"display": "<i class='icon fas fa-arrow-up'></i>"
-	},
-	{
-		"logicalId": "down",
-		"name": "Down",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "cmd",
-			"key": "108"
-		},
-		"display": "<i class='icon fas fa-arrow-down'></i>"
-	},
-	{
-		"logicalId": "left",
-		"name": "Left",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "cmd",
-			"key": "105"
-		},
-		"display": "<i class='icon fas fa-arrow-left'></i>"
-	},
-	{
-		"logicalId": "right",
-		"name": "Right",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "cmd",
-			"key": "106"
-		},
-		"display": "<i class='icon fas fa-arrow-right'></i>"
-	},
-	{
-		"logicalId": "ok",
-		"name": "Ok",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "cmd",
-			"key": "352"
-		}
-	},
-	{
-		"logicalId": "back",
-		"name": "Back",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "cmd",
-			"key": "158"
-		},
-		"display": "<i class='icon fas fa-undo'></i>"
-	},
-	{
-		"logicalId": "menu",
-		"name": "Menu",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "cmd",
-			"key": "139"
-		}
-	},
-	{
-		"logicalId": "play",
-		"generic_type": "MEDIA_RESUME",
-		"name": "Play",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "cmd",
-			"key": "164"
-		},
-		"display": "<i class='icon fas fa-play'></i>"
-	},
-	{
-		"logicalId": "Pause",
-		"generic_type": "MEDIA_PAUSE",
-		"name": "Pause",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "cmd",
-			"key": "164"
-		},
-		"display": "<i class='icon fas fa-pause'></i>"
-	},
-	{
-		"logicalId": "fbwd",
-		"name": "Fbwd",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "cmd",
-			"key": "168"
-		},
-		"display": "<i class='icon fas fa-backward'></i>"
-	},
-	{
-		"logicalId": "ffwd",
-		"name": "Ffwd",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "cmd",
-			"key": "159"
-		},
-		"display": "<i class='icon fas fa-forward'></i>"
-	},
-	{
-		"logicalId": "rec",
-		"name": "Rec",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "cmd",
-			"key": "167"
-		},
-		"display": "<i class='icon fas fa-circle icon_red'></i>"
-	},
-	{
-		"logicalId": "vod",
-		"name": "Vod",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "cmd",
-			"key": "393"
-		},
-		"display": "<i class='icon fas fa-film'></i>"
 	},
 	{
 		"logicalId": "stop",
@@ -480,6 +446,61 @@
 			"table": "cmd",
 			"key": "166"
 		},
-		"display": "<i class='icon fas fa-stop'></i>"
+		"display": {
+			"icon": "<i class='icon fas fa-stop'></i>"
+		}
+	},
+	{
+		"logicalId": "rec",
+		"name": "Rec",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "167"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-circle icon_red'></i>"
+		}
+	},
+	{
+		"logicalId": "fbwd",
+		"name": "Fbwd",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "168"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-backward'></i>"
+		}
+	},
+	{
+		"logicalId": "playPause",
+		"generic_type": "MEDIA_RESUME",
+		"name": "Play",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "164"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-play'></i>"
+		}
+	},
+	{
+		"logicalId": "ffwd",
+		"name": "Ffwd",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "159"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-forward'></i>"
+		}
 	}
 ]
