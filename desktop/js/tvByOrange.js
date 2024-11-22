@@ -24,6 +24,22 @@
 // 	forcePlaceholderSize: true
 // });
 
+var tableChannel = document.getElementById('table_channel');
+new Sortable(tableChannel.tBodies[0], {
+	delay: 100,
+	delayOnTouchOnly: true,
+	touchStartThreshold: 20,
+	draggable: 'tr.cmd',
+	filter: 'a, input, textarea, label, select',
+	preventOnFilter: false,
+	direction: 'vertical',
+	chosenClass: 'dragSelected',
+	onEnd: function (event) {
+		jeeFrontEnd.modifyWithoutSave = true;
+		modifyWithoutSave = true;
+	},
+});
+
 /* Fonction permettant l'affichage des commandes dans l'équipement */
 // function addCmdToTable(_cmd) {
 // 	if (!isset(_cmd)) {
