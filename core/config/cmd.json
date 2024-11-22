@@ -147,6 +147,20 @@
 		"value": "playedMediaId"
 	},
 	{
+		"logicalId": "channelSlider",
+		"generic_type": "SET_CHANNEL",
+		"name": "Channel Slider",
+		"type": "action",
+		"subType": "slider",
+		"configuration": {
+			"table": "cmd",
+			"minValue": 1,
+			"maxValue": 999
+		},
+		"value": "channelNumber",
+		"isVisible": 0
+	},
+	{
 		"logicalId": "vod",
 		"name": "Vod",
 		"type": "action",
@@ -515,17 +529,27 @@
 		"isVisible": 0
 	},
 	{
-		"logicalId": "channelSlider",
-		"generic_type": "SET_CHANNEL",
-		"name": "Channel Slider",
+		"logicalId": "unmute",
+		"generic_type": "MEDIA_UNMUTE",
+		"name": "Unmute",
 		"type": "action",
-		"subType": "slider",
+		"subType": "other",
 		"configuration": {
 			"table": "cmd",
-			"minValue": 1,
-			"maxValue": 999
+			"key": "113"
 		},
-		"value": "channelNumber",
-		"isVisible": 1
+		"isVisible": 0
+	},
+	{
+		"logicalId": "pause",
+		"generic_type": "MEDIA_PAUSE",
+		"name": "Pause",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "164"
+		},
+		"isVisible": 0
 	}
 ]
