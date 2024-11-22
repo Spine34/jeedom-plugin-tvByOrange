@@ -118,7 +118,7 @@ class tvByOrange extends eqLogic
 		}
 		$cron = cron::byClassAndFunction(__CLASS__, 'update');
 		if (!is_object($cron)) {
-			throw new Exception(__('Tache cron introuvable', __FILE__));
+			throw new Exception('Tache cron introuvable');
 		}
 		$cron->run();
 	}
@@ -127,7 +127,7 @@ class tvByOrange extends eqLogic
 	{
 		$cron = cron::byClassAndFunction(__CLASS__, 'update');
 		if (!is_object($cron)) {
-			throw new Exception(__('Tache cron introuvable', __FILE__));
+			throw new Exception('Tache cron introuvable');
 		}
 		$cron->halt();
 	}
@@ -136,7 +136,7 @@ class tvByOrange extends eqLogic
 	{
 		$cron = cron::byClassAndFunction(__CLASS__, 'update');
 		if (!is_object($cron)) {
-			throw new Exception(__('Tache cron introuvable', __FILE__));
+			throw new Exception('Tache cron introuvable');
 		}
 		$cron->setEnable($_mode);
 		$cron->save();
@@ -170,7 +170,7 @@ class tvByOrange extends eqLogic
 	public function preUpdate()
 	{
 		if (empty($this->getConfiguration('ip'))) {
-			throw new Exception(__('L\'adresse IP du décodeur ne peut être vide', __FILE__));
+			throw new Exception('L\'adresse IP du décodeur ne peut être vide');
 		}
 	}
 
