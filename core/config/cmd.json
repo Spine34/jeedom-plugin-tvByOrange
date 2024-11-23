@@ -180,7 +180,7 @@
 		"configuration": {
 			"table": "cmd",
 			"minValue": 1,
-			"maxValue": 8
+			"maxValue": 16
 		},
 		"value": "volumeState",
 		"isVisible": 1
