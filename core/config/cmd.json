@@ -137,6 +137,16 @@
 		}
 	},
 	{
+		"logicalId": "volumeState",
+		"generic_type": "VOLUME",
+		"name": "VolumeState",
+		"type": "info",
+		"subType": "numeric",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
 		"logicalId": "channelSelect",
 		"name": "Channel Select",
 		"type": "action",
@@ -148,7 +158,7 @@
 	},
 	{
 		"logicalId": "channelSlider",
-		"generic_type": "SET_CHANNEL",
+		"generic_type": "SET_VOLUME",
 		"name": "Channel Slider",
 		"type": "action",
 		"subType": "slider",
@@ -158,7 +168,21 @@
 			"maxValue": 999
 		},
 		"value": "channelNumber",
-		"isVisible": 0
+		"isVisible": 1
+	},
+	{
+		"logicalId": "volumeSlider",
+		"generic_type": "SET_CHANNEL",
+		"name": "volume Slider",
+		"type": "action",
+		"subType": "slider",
+		"configuration": {
+			"table": "cmd",
+			"minValue": 1,
+			"maxValue": 999
+		},
+		"value": "channelNumber",
+		"isVisible": 1
 	},
 	{
 		"logicalId": "vod",
