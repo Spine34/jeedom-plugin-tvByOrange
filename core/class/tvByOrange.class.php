@@ -448,6 +448,12 @@ class tvByOrangeCmd extends cmd
 					log::add(__CLASS__, 'error', $this->getHumanName() . ' : Le numéro ' . $_options['slider'] . ' n\'existe pas dans la liste des chaînes');
 				}
 			} else if ($this->getLogicalId() == 'volumeSlider') {
+				$volumeState = $this->getEqLogic()->getCmd('info', 'volumeState')->execCmd();
+				if ($_options['slider'] > $volumeState) {
+					$this->getEqLogic()->sendCmd($this->getConfiguration(115));
+				} else {
+					$this->getEqLogic()->sendCmd($this->getConfiguration(114));
+				}
 				$this->getEqLogic()->checkAndUpdateCmd('volumeState', $_options['slider']);
 			} else {
 				$this->getEqLogic()->sendCmd($this->getConfiguration('key'));
