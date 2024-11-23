@@ -1,5 +1,14 @@
 [
 	{
+		"logicalId": "refresh",
+		"name": "Refresh",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
 		"logicalId": "online",
 		"name": "Online",
 		"type": "info",
@@ -14,15 +23,6 @@
 		"name": "Active Standby State",
 		"type": "info",
 		"subType": "binary",
-		"configuration": {
-			"table": "cmd"
-		}
-	},
-	{
-		"logicalId": "refresh",
-		"name": "Refresh",
-		"type": "action",
-		"subType": "other",
 		"configuration": {
 			"table": "cmd"
 		}
@@ -139,12 +139,13 @@
 	{
 		"logicalId": "volumeState",
 		"generic_type": "VOLUME",
-		"name": "VolumeState",
+		"name": "Volume State",
 		"type": "info",
 		"subType": "numeric",
 		"configuration": {
 			"table": "cmd"
-		}
+		},
+		"isVisible": 1
 	},
 	{
 		"logicalId": "channelSelect",
@@ -158,7 +159,7 @@
 	},
 	{
 		"logicalId": "channelSlider",
-		"generic_type": "SET_VOLUME",
+		"generic_type": "SET_CHANNEL",
 		"name": "Channel Slider",
 		"type": "action",
 		"subType": "slider",
@@ -172,16 +173,16 @@
 	},
 	{
 		"logicalId": "volumeSlider",
-		"generic_type": "SET_CHANNEL",
+		"generic_type": "SET_VOLUME",
 		"name": "volume Slider",
 		"type": "action",
 		"subType": "slider",
 		"configuration": {
 			"table": "cmd",
 			"minValue": 1,
-			"maxValue": 999
+			"maxValue": 8
 		},
-		"value": "channelNumber",
+		"value": "volumeState",
 		"isVisible": 1
 	},
 	{
