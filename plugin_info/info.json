@@ -15,10 +15,10 @@
 	"hasDependency": false,
 	"hasOwnDeamon": true,
 	"maxDependancyInstallTime": 0,
-	"changelog_beta": "https:\/\/spine34.github.io\/jeedom-documentations\/#language#\/beta\/changelog",
-	"changelog": "https:\/\/spine34.github.io\/jeedom-documentations\/#language#\/stable\/changelog",
-	"documentation_beta": "https:\/\/spine34.github.io\/jeedom-documentations\/#language#",
-	"documentation": "https:\/\/spine34.github.io\/jeedom-documentations\/#language#",
+	"changelog_beta": "https:\/\/spine34.github.io\/jeedom-documentations\/#language#\/tvByOrange\/beta\/changelog",
+	"changelog": "https:\/\/spine34.github.io\/jeedom-documentations\/#language#\/tvByOrange\/stable\/changelog",
+	"documentation_beta": "https:\/\/spine34.github.io\/jeedom-documentations\/tvByOrange\/#language#",
+	"documentation": "https:\/\/spine34.github.io\/jeedom-documentations\/tvByOrange\/#language#",
 	"language": [
 		"fr_FR"
 	],
