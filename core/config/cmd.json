@@ -24,7 +24,8 @@
 		"type": "info",
 		"subType": "binary",
 		"configuration": {
-			"table": "cmd"
+			"table": "cmd",
+			"invertBinary": 1
 		}
 	},
 	{
