@@ -149,6 +149,34 @@
 		"isVisible": 0
 	},
 	{
+		"logicalId": "channelSlider",
+		"generic_type": "SET_CHANNEL",
+		"name": "Channel Slider",
+		"type": "action",
+		"subType": "slider",
+		"configuration": {
+			"table": "cmd",
+			"minValue": 1,
+			"maxValue": 999
+		},
+		"value": "channelNumber",
+		"isVisible": 0
+	},
+	{
+		"logicalId": "volumeSlider",
+		"generic_type": "SET_VOLUME",
+		"name": "volume Slider",
+		"type": "action",
+		"subType": "slider",
+		"configuration": {
+			"table": "cmd",
+			"minValue": 1,
+			"maxValue": 16
+		},
+		"value": "volumeState",
+		"isVisible": 0
+	},
+	{
 		"logicalId": "channelSelect",
 		"name": "Channel Select",
 		"type": "action",
@@ -391,9 +419,9 @@
 		}
 	},
 	{
-		"logicalId": "mute",
+		"logicalId": "muteUnmute",
 		"generic_type": "MEDIA_MUTE",
-		"name": "Mute",
+		"name": "Mute Unmute",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
@@ -551,31 +579,39 @@
 		"isVisible": 0
 	},
 	{
-		"logicalId": "channelSlider",
-		"generic_type": "SET_CHANNEL",
-		"name": "Channel Slider",
+		"logicalId": "netflix",
+		"name": "Netflix",
 		"type": "action",
-		"subType": "slider",
+		"subType": "other",
 		"configuration": {
-			"table": "cmd",
-			"minValue": 1,
-			"maxValue": 999
-		},
-		"value": "channelNumber",
-		"isVisible": 0
+			"table": "cmd"
+		}
 	},
 	{
-		"logicalId": "volumeSlider",
-		"generic_type": "SET_VOLUME",
-		"name": "volume Slider",
+		"logicalId": "primeVideo",
+		"name": "Prime Video",
 		"type": "action",
-		"subType": "slider",
+		"subType": "other",
 		"configuration": {
-			"table": "cmd",
-			"minValue": 1,
-			"maxValue": 16
-		},
-		"value": "volumeState",
-		"isVisible": 0
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "disneyPlus",
+		"name": "Disney+",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "paramountPlus",
+		"name": "Paramount+",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd"
+		}
 	}
 ]

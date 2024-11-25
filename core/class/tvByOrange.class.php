@@ -456,6 +456,18 @@ class tvByOrangeCmd extends cmd
 					$this->getEqLogic()->sendCmd(114);
 				}
 				$this->getEqLogic()->checkAndUpdateCmd('volumeState', $_options['slider']);
+			} else if ($this->getLogicalId() == 'netflix') {
+				$this->getEqLogic()->sendCmd(518);
+				$this->getEqLogic()->sendCmd(518);
+			} else if ($this->getLogicalId() == 'primeVideo') {
+				$this->getEqLogic()->sendCmd(518);
+				$this->getEqLogic()->sendCmd(519);
+			} else if ($this->getLogicalId() == 'disneyPlus') {
+				$this->getEqLogic()->sendCmd(518);
+				$this->getEqLogic()->sendCmd(520);
+			} else if ($this->getLogicalId() == 'paramountPlus') {
+				$this->getEqLogic()->sendCmd(518);
+				$this->getEqLogic()->sendCmd(521);
 			} else {
 				$this->getEqLogic()->sendCmd($this->getConfiguration('key'));
 			}
