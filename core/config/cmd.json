@@ -159,34 +159,6 @@
 		"value": "playedMediaId"
 	},
 	{
-		"logicalId": "channelSlider",
-		"generic_type": "SET_CHANNEL",
-		"name": "Channel Slider",
-		"type": "action",
-		"subType": "slider",
-		"configuration": {
-			"table": "cmd",
-			"minValue": 1,
-			"maxValue": 999
-		},
-		"value": "channelNumber",
-		"isVisible": 1
-	},
-	{
-		"logicalId": "volumeSlider",
-		"generic_type": "SET_VOLUME",
-		"name": "volume Slider",
-		"type": "action",
-		"subType": "slider",
-		"configuration": {
-			"table": "cmd",
-			"minValue": 1,
-			"maxValue": 16
-		},
-		"value": "volumeState",
-		"isVisible": 1
-	},
-	{
 		"logicalId": "vod",
 		"name": "Vod",
 		"type": "action",
@@ -576,6 +548,34 @@
 			"table": "cmd",
 			"key": "164"
 		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "channelSlider",
+		"generic_type": "SET_CHANNEL",
+		"name": "Channel Slider",
+		"type": "action",
+		"subType": "slider",
+		"configuration": {
+			"table": "cmd",
+			"minValue": 1,
+			"maxValue": 999
+		},
+		"value": "channelNumber",
+		"isVisible": 0
+	},
+	{
+		"logicalId": "volumeSlider",
+		"generic_type": "SET_VOLUME",
+		"name": "volume Slider",
+		"type": "action",
+		"subType": "slider",
+		"configuration": {
+			"table": "cmd",
+			"minValue": 1,
+			"maxValue": 16
+		},
+		"value": "volumeState",
 		"isVisible": 0
 	}
 ]
