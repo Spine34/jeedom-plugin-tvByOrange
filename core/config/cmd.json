@@ -146,7 +146,7 @@
 		"configuration": {
 			"table": "cmd"
 		},
-		"isVisible": 1
+		"isVisible": 0
 	},
 	{
 		"logicalId": "channelSelect",
