@@ -59,7 +59,6 @@ foreach (eqLogic::byType('speedtestByOokla') as $eqLogic) {
 			$cmd->setLogicalId('muteUnmute');
 			$cmd->setName('Mute Unmute');
 			$cmd->save();
-			break;
 		}
 		$eqLogic->save();
 	}
