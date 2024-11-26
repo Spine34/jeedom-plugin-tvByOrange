@@ -59,9 +59,10 @@ foreach (eqLogic::byType('speedtestByOokla') as $eqLogic) {
 			$cmd->setLogicalId('muteUnmute');
 			$cmd->setName('Mute Unmute');
 			$cmd->save();
+			break;
 		}
-		$eqLogic->save();
 	}
+	$eqLogic->save();
 }
 
 // Fonction exécutée automatiquement après la suppression du plugin
