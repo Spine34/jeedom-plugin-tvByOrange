@@ -613,5 +613,14 @@
 		"configuration": {
 			"table": "cmd"
 		}
+	},
+	{
+		"logicalId": "max",
+		"name": "Max",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd"
+		}
 	}
 ]

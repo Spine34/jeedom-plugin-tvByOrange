@@ -468,6 +468,9 @@ class tvByOrangeCmd extends cmd
 			} else if ($this->getLogicalId() == 'paramountPlus') {
 				$this->getEqLogic()->sendCmd(518);
 				$this->getEqLogic()->sendCmd(521);
+			} else if ($this->getLogicalId() == 'max') {
+				$this->getEqLogic()->sendCmd(519);
+				$this->getEqLogic()->sendCmd(512);
 			} else {
 				$this->getEqLogic()->sendCmd($this->getConfiguration('key'));
 			}
