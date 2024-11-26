@@ -53,6 +53,18 @@ function tvByOrange_update()
 	tvByOrange::deamon_start();
 }
 
+foreach (eqLogic::byType('speedtestByOokla') as $eqLogic) {
+	foreach (($eqLogic->getCmd('action')) as $cmd) {
+		if ($cmd->getLogicalId() == 'mute') {
+			$cmd->setLogicalId('muteUnmute');
+			$cmd->setName('Mute Unmute');
+			$cmd->save();
+			break;
+		}
+		$eqLogic->save();
+	}
+}
+
 // Fonction exécutée automatiquement après la suppression du plugin
 function tvByOrange_remove()
 {
