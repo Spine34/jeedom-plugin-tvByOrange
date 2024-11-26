@@ -53,7 +53,7 @@ function tvByOrange_update()
 	tvByOrange::deamon_start();
 }
 
-foreach (eqLogic::byType('speedtestByOokla') as $eqLogic) {
+foreach (eqLogic::byType('tvByOrange') as $eqLogic) {
 	foreach (($eqLogic->getCmd('action')) as $cmd) {
 		if ($cmd->getLogicalId() == 'mute') {
 			$cmd->setLogicalId('muteUnmute');
