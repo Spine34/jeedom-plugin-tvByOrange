@@ -539,7 +539,8 @@
 			"key": "159"
 		},
 		"display": {
-			"icon": "<i class='icon fas fa-forward'></i>"
+			"icon": "<i class='icon fas fa-forward'></i>",
+			"forceReturnLineAfter": 1
 		}
 	},
 	{
