@@ -444,6 +444,18 @@
 		"isVisible": 0
 	},
 	{
+		"logicalId": "marmitonTv",
+		"name": "Marmiton TV",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "117",
+			"epg_id": "2184"
+		},
+		"isVisible": 0
+	},
+	{
 		"logicalId": "mggTv",
 		"name": "MGG TV",
 		"type": "action",
