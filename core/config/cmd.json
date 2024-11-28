@@ -107,6 +107,10 @@
 		"subType": "binary",
 		"configuration": {
 			"table": "cmd"
+		},
+		"template": {
+			"dashboard": "core::line",
+			"mobile": "core::line"
 		}
 	},
 	{
