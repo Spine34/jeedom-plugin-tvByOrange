@@ -188,6 +188,7 @@ $eqLogics = eqLogic::byType($plugin->getId());
 								<th style="min-width:200px;width:350px;">{{Nom}}</th>
 								<th>{{Type}}</th>
 								<th style="min-width:260px;">{{Options}}</th>
+								<th>{{Custom Channel Select}}</th>
 								<th>{{Numéro}}</th>
 								<th>{{ID EPG}}</th>
 								<!-- <th>{{Etat}}</th> -->

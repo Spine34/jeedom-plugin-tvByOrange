@@ -178,6 +178,9 @@ function addCmdToTable(_cmd) {
 		tr += '</div>';
 		tr += '</td>';
 		tr += '<td>';
+		tr += '<label class="checkbox-inline"><input type="checkbox" class="cmdAttr" data-l1key="configuration" data-l2key="customChannelSelect"/>{{Sélectionner}}</label>';
+		tr += '</td>';
+		tr += '<td>';
 		tr += '<input type="number" class="cmdAttr form-control input-sm" data-l1key="configuration" data-l2key="number">';
 		tr += '</td>';
 		tr += '<td>';

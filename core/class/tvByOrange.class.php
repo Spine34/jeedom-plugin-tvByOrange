@@ -252,19 +252,29 @@ class tvByOrange extends eqLogic
 
 	public function postAjax()
 	{
-		$listValue = '';
+		$channelSelect = '';
+		$customListValue = '';
 		if (!empty($this->getConfiguration('ip'))) {
 			$cmds = $this->getCmd('action');
 			foreach ($cmds as $cmd) {
 				if ($cmd->getConfiguration('table') == 'channel') {
-					$listValue .= $cmd->getConfiguration('epg_id') . '|' . $cmd->getName() . ';';
+					$channelSelect .= $cmd->getConfiguration('epg_id') . '|' . $cmd->getName() . ';';
+					if ($cmd->getConfiguration('customChannelSelect') == 1) {
+						$customChannelSelect .= $cmd->getConfiguration('epg_id') . '|' . $cmd->getName() . ';';
+					}
 				}
 			}
-			$listValue = rtrim($listValue, ';');
-			log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $listValue : ' . $listValue);
-			$cmd = $this->getCmd('action', 'channelSelect');
-			$cmd->setConfiguration('listValue', $listValue);
-			$cmd->save();
+			$channelSelect = rtrim($channelSelect, ';');
+			log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $channelSelect : ' . $channelSelect);
+			$cmdChannelSelect = $this->getCmd('action', 'channelSelect');
+			$cmdChannelSelect->setConfiguration('listValue', $channelSelect);
+			$cmdChannelSelect->save();
+
+			$customChannelSelect = rtrim($customChannelSelect, ';');
+			log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $customChannelSelect : ' . $customChannelSelect);
+			$cmdCustomChannelSelect = $this->getCmd('action', 'customChannelSelect');
+			$cmdCustomChannelSelect->setConfiguration('listValue', $customChannelSelect);
+			$cmdCustomChannelSelect->save();
 		}
 	}
 
@@ -434,7 +444,7 @@ class tvByOrangeCmd extends cmd
 		if ($this->getConfiguration('table') == 'cmd') {
 			if ($this->getLogicalId() == 'refresh') {
 				$this->getEqLogic()->refreshData();
-			} else if ($this->getLogicalId() == 'channelSelect') {
+			} else if ($this->getLogicalId() == 'channelSelect' || $this->getLogicalId() == 'customChannelSelect') {
 				$this->getEqLogic()->sendChannel($_options['select']);
 			} else if ($this->getLogicalId() == 'channelSlider') {
 				$cmds = $this->getEqLogic()->getCmd('action');

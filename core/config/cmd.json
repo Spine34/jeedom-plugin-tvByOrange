@@ -158,6 +158,26 @@
 		"isVisible": 0
 	},
 	{
+		"logicalId": "channelSelect",
+		"name": "Channel Select",
+		"type": "action",
+		"subType": "select",
+		"configuration": {
+			"table": "cmd"
+		},
+		"value": "playedMediaId"
+	},
+	{
+		"logicalId": "customChannelSelect",
+		"name": "Custom Channel Select",
+		"type": "action",
+		"subType": "select",
+		"configuration": {
+			"table": "cmd"
+		},
+		"value": "playedMediaId"
+	},
+	{
 		"logicalId": "channelSlider",
 		"generic_type": "SET_CHANNEL",
 		"name": "Channel Slider",
@@ -184,16 +204,6 @@
 		},
 		"value": "volumeState",
 		"isVisible": 0
-	},
-	{
-		"logicalId": "channelSelect",
-		"name": "Channel Select",
-		"type": "action",
-		"subType": "select",
-		"configuration": {
-			"table": "cmd"
-		},
-		"value": "playedMediaId"
 	},
 	{
 		"logicalId": "vod",
