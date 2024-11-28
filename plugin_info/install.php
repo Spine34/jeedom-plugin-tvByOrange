@@ -63,7 +63,7 @@ foreach (eqLogic::byType('tvByOrange') as $eqLogic) {
 	}
 	foreach (($eqLogic->getCmd('info')) as $cmd) {
 		if ($cmd->getLogicalId() == 'wolSupport') {
-			$cmd->setType('binary');
+			$cmd->setSubType('binary');
 			$cmd->save();
 			break;
 		}
