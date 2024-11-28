@@ -104,6 +104,15 @@
 		"logicalId": "wolSupport",
 		"name": "WoL Support",
 		"type": "info",
+		"subType": "binary",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "friendlyName",
+		"name": "Friendly Name",
+		"type": "info",
 		"subType": "string",
 		"configuration": {
 			"table": "cmd"
@@ -112,15 +121,6 @@
 	{
 		"logicalId": "npvrSupport",
 		"name": "Npvr Support",
-		"type": "info",
-		"subType": "string",
-		"configuration": {
-			"table": "cmd"
-		}
-	},
-	{
-		"logicalId": "friendlyName",
-		"name": "Friendly Name",
 		"type": "info",
 		"subType": "string",
 		"configuration": {
