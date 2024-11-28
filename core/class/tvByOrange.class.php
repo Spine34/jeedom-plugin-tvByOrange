@@ -239,7 +239,7 @@ class tvByOrange extends eqLogic
 					}
 				}
 				if (isset($cmdArray['value'])) {
-					$cmd->setValue($this->getCmd(null, $cmdArray['value'])->getId());
+					$cmd->setValue($this->getCmd('info', $cmdArray['value'])->getId());
 				}
 				if (isset($cmdArray['isVisible'])) {
 					$cmd->setIsVisible($cmdArray['isVisible']);

@@ -58,10 +58,14 @@ foreach (eqLogic::byType('tvByOrange') as $eqLogic) {
 		if ($cmd->getLogicalId() == 'mute') {
 			$cmd->setLogicalId('muteUnmute');
 			$cmd->save();
+			break;
 		}
+	}
+	foreach (($eqLogic->getCmd('info')) as $cmd) {
 		if ($cmd->getLogicalId() == 'wolSupport') {
 			$cmd->setType('binary');
 			$cmd->save();
+			break;
 		}
 	}
 	$eqLogic->save();
