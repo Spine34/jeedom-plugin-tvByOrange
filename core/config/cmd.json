@@ -126,7 +126,7 @@
 		"logicalId": "npvrSupport",
 		"name": "Npvr Support",
 		"type": "info",
-		"subType": "string",
+		"subType": "binary",
 		"configuration": {
 			"table": "cmd"
 		}
