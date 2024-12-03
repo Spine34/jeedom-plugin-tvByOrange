@@ -61,7 +61,6 @@ foreach (eqLogic::byType('tvByOrange') as $eqLogic) {
 			break;
 		}
 	}
-	$eqLogic->save();
 }
 
 // Fonction exécutée automatiquement après la suppression du plugin
