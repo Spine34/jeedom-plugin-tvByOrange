@@ -54,15 +54,8 @@ function tvByOrange_update()
 }
 
 foreach (eqLogic::byType('tvByOrange') as $eqLogic) {
-	foreach (($eqLogic->getCmd('action')) as $cmd) {
-		if ($cmd->getLogicalId() == 'mute') {
-			$cmd->setLogicalId('muteUnmute');
-			$cmd->save();
-			break;
-		}
-	}
 	foreach (($eqLogic->getCmd('info')) as $cmd) {
-		if ($cmd->getLogicalId() == 'wolSupport') {
+		if ($cmd->getLogicalId() == 'npvrSupport') {
 			$cmd->setSubType('binary');
 			$cmd->save();
 			break;
