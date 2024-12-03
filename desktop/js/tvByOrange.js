@@ -260,7 +260,7 @@ document.getElementById('orderChannel').addEventListener('click', function (even
 		success: function (data) {
 			window.location.reload();
 			jeedomUtils.showAlert({
-				message: 'All good dude!',
+				message: 'Liste de chaînes ordonnée par ordre croissant des numéros de chaînes',
 				level: 'success'
 			});
 		}
