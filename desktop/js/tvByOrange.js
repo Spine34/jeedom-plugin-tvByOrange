@@ -240,3 +240,29 @@ document.getElementById('addChannel').addEventListener('click', function (event)
 	addCmdToTable({ type: 'action', subType: 'other', configuration: { table: 'channel' } });
 	modifyWithoutSave = true;
 });
+
+document.getElementById('orderChannel').addEventListener('click', function (event) {
+	domUtils.ajax({
+		type: "POST",
+		url: "plugins/tvByOrange/core/ajax/tvByOrange.ajax.php",
+		data: {
+			action: "orderChannel",
+			eqLogicId: document.querySelector('.eqLogicAttr[data-l1key="id"]').jeeValue()
+		},
+		dataType: 'json',
+		global: false,
+		error: function (error) {
+			jeedomUtils.showAlert({
+				message: error.message,
+				level: 'danger'
+			});
+		},
+		success: function (data) {
+			window.location.reload();
+			jeedomUtils.showAlert({
+				message: 'All good dude!',
+				level: 'success'
+			});
+		}
+	});
+});

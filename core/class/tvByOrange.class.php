@@ -153,6 +153,20 @@ class tvByOrange extends eqLogic
 		}
 	}
 
+	public static function orderChannel($eqLogicId)
+	{
+		$eqLogic = eqLogic::byId($eqLogicId);
+		$cmds = $eqLogic->getCmd('action');
+		foreach ($cmds as $cmd) {
+			if ($cmd->getConfiguration('table') == 'channel') {
+				$cmd->setOrder(100 + $cmd->getConfiguration('number'));
+				$cmd->save();
+			}
+		}
+		$eqLogic->save();
+		log::add(__CLASS__, 'info', $eqLogic->getHumanName() . ' : Liste de chaînes ordonnée par ordre croissant des numéros de chaînes');
+	}
+
 	/*     * *********************Méthodes d'instance************************* */
 
 	// Fonction exécutée automatiquement avant la création de l'équipement
