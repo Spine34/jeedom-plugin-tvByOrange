@@ -202,7 +202,7 @@
 	{
 		"logicalId": "volumeSlider",
 		"generic_type": "SET_VOLUME",
-		"name": "volume Slider",
+		"name": "Volume Slider",
 		"type": "action",
 		"subType": "slider",
 		"configuration": {
