@@ -1,0 +1,654 @@
+[
+	{
+		"logicalId": "refresh",
+		"name": "Refresh",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "online",
+		"name": "Online",
+		"type": "info",
+		"subType": "binary",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "activeStandbyState",
+		"generic_type": "MEDIA_STATE",
+		"name": "Active Standby State",
+		"type": "info",
+		"subType": "binary",
+		"configuration": {
+			"table": "cmd",
+			"invertBinary": 1
+		}
+	},
+	{
+		"logicalId": "osdContext",
+		"name": "OSD Context",
+		"type": "info",
+		"subType": "string",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "playedMediaType",
+		"name": "Played Media Type",
+		"type": "info",
+		"subType": "string",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "playedMediaState",
+		"name": "Played Media State",
+		"type": "info",
+		"subType": "string",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "playedMediaId",
+		"name": "Played Media Id",
+		"type": "info",
+		"subType": "string",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "playedMediaContextId",
+		"name": "Played Media Context Id",
+		"type": "info",
+		"subType": "string",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "playedMediaPosition",
+		"name": "Played Media Position",
+		"type": "info",
+		"subType": "string",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "timeShiftingState",
+		"name": "Time Shifting State",
+		"type": "info",
+		"subType": "string",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "macAddress",
+		"name": "MAC Address",
+		"type": "info",
+		"subType": "string",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "wolSupport",
+		"name": "WoL Support",
+		"type": "info",
+		"subType": "binary",
+		"configuration": {
+			"table": "cmd"
+		},
+		"template": {
+			"dashboard": "core::line",
+			"mobile": "core::line"
+		}
+	},
+	{
+		"logicalId": "friendlyName",
+		"name": "Friendly Name",
+		"type": "info",
+		"subType": "string",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "npvrSupport",
+		"name": "Npvr Support",
+		"type": "info",
+		"subType": "binary",
+		"configuration": {
+			"table": "cmd"
+		},
+		"template": {
+			"dashboard": "core::line",
+			"mobile": "core::line"
+		}
+	},
+	{
+		"logicalId": "channelNumber",
+		"generic_type": "CHANNEL",
+		"name": "Channel Number",
+		"type": "info",
+		"subType": "string",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "channelText",
+		"name": "Channel Text",
+		"type": "info",
+		"subType": "string",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "volumeState",
+		"generic_type": "VOLUME",
+		"name": "Volume State",
+		"type": "info",
+		"subType": "numeric",
+		"configuration": {
+			"table": "cmd"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "channelSelect",
+		"name": "Channel Select",
+		"type": "action",
+		"subType": "select",
+		"configuration": {
+			"table": "cmd"
+		},
+		"value": "playedMediaId"
+	},
+	{
+		"logicalId": "customChannelSelect",
+		"name": "Custom Channel Select",
+		"type": "action",
+		"subType": "select",
+		"configuration": {
+			"table": "cmd"
+		},
+		"value": "playedMediaId"
+	},
+	{
+		"logicalId": "channelSlider",
+		"generic_type": "SET_CHANNEL",
+		"name": "Channel Slider",
+		"type": "action",
+		"subType": "slider",
+		"configuration": {
+			"table": "cmd",
+			"minValue": 1,
+			"maxValue": 999
+		},
+		"value": "channelNumber",
+		"isVisible": 0
+	},
+	{
+		"logicalId": "volumeSlider",
+		"generic_type": "SET_VOLUME",
+		"name": "Volume Slider",
+		"type": "action",
+		"subType": "slider",
+		"configuration": {
+			"table": "cmd",
+			"minValue": 1,
+			"maxValue": 16
+		},
+		"value": "volumeState",
+		"isVisible": 0
+	},
+	{
+		"logicalId": "vod",
+		"name": "Vod",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "393"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-film'></i>"
+		}
+	},
+	{
+		"logicalId": "up",
+		"name": "Up",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "103"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-chevron-up'></i>"
+		}
+	},
+	{
+		"logicalId": "onOff",
+		"generic_type": "MEDIA_ON",
+		"name": "On Off",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "116"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-power-off'></i>",
+			"forceReturnLineAfter": 1
+		}
+	},
+	{
+		"logicalId": "left",
+		"name": "Left",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "105"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-chevron-left'></i>"
+		}
+	},
+	{
+		"logicalId": "ok",
+		"name": "OK",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "352"
+		}
+	},
+	{
+		"logicalId": "right",
+		"name": "Right",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "106"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-chevron-right'></i>",
+			"forceReturnLineAfter": 1
+		}
+	},
+	{
+		"logicalId": "back",
+		"name": "Back",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "158"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-undo'></i>"
+		}
+	},
+	{
+		"logicalId": "down",
+		"name": "Down",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "108"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-chevron-down'></i>"
+		}
+	},
+	{
+		"logicalId": "menu",
+		"name": "Menu",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "139"
+		},
+		"display": {
+			"icon": "<i class='icon kiko-hamburger-menu'></i>",
+			"forceReturnLineAfter": 1
+		}
+	},
+	{
+		"logicalId": "volumeUp",
+		"name": "Volume Up",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "115"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-volume-up'></i>"
+		}
+	},
+	{
+		"logicalId": "1",
+		"name": "1",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "513"
+		}
+	},
+	{
+		"logicalId": "2",
+		"name": "2",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "514"
+		}
+	},
+	{
+		"logicalId": "3",
+		"name": "3",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "515"
+		}
+	},
+	{
+		"logicalId": "channelUp",
+		"name": "Channel Up",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "402"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-chevron-up'></i>",
+			"forceReturnLineAfter": 1
+		}
+	},
+	{
+		"logicalId": "volumeDown",
+		"name": "Volume Down",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "114"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-volume-down'></i>"
+		}
+	},
+	{
+		"logicalId": "4",
+		"name": "4",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "516"
+		}
+	},
+	{
+		"logicalId": "5",
+		"name": "5",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "517"
+		}
+	},
+	{
+		"logicalId": "6",
+		"name": "6",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "518"
+		}
+	},
+	{
+		"logicalId": "channelDown",
+		"name": "Channel Down",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "403"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-chevron-down'></i>",
+			"forceReturnLineAfter": 1
+		}
+	},
+	{
+		"logicalId": "muteUnmute",
+		"generic_type": "MEDIA_MUTE",
+		"name": "Mute Unmute",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "113"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-volume-mute'></i>"
+		}
+	},
+	{
+		"logicalId": "7",
+		"name": "7",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "519"
+		}
+	},
+	{
+		"logicalId": "8",
+		"name": "8",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "520"
+		}
+	},
+	{
+		"logicalId": "9",
+		"name": "9",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "521"
+		}
+	},
+	{
+		"logicalId": "0",
+		"name": "0",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "512"
+		},
+		"display": {
+			"forceReturnLineAfter": 1
+		}
+	},
+	{
+		"logicalId": "stop",
+		"generic_type": "MEDIA_STOP",
+		"name": "Stop",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "166"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-stop'></i>"
+		}
+	},
+	{
+		"logicalId": "rec",
+		"name": "Rec",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "167"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-circle icon_red'></i>"
+		}
+	},
+	{
+		"logicalId": "fbwd",
+		"name": "Fbwd",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "168"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-backward'></i>"
+		}
+	},
+	{
+		"logicalId": "playPause",
+		"generic_type": "MEDIA_RESUME",
+		"name": "Play Pause",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "164"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-play'></i>"
+		}
+	},
+	{
+		"logicalId": "ffwd",
+		"name": "Ffwd",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "159"
+		},
+		"display": {
+			"icon": "<i class='icon fas fa-forward'></i>",
+			"forceReturnLineAfter": 1
+		}
+	},
+	{
+		"logicalId": "off",
+		"generic_type": "MEDIA_OFF",
+		"name": "Off",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "116"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "unmute",
+		"generic_type": "MEDIA_UNMUTE",
+		"name": "Unmute",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "113"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "pause",
+		"generic_type": "MEDIA_PAUSE",
+		"name": "Pause",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd",
+			"key": "164"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "netflix",
+		"name": "Netflix",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "primeVideo",
+		"name": "Prime Video",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "disneyPlus",
+		"name": "Disney+",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "paramountPlus",
+		"name": "Paramount+",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd"
+		}
+	},
+	{
+		"logicalId": "max",
+		"name": "Max",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "cmd"
+		}
+	}
+]

@@ -18,13 +18,56 @@
 require_once dirname(__FILE__) . '/../../../core/php/core.inc.php';
 
 // Fonction exécutée automatiquement après l'installation du plugin
-function template_install() {
+function tvByOrange_install()
+{
+	$cron = cron::byClassAndFunction('tvByOrange', 'update');
+	if (!is_object($cron)) {
+		$cron = new cron();
+		$cron->setClass('tvByOrange');
+		$cron->setFunction('update');
+		$cron->setEnable(1);
+		$cron->setDeamon(1);
+		$cron->setSchedule('* * * * *');
+		$cron->setTimeout(1440);
+		$cron->setDeamonSleepTime(5);
+		$cron->save();
+		tvByOrange::deamon_start();
+	}
 }
 
 // Fonction exécutée automatiquement après la mise à jour du plugin
-function template_update() {
+function tvByOrange_update()
+{
+	$cron = cron::byClassAndFunction('tvByOrange', 'update');
+	if (!is_object($cron)) {
+		$cron = new cron();
+	}
+	$cron->setClass('tvByOrange');
+	$cron->setFunction('update');
+	$cron->setEnable(1);
+	$cron->setDeamon(1);
+	$cron->setTimeout(1440);
+	$cron->setSchedule('* * * * *');
+	$cron->setDeamonSleepTime(5);
+	$cron->save();
+	tvByOrange::deamon_start();
+}
+
+foreach (eqLogic::byType('tvByOrange') as $eqLogic) {
+	foreach (($eqLogic->getCmd('info')) as $cmd) {
+		if ($cmd->getLogicalId() == 'npvrSupport') {
+			$cmd->setSubType('binary');
+			$cmd->save();
+			break;
+		}
+	}
 }
 
 // Fonction exécutée automatiquement après la suppression du plugin
-function template_remove() {
+function tvByOrange_remove()
+{
+	$cron = cron::byClassAndFunction('tvByOrange', 'update');
+	if (is_object($cron)) {
+		$cron->remove();
+	}
 }

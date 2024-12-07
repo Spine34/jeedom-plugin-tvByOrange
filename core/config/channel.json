@@ -1,0 +1,806 @@
+[
+	{
+		"logicalId": "tf1",
+		"name": "TF1",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "1",
+			"epg_id": "192"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "france2",
+		"name": "France 2",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "2",
+			"epg_id": "4"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "france3",
+		"name": "France 3",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "3",
+			"epg_id": "1934"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "canalPlus",
+		"name": " CANAL+",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "4",
+			"epg_id": "34"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "france5",
+		"name": "France 5",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "5",
+			"epg_id": "47"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "m6",
+		"name": "M6",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "6",
+			"epg_id": "118"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "arte",
+		"name": "ARTE",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "7",
+			"epg_id": "111"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "c8",
+		"name": "C8",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "8",
+			"epg_id": "445"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "w9",
+		"name": "W9",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "9",
+			"epg_id": "119"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "tmc",
+		"name": "TMC",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "10",
+			"epg_id": "195"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "tfx",
+		"name": "TFX",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "11",
+			"epg_id": "446"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "nrj12",
+		"name": "NRJ12",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "12",
+			"epg_id": "444"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "lcp",
+		"name": "LCP",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "13",
+			"epg_id": "234"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "france4",
+		"name": "France 4",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "14",
+			"epg_id": "78"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "bfmTv",
+		"name": "BFM TV",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "15",
+			"epg_id": "481"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "cnews",
+		"name": "CNEWS",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "16",
+			"epg_id": "226"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "cStar",
+		"name": "CSTAR",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "17",
+			"epg_id": "458"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "gulli",
+		"name": "Gulli",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "18",
+			"epg_id": "482"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "tf1SeriesFilms",
+		"name": "TF1 Séries Films",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "20",
+			"epg_id": "1404"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "laChaineLEquipe",
+		"name": "La chaîne l'Equipe",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "21",
+			"epg_id": "1401"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "6ter",
+		"name": "6ter",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "22",
+			"epg_id": "1403"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "rmcStory",
+		"name": "RMC Story",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "23",
+			"epg_id": "1402"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "rmcDecouverte",
+		"name": "RMC Découverte",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "24",
+			"epg_id": "1400"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "cherie25",
+		"name": "Chérie 25",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "25",
+			"epg_id": "1399"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "lci",
+		"name": "LCI",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "26",
+			"epg_id": "112"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "franceinfo",
+		"name": "Franceinfo:",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "27",
+			"epg_id": "2111"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "tv5Monde",
+		"name": "TV5 Monde",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "33",
+			"epg_id": "205"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "mtv",
+		"name": "MTV",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "76",
+			"epg_id": "128"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "bet",
+		"name": "BET",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "77",
+			"epg_id": "1960"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "warnerTv",
+		"name": "Warner TV",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "78",
+			"epg_id": "2334"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "tlc",
+		"name": "TLC",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "79",
+			"epg_id": "1374"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "tvPitchoun",
+		"name": "TV Pitchoun",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "91",
+			"epg_id": "2803"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "lEspritSorcierTv",
+		"name": "L’Esprit Sorcier TV",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "111",
+			"epg_id": "3561"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "museum",
+		"name": "Museum",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "112",
+			"epg_id": "1072"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "MaisonEtTravauxTv",
+		"name": "Maison et Travaux TV",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "113",
+			"epg_id": "3360"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "TopSanteTv",
+		"name": "Top Santé TV",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "114",
+			"epg_id": "3106"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "discoveryInvestigation",
+		"name": "Discovery Investigation",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "116",
+			"epg_id": "2184"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "marmitonTv",
+		"name": "Marmiton TV",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "117",
+			"epg_id": "3155"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "mggTv",
+		"name": "MGG TV",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "140",
+			"epg_id": "2353"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "nrjHits",
+		"name": "NRJ Hits",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "151",
+			"epg_id": "605"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "mtvHits",
+		"name": "MTV Hits",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "152",
+			"epg_id": "2006"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "melodyDAfrique",
+		"name": "Melody d'Afrique",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "153",
+			"epg_id": "2321"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "clubbingTv",
+		"name": "Clubbing TV",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "155",
+			"epg_id": "1989"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "journalDuGolfTv",
+		"name": "Journal du Golf TV",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "172",
+			"epg_id": "3629"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "equidia",
+		"name": "Equidia",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "173",
+			"epg_id": "64"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "sportEnFrance",
+		"name": "Sport en France",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "174",
+			"epg_id": "2837"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "luckyJack",
+		"name": "Lucky Jack",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "211",
+			"epg_id": "1061"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "fashionTvParis",
+		"name": "FashionTV Paris",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "213",
+			"epg_id": "1996"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "luxeTv",
+		"name": "Luxe TV",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "115",
+			"epg_id": "531"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "sqoolTv",
+		"name": "Sqool TV",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "217",
+			"epg_id": "3767"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "demainTv",
+		"name": "Demain TV",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "219",
+			"epg_id": "57"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "kto",
+		"name": "KTO",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "220",
+			"epg_id": "110"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "lcp100Percent",
+		"name": "LCP 100%",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "223",
+			"epg_id": "992"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "france24EnFrancais",
+		"name": "France 24 (en français)",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "225",
+			"epg_id": "529"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "bfmBusiness",
+		"name": "BFM Business",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "228",
+			"epg_id": "1073"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "euronewsFrancais",
+		"name": "Euronews Français",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "229",
+			"epg_id": "140"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "france24EnAnglais",
+		"name": "France 24 (en anglais)",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "232",
+			"epg_id": "671"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "cnn",
+		"name": "CNN",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "234",
+			"epg_id": "53"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "cnbc",
+		"name": "CNBC",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "235",
+			"epg_id": "51"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "bloombergEurope",
+		"name": "Bloomberg Europe",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "236",
+			"epg_id": "410"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "bbcNews",
+		"name": "BBC News",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "237",
+			"epg_id": "19"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "alJazeeraEnAnglais",
+		"name": "Al Jazeera (en anglais)",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "238",
+			"epg_id": "525"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "france24EnArabe",
+		"name": "France 24 (en arabe)",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "240",
+			"epg_id": "3413"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "i24News",
+		"name": "i24 News",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "243",
+			"epg_id": "781"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "nhkWorldJapan",
+		"name": "NHK World Japan",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "244",
+			"epg_id": "830"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "deutscheWelleEnAnglais",
+		"name": "Deutsche Welle (en anglais)",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "245",
+			"epg_id": "61"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "france24EnEspagnol",
+		"name": "France 24 (en espagnol)",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "247",
+			"epg_id": "3562"
+		},
+		"isVisible": 0
+	}
+]
