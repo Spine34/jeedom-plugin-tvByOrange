@@ -258,11 +258,7 @@ document.getElementById('orderChannel').addEventListener('click', function (even
 			});
 		},
 		success: function (data) {
-			window.location.reload();
-			jeedomUtils.showAlert({
-				message: 'Liste de chaînes ordonnée par ordre croissant des numéros de chaînes',
-				level: 'success'
-			});
+			jeedomUtils.reloadPagePrompt('{{Liste de chaînes ordonnée avec succès.}}');
 		}
 	});
 });

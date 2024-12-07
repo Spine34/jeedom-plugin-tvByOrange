@@ -114,7 +114,7 @@ class tvByOrange extends eqLogic
 		self::deamon_stop();
 		$deamon_info = self::deamon_info();
 		if ($deamon_info['launchable'] != 'ok') {
-			throw new Exception(__('Veuillez vérifier la configuration', __FILE__));
+			throw new Exception('Veuillez vérifier la configuration');
 		}
 		$cron = cron::byClassAndFunction(__CLASS__, 'update');
 		if (!is_object($cron)) {
@@ -163,7 +163,7 @@ class tvByOrange extends eqLogic
 				$cmd->save();
 			}
 		}
-		$eqLogic->save();
+		$eqLogic->updateCmdChannelSelect();
 		log::add(__CLASS__, 'info', $eqLogic->getHumanName() . ' : Liste de chaînes ordonnée par ordre croissant des numéros de chaînes');
 	}
 
@@ -266,30 +266,7 @@ class tvByOrange extends eqLogic
 
 	public function postAjax()
 	{
-		$channelSelect = '';
-		$customListValue = '';
-		if (!empty($this->getConfiguration('ip'))) {
-			$cmds = $this->getCmd('action');
-			foreach ($cmds as $cmd) {
-				if ($cmd->getConfiguration('table') == 'channel') {
-					$channelSelect .= $cmd->getConfiguration('epg_id') . '|' . $cmd->getName() . ';';
-					if ($cmd->getConfiguration('customChannelSelect') == 1) {
-						$customChannelSelect .= $cmd->getConfiguration('epg_id') . '|' . $cmd->getName() . ';';
-					}
-				}
-			}
-			$channelSelect = rtrim($channelSelect, ';');
-			log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $channelSelect : ' . $channelSelect);
-			$cmdChannelSelect = $this->getCmd('action', 'channelSelect');
-			$cmdChannelSelect->setConfiguration('listValue', $channelSelect);
-			$cmdChannelSelect->save();
-
-			$customChannelSelect = rtrim($customChannelSelect, ';');
-			log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $customChannelSelect : ' . $customChannelSelect);
-			$cmdCustomChannelSelect = $this->getCmd('action', 'customChannelSelect');
-			$cmdCustomChannelSelect->setConfiguration('listValue', $customChannelSelect);
-			$cmdCustomChannelSelect->save();
-		}
+		$this->updateCmdChannelSelect();
 	}
 
 	// Fonction exécutée automatiquement avant la suppression de l'équipement
@@ -401,7 +378,7 @@ class tvByOrange extends eqLogic
 		}
 	}
 
-	public function sendChannel($epg_id)
+	public function sendChannel()
 	{
 		if (!empty($this->getConfiguration('ip'))) {
 			$epg_id = str_pad($epg_id, 10, '*', STR_PAD_LEFT);
@@ -425,6 +402,34 @@ class tvByOrange extends eqLogic
 			}
 
 			curl_close($ch);
+		}
+	}
+
+	public function updateCmdChannelSelect()
+	{
+		$channelSelect = '';
+		$customListValue = '';
+		if (!empty($this->getConfiguration('ip'))) {
+			$cmds = $this->getCmd('action');
+			foreach ($cmds as $cmd) {
+				if ($cmd->getConfiguration('table') == 'channel') {
+					$channelSelect .= $cmd->getConfiguration('epg_id') . '|' . $cmd->getName() . ';';
+					if ($cmd->getConfiguration('customChannelSelect') == 1) {
+						$customChannelSelect .= $cmd->getConfiguration('epg_id') . '|' . $cmd->getName() . ';';
+					}
+				}
+			}
+			$channelSelect = rtrim($channelSelect, ';');
+			log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $channelSelect : ' . $channelSelect);
+			$cmdChannelSelect = $this->getCmd('action', 'channelSelect');
+			$cmdChannelSelect->setConfiguration('listValue', $channelSelect);
+			$cmdChannelSelect->save();
+
+			$customChannelSelect = rtrim($customChannelSelect, ';');
+			log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $customChannelSelect : ' . $customChannelSelect);
+			$cmdCustomChannelSelect = $this->getCmd('action', 'customChannelSelect');
+			$cmdCustomChannelSelect->setConfiguration('listValue', $customChannelSelect);
+			$cmdCustomChannelSelect->save();
 		}
 	}
 

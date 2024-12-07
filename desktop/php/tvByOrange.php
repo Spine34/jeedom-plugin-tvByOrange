@@ -179,7 +179,7 @@ $eqLogics = eqLogic::byType($plugin->getId());
 			<!-- Onglet des chaînes de l'équipement -->
 			<div role="tabpanel" class="tab-pane" id="channeltab">
 				<a class="btn btn-default btn-sm pull-right cmdAction" style="margin-top:5px;" id="addChannel"><i class="fas fa-plus-circle"></i> {{Ajouter une chaîne}}</a>
-				<a class="btn btn-default btn-sm pull-right cmdAction" style="margin-top:5px;" id="orderChannel" data-title="Ordonner la liste de chaînes par ordre croissant des numéros de chaînes"><i class="icon fas fa-sort-numeric-down"></i> {{Ordonner les chaînes}}</a>
+				<a class="btn btn-default btn-sm pull-right cmdAction" style="margin-top:5px;" id="orderChannel" title="Ordonner la liste de chaînes par ordre croissant des numéros de chaînes"><i class="icon fas fa-sort-numeric-down"></i> {{Ordonner les chaînes}}</a>
 				<br><br>
 				<div class="table-responsive">
 					<table id="table_channel" class="table table-bordered table-condensed">
