@@ -378,7 +378,7 @@ class tvByOrange extends eqLogic
 		}
 	}
 
-	public function sendChannel()
+	public function sendChannel($epg_id)
 	{
 		if (!empty($this->getConfiguration('ip'))) {
 			$epg_id = str_pad($epg_id, 10, '*', STR_PAD_LEFT);
