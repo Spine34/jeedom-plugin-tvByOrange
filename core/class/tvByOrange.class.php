@@ -350,6 +350,7 @@ class tvByOrange extends eqLogic
 			}
 
 			curl_close($ch);
+			unset($ch);
 		}
 	}
 
@@ -375,6 +376,7 @@ class tvByOrange extends eqLogic
 			}
 
 			curl_close($ch);
+			unset($ch);
 		}
 	}
 
@@ -402,6 +404,7 @@ class tvByOrange extends eqLogic
 			}
 
 			curl_close($ch);
+			unset($ch);
 		}
 	}
 
