@@ -350,6 +350,7 @@ class tvByOrange extends eqLogic
 			}
 
 			curl_close($ch);
+			unset($ch);
 		}
 	}
 
@@ -375,10 +376,11 @@ class tvByOrange extends eqLogic
 			}
 
 			curl_close($ch);
+			unset($ch);
 		}
 	}
 
-	public function sendChannel()
+	public function sendChannel($epg_id)
 	{
 		if (!empty($this->getConfiguration('ip'))) {
 			$epg_id = str_pad($epg_id, 10, '*', STR_PAD_LEFT);
@@ -402,6 +404,7 @@ class tvByOrange extends eqLogic
 			}
 
 			curl_close($ch);
+			unset($ch);
 		}
 	}
 
