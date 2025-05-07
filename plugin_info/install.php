@@ -54,13 +54,7 @@ function tvByOrange_update()
 }
 
 foreach (eqLogic::byType('tvByOrange') as $eqLogic) {
-	foreach (($eqLogic->getCmd('info')) as $cmd) {
-		if ($cmd->getLogicalId() == 'npvrSupport') {
-			$cmd->setSubType('binary');
-			$cmd->save();
-			break;
-		}
-	}
+	$eqLogic->save();
 }
 
 // Fonction exécutée automatiquement après la suppression du plugin

@@ -324,6 +324,330 @@
 		"isVisible": 0
 	},
 	{
+		"logicalId": "teva",
+		"name": "Téva",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "34",
+			"epg_id": "191"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "parisPremiere",
+		"name": "Paris Première",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "35",
+			"epg_id": "145"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "rtl9",
+		"name": "RTL9",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "36",
+			"epg_id": "115"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "tvBreizh",
+		"name": "TV Breizh",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "37",
+			"epg_id": "225"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "canalPlusSport360",
+		"name": "CANAL+ Sport 360",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "38",
+			"epg_id": "3504"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "canalPlusFoot",
+		"name": "CANAL+ Foot",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "39",
+			"epg_id": "3501"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "canalPlusSport",
+		"name": "CANAL+ Sport",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "40",
+			"epg_id": "35"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "canalPlusBoxOffice",
+		"name": "CANAL+ Box Office",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "41",
+			"epg_id": "3779"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "canalPlusGrandEcran",
+		"name": "CANAL+ Grand Ecran",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "42",
+			"epg_id": "3349"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "canalPlusCinemaS",
+		"name": "CANAL+ Cinéma(s)",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "43",
+			"epg_id": "33"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "canalPlusSeries",
+		"name": "CANAL+ Séries",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "44",
+			"epg_id": "1563"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "canalPlusDocs",
+		"name": "CANAL+ Docs",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "45",
+			"epg_id": "3347"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "canalPlusKids",
+		"name": "CANAL+ Kids",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "46",
+			"epg_id": "3348"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "beInSports1",
+		"name": "beIN SPORTS 1",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "47",
+			"epg_id": "1290"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "beInSports2",
+		"name": "beIN SPORTS 2",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "48",
+			"epg_id": "1304"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "beInSports3",
+		"name": "beIN SPORTS 3",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "49",
+			"epg_id": "1335"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "ocs",
+		"name": "OCS",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "51",
+			"epg_id": "282"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "cinePlusFrisson",
+		"name": "CINÉ+frisson",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "52",
+			"epg_id": "284"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "cinePlusEmotion",
+		"name": "CINÉ+émotion",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "53",
+			"epg_id": "283"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "cinePlusFamily",
+		"name": "CINÉ+family",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "54",
+			"epg_id": "401"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "cinePlusFestival",
+		"name": "CINÉ+festival",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "55",
+			"epg_id": "285"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "cinePlusClassic",
+		"name": "CINÉ+classic",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "56",
+			"epg_id": "287"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "paramountChannel",
+		"name": "Paramount Channel",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "60",
+			"epg_id": "1562"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "paramountChannelDecale",
+		"name": "Paramount Channel décalé",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "61",
+			"epg_id": "2072"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "tcmCinema",
+		"name": "TCM Cinéma",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "62",
+			"epg_id": "185"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "action",
+		"name": "Action",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "63",
+			"epg_id": "10"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "eurochanne",
+		"name": "Eurochanne",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "65",
+			"epg_id": "1190"
+		},
+		"isVisible": 0
+	},
+	{
 		"logicalId": "mtv",
 		"name": "MTV",
 		"type": "action",
@@ -372,6 +696,102 @@
 		"isVisible": 0
 	},
 	{
+		"logicalId": "ab1",
+		"name": "AB1",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "81",
+			"epg_id": "5"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "comedyCentral",
+		"name": "Comedy Central",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "82",
+			"epg_id": "2752"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "gameOne",
+		"name": "Game One",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "83",
+			"epg_id": "87"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "gameOnePlus1",
+		"name": "Game One +1",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "84",
+			"epg_id": "1167"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "comediePlus",
+		"name": "Comédie+",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "86",
+			"epg_id": "54"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "polarPlus",
+		"name": "Polar+",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "87",
+			"epg_id": "2326"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "serieClub",
+		"name": "Série Club",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "88",
+			"epg_id": "49"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "disneyChannel",
+		"name": "Disney Channel",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "90",
+			"epg_id": "58"
+		},
+		"isVisible": 0
+	},
+	{
 		"logicalId": "tvPitchoun",
 		"name": "TV Pitchoun",
 		"type": "action",
@@ -380,6 +800,162 @@
 			"table": "channel",
 			"number": "91",
 			"epg_id": "2803"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "boomerang",
+		"name": "Boomerang",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "94",
+			"epg_id": "321"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "boomerangPlus1",
+		"name": "Boomerang +1",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "95",
+			"epg_id": "928"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "cartoonito",
+		"name": "Cartoonito",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "96",
+			"epg_id": "3738"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "tiji",
+		"name": "Tiji",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "97",
+			"epg_id": "229"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "canalJ",
+		"name": "Canal J",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "98",
+			"epg_id": "32"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "nickelodeonJunior",
+		"name": "Nickelodeon Junior",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "99",
+			"epg_id": "888"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "nickelodeon",
+		"name": "Nickelodeon",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "100",
+			"epg_id": "473"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "nickelodeonPlus1",
+		"name": "Nickelodeon+1",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "101",
+			"epg_id": "2065"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "nickelodeonTeen",
+		"name": "Nickelodeon Teen",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "102",
+			"epg_id": "1746"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "piwiPlus",
+		"name": "Piwi+",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "105",
+			"epg_id": "344"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "teleToonPlus",
+		"name": "TéléToon+",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "106",
+			"epg_id": "197"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "teleToonPlus1",
+		"name": "TéléToon+ 1",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "107",
+			"epg_id": "293"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "nationalGeographic",
+		"name": "National Geographic",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "110",
+			"epg_id": "508"
 		},
 		"isVisible": 0
 	},
@@ -456,6 +1032,138 @@
 		"isVisible": 0
 	},
 	{
+		"logicalId": "animaux",
+		"name": "Animaux",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "120",
+			"epg_id": "12"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "crimeDistrict",
+		"name": "Crime District",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "121",
+			"epg_id": "2037"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "chasseEtPeche",
+		"name": "Chasse & Pêche",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "122",
+			"epg_id": "38"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "touteLHistoire",
+		"name": "Toute l'Histoire",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "123",
+			"epg_id": "7"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "histoireTv",
+		"name": "Histoire TV",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "124",
+			"epg_id": "88"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "ushuaiaTv",
+		"name": "Ushuaïa TV",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "125",
+			"epg_id": "451"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "myZenTv",
+		"name": "MyZen TV",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "126",
+			"epg_id": "829"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "scienceEtVieTv",
+		"name": "Science & Vie TV",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "127",
+			"epg_id": "63"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "planetePlus",
+		"name": "Planète +",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "132",
+			"epg_id": "147"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "planetePlusCrime",
+		"name": "Planète+Crime",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "133",
+			"epg_id": "662"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "planetePlusAventure",
+		"name": "Planète+Aventure",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "134",
+			"epg_id": "402"
+		},
+		"isVisible": 0
+	},
+	{
 		"logicalId": "mggTv",
 		"name": "MGG TV",
 		"type": "action",
@@ -464,6 +1172,66 @@
 			"table": "channel",
 			"number": "140",
 			"epg_id": "2353"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "techEtCo",
+		"name": "Tech&Co",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "141",
+			"epg_id": "2942"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "mcm",
+		"name": "MCM",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "142",
+			"epg_id": "121"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "mangas",
+		"name": "Mangas",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "145",
+			"epg_id": "6"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "warnerTvNext",
+		"name": "Warner TV Next",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "146",
+			"epg_id": "2040"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "jOne",
+		"name": "J-One",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "147",
+			"epg_id": "1585"
 		},
 		"isVisible": 0
 	},
@@ -516,6 +1284,78 @@
 		"isVisible": 0
 	},
 	{
+		"logicalId": "m6Music",
+		"name": "M6 Music",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "157",
+			"epg_id": "453"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "melody",
+		"name": "Melody",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "160",
+			"epg_id": "265"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "olympiaTv",
+		"name": "Olympia TV",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "166",
+			"epg_id": "2958"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "mezzo",
+		"name": "Mezzo",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "167",
+			"epg_id": "125"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "mezzoLive",
+		"name": "Mezzo Live",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "168",
+			"epg_id": "907"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "stingrayClassica",
+		"name": "Stingray Classica",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "169",
+			"epg_id": "1353"
+		},
+		"isVisible": 0
+	},
+	{
 		"logicalId": "journalDuGolfTv",
 		"name": "Journal du Golf TV",
 		"type": "action",
@@ -548,6 +1388,138 @@
 			"table": "channel",
 			"number": "174",
 			"epg_id": "2837"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "beInSports1",
+		"name": "beIN SPORTS 1",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "176",
+			"epg_id": "1290"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "beInSports2",
+		"name": "beIN SPORTS 2",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "177",
+			"epg_id": "1304"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "beInSports3",
+		"name": "beIN SPORTS 3",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "178",
+			"epg_id": "1335"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "beInSportsMax4",
+		"name": "beIN SPORTS MAX 4",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "179",
+			"epg_id": "1336"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "beInSportsMax5",
+		"name": "beIN SPORTS MAX 5",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "180",
+			"epg_id": "1337"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "beInSportsMax6",
+		"name": "beIN SPORTS MAX 6",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "181",
+			"epg_id": "1338"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "beInSportsMax7",
+		"name": "beIN SPORTS MAX 7",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "182",
+			"epg_id": "1339"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "beInSportsMax8",
+		"name": "beIN SPORTS MAX 8",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "183",
+			"epg_id": "1340"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "beInSportsMax9",
+		"name": "beIN SPORTS MAX 9",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "184",
+			"epg_id": "1341"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "beInSportsMax10",
+		"name": "beIN SPORTS MAX 10",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "185",
+			"epg_id": "1342"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "automotoLaChaine",
+		"name": "Automoto la chaîne",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "196",
+			"epg_id": "15"
 		},
 		"isVisible": 0
 	},
