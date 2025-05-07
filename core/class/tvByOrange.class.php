@@ -340,7 +340,10 @@ class tvByOrange extends eqLogic
 						}
 					}
 					if (!$epg_id) {
-						log::add(__CLASS__, 'error', $this->getHumanName() . ' : L\'ID EPG ' . $result['result']['data']['playedMediaId'] . ' n\'existe pas dans la liste des chaînes');
+						log::add(__CLASS__, 'warning', $this->getHumanName() . ' : L\'ID EPG ' . $result['result']['data']['playedMediaId'] . ' n\'existe pas dans la liste des chaînes');
+						if ($this->getConfiguration('messageAdd') == 1) {
+							message::add(__CLASS__, $this->getHumanName() . ' : L\'ID EPG ' . $result['result']['data']['playedMediaId'] . ' n\'existe pas dans la liste des chaînes');
+						}
 					}
 				} else {
 					$this->checkAndUpdateCmd('channelNumber', 'NA');
