@@ -84,18 +84,6 @@
 		"isVisible": 0
 	},
 	{
-		"logicalId": "c8",
-		"name": "C8",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "channel",
-			"number": "8",
-			"epg_id": "445"
-		},
-		"isVisible": 0
-	},
-	{
 		"logicalId": "w9",
 		"name": "W9",
 		"type": "action",
@@ -128,18 +116,6 @@
 			"table": "channel",
 			"number": "11",
 			"epg_id": "446"
-		},
-		"isVisible": 0
-	},
-	{
-		"logicalId": "nrj12",
-		"name": "NRJ12",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "channel",
-			"number": "12",
-			"epg_id": "444"
 		},
 		"isVisible": 0
 	},
