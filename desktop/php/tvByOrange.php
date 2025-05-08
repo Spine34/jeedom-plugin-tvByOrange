@@ -136,6 +136,14 @@ $eqLogics = eqLogic::byType($plugin->getId());
 									<input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="ip">
 								</div>
 							</div>
+							<div class="form-group">
+								<label class="col-sm-4 control-label">{{Ajouter un message}}
+									<sup><i class="fas fa-question-circle tooltips" title="{{Permet d'ajouter un message dans le Centre de Messages lorqu'une chaîne qui n'existe pas dans la liste des chaînes est détectée}}"></i></sup>
+								</label>
+								<div class="col-sm-6">
+									<input type="checkbox" class="eqLogicAttr" data-l1key="configuration" data-l2key="messageAdd">
+								</div>
+							</div>
 						</div>
 
 						<!-- Partie droite de l'onglet "Équipement" -->
