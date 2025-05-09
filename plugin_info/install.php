@@ -54,7 +54,13 @@ function tvByOrange_update()
 }
 
 foreach (eqLogic::byType('tvByOrange') as $eqLogic) {
+	foreach (($eqLogic->getCmd('action')) as $cmd) {
+		if ($cmd->getLogicalId() == 'c8' || $cmd->getLogicalId() == 'nrj12') {
+			$cmd->remove();
+		}
+	}
 	$eqLogic->save();
+	$eqLogic->postAjax();
 }
 
 // Fonction exécutée automatiquement après la suppression du plugin
