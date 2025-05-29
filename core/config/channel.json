@@ -300,13 +300,25 @@
 		"isVisible": 0
 	},
 	{
+		"logicalId": "rtl9",
+		"name": "RTL9",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "34",
+			"epg_id": "115"
+		},
+		"isVisible": 0
+	},
+	{
 		"logicalId": "teva",
 		"name": "Téva",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "34",
+			"number": "35",
 			"epg_id": "191"
 		},
 		"isVisible": 0
@@ -318,20 +330,8 @@
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "35",
-			"epg_id": "145"
-		},
-		"isVisible": 0
-	},
-	{
-		"logicalId": "rtl9",
-		"name": "RTL9",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "channel",
 			"number": "36",
-			"epg_id": "115"
+			"epg_id": "145"
 		},
 		"isVisible": 0
 	},

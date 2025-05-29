@@ -323,9 +323,7 @@ class tvByOrange extends eqLogic
 				$this->checkAndUpdateCmd('wolSupport', $result['result']['data']['wolSupport']);
 				$this->checkAndUpdateCmd('friendlyName', $result['result']['data']['friendlyName']);
 				$this->checkAndUpdateCmd('activeStandbyState', $result['result']['data']['activeStandbyState']);
-				if (isset($result['result']['data']['npvrSupport'])) {
-					$this->checkAndUpdateCmd('activeStandbyState', $result['result']['data']['npvrSupport']);
-				}
+				$this->checkAndUpdateCmd('npvrSupport', $result['result']['data']['npvrSupport']);
 				$cmds = $this->getCmd('action');
 				$epg_id = false;
 				if (preg_match('/[1-9]/', $result['result']['data']['playedMediaId']) === 1) {
