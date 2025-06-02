@@ -57,6 +57,7 @@ if (!is_file(dirname(__FILE__, 2) . '/core/config/channel.json')) {
 	throw new Exception(__('Fichier channel.json non trouvé', __FILE__));
 }
 $cmdsArray = json_decode(file_get_contents(dirname(__FILE__) . '/../config/channel.json'), true);
+log::add(__CLASS__, 'debug', $this->getHumanName() . ' : $cmdsArray : ' . json_encode($cmdsArray));
 foreach (eqLogic::byType('tvByOrange') as $eqLogic) {
 	foreach (($eqLogic->getCmd('action')) as $cmd) {
 		if ($cmd->getLogicalId() == 'c8' || $cmd->getLogicalId() == 'nrj12') {
