@@ -74,6 +74,7 @@ foreach (eqLogic::byType('tvByOrange') as $eqLogic) {
 		} else {
 			foreach ($cmdsArray as $cmdArray) {
 				if ($cmd->getLogicalId() == $cmdArray['logicalId']) {
+					log::add('tvByOrange', 'debug', 'test');
 					if (isset($cmdArray['configuration'])) {
 						foreach ($cmdArray['configuration'] as $key => $value) {
 							$cmd->setConfiguration($key, $value);
