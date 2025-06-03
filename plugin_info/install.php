@@ -74,7 +74,7 @@ foreach (eqLogic::byType('tvByOrange') as $eqLogic) {
 			}
 		}
 	}
-	// $eqLogic->save();
+	$eqLogic->save();
 	$eqLogic->postAjax();
 }
 
