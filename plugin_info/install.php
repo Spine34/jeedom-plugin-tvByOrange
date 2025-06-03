@@ -78,6 +78,7 @@ foreach (eqLogic::byType('tvByOrange') as $eqLogic) {
 					if (isset($cmdArray['configuration'])) {
 						foreach ($cmdArray['configuration'] as $key => $value) {
 							$cmd->setConfiguration($key, $value);
+							$cmd->save();
 						}
 					}
 				}
