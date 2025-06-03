@@ -412,7 +412,7 @@ class tvByOrange extends eqLogic
 	public function updateCmdChannelSelect()
 	{
 		$channelSelect = '';
-		$customListValue = '';
+		$customChannelSelect = '';
 		if (!empty($this->getConfiguration('ip'))) {
 			$cmds = $this->getCmd('action');
 			foreach ($cmds as $cmd) {
