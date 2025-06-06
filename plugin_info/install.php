@@ -59,7 +59,7 @@ if (!is_file(dirname(__FILE__) . '/../core/config/channel.json')) {
 $cmdsArray = json_decode(file_get_contents(dirname(__FILE__) . '/../core/config/channel.json'), true);
 foreach (eqLogic::byType('tvByOrange') as $eqLogic) {
 	foreach (($eqLogic->getCmd('action')) as $cmd) {
-		if ($cmd->getLogicalId() == 'c8' || $cmd->getLogicalId() == 'nrj12') {
+		if ($cmd->getLogicalId() == 'c8' || $cmd->getLogicalId() == 'nrj12' || $cmd->getLogicalId() == 'canalPlusSeries' || $cmd->getLogicalId() == 'paramountChannel' || $cmd->getLogicalId() == 'paramountChannelDecale' || $cmd->getLogicalId() == 'eurochanne') {
 			$cmd->remove();
 		} else {
 			foreach ($cmdsArray as $cmdArray) {

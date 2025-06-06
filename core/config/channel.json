@@ -36,14 +36,14 @@
 		"isVisible": 0
 	},
 	{
-		"logicalId": "canalPlus",
-		"name": " CANAL+",
+		"logicalId": "france4",
+		"name": "France 4",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
 			"number": "4",
-			"epg_id": "34"
+			"epg_id": "78"
 		},
 		"isVisible": 0
 	},
@@ -84,6 +84,18 @@
 		"isVisible": 0
 	},
 	{
+		"logicalId": "lcp",
+		"name": "LCP",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "8",
+			"epg_id": "234"
+		},
+		"isVisible": 0
+	},
+	{
 		"logicalId": "w9",
 		"name": "W9",
 		"type": "action",
@@ -120,26 +132,14 @@
 		"isVisible": 0
 	},
 	{
-		"logicalId": "lcp",
-		"name": "LCP",
+		"logicalId": "gulli",
+		"name": "Gulli",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "13",
-			"epg_id": "234"
-		},
-		"isVisible": 0
-	},
-	{
-		"logicalId": "france4",
-		"name": "France 4",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "channel",
-			"number": "14",
-			"epg_id": "78"
+			"number": "12",
+			"epg_id": "482"
 		},
 		"isVisible": 0
 	},
@@ -150,7 +150,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "15",
+			"number": "13",
 			"epg_id": "481"
 		},
 		"isVisible": 0
@@ -162,8 +162,32 @@
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "16",
+			"number": "14",
 			"epg_id": "226"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "lci",
+		"name": "LCI",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "15",
+			"epg_id": "112"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "franceinfo",
+		"name": "Franceinfo:",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "16",
+			"epg_id": "2111"
 		},
 		"isVisible": 0
 	},
@@ -180,14 +204,14 @@
 		"isVisible": 0
 	},
 	{
-		"logicalId": "gulli",
-		"name": "Gulli",
+		"logicalId": "t18",
+		"name": "T18",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
 			"number": "18",
-			"epg_id": "482"
+			"epg_id": "4139"
 		},
 		"isVisible": 0
 	},
@@ -264,30 +288,6 @@
 		"isVisible": 0
 	},
 	{
-		"logicalId": "lci",
-		"name": "LCI",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "channel",
-			"number": "26",
-			"epg_id": "112"
-		},
-		"isVisible": 0
-	},
-	{
-		"logicalId": "franceinfo",
-		"name": "Franceinfo:",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "channel",
-			"number": "27",
-			"epg_id": "2111"
-		},
-		"isVisible": 0
-	},
-	{
 		"logicalId": "tv5Monde",
 		"name": "TV5 Monde",
 		"type": "action",
@@ -348,13 +348,25 @@
 		"isVisible": 0
 	},
 	{
+		"logicalId": "canalPlus",
+		"name": " CANAL+",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "40",
+			"epg_id": "34"
+		},
+		"isVisible": 0
+	},
+	{
 		"logicalId": "canalPlusSport360",
 		"name": "CANAL+ Sport 360",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "38",
+			"number": "42",
 			"epg_id": "3504"
 		},
 		"isVisible": 0
@@ -366,7 +378,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "39",
+			"number": "43",
 			"epg_id": "3501"
 		},
 		"isVisible": 0
@@ -378,7 +390,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "40",
+			"number": "44",
 			"epg_id": "35"
 		},
 		"isVisible": 0
@@ -390,7 +402,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "41",
+			"number": "45",
 			"epg_id": "3779"
 		},
 		"isVisible": 0
@@ -402,7 +414,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "42",
+			"number": "46",
 			"epg_id": "3349"
 		},
 		"isVisible": 0
@@ -414,20 +426,8 @@
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "43",
+			"number": "47",
 			"epg_id": "33"
-		},
-		"isVisible": 0
-	},
-	{
-		"logicalId": "canalPlusSeries",
-		"name": "CANAL+ Séries",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "channel",
-			"number": "44",
-			"epg_id": "1563"
 		},
 		"isVisible": 0
 	},
@@ -438,7 +438,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "45",
+			"number": "48",
 			"epg_id": "3347"
 		},
 		"isVisible": 0
@@ -450,7 +450,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "46",
+			"number": "49",
 			"epg_id": "3348"
 		},
 		"isVisible": 0
@@ -462,7 +462,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "47",
+			"number": "50",
 			"epg_id": "1290"
 		},
 		"isVisible": 0
@@ -474,7 +474,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "48",
+			"number": "51",
 			"epg_id": "1304"
 		},
 		"isVisible": 0
@@ -486,7 +486,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "49",
+			"number": "52",
 			"epg_id": "1335"
 		},
 		"isVisible": 0
@@ -498,7 +498,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "51",
+			"number": "54",
 			"epg_id": "282"
 		},
 		"isVisible": 0
@@ -510,7 +510,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "52",
+			"number": "55",
 			"epg_id": "284"
 		},
 		"isVisible": 0
@@ -522,7 +522,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "53",
+			"number": "56",
 			"epg_id": "283"
 		},
 		"isVisible": 0
@@ -534,7 +534,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "54",
+			"number": "57",
 			"epg_id": "401"
 		},
 		"isVisible": 0
@@ -546,7 +546,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "55",
+			"number": "58",
 			"epg_id": "285"
 		},
 		"isVisible": 0
@@ -558,31 +558,31 @@
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "56",
+			"number": "59",
 			"epg_id": "287"
 		},
 		"isVisible": 0
 	},
 	{
-		"logicalId": "paramountChannel",
-		"name": "Paramount Channel",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "channel",
-			"number": "60",
-			"epg_id": "1562"
-		},
-		"isVisible": 0
-	},
-	{
-		"logicalId": "paramountChannelDecale",
-		"name": "Paramount Channel décalé",
+		"logicalId": "paramountNetwork",
+		"name": "Paramount Network",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
 			"number": "61",
+			"epg_id": "1562"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "paramountNetworkDecale",
+		"name": "Paramount Network décalé",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "62",
 			"epg_id": "2072"
 		},
 		"isVisible": 0
@@ -594,7 +594,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "62",
+			"number": "63",
 			"epg_id": "185"
 		},
 		"isVisible": 0
@@ -606,20 +606,32 @@
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "63",
+			"number": "64",
 			"epg_id": "10"
 		},
 		"isVisible": 0
 	},
 	{
-		"logicalId": "eurochanne",
-		"name": "Eurochanne",
+		"logicalId": "eurochannel",
+		"name": "Eurochannel",
 		"type": "action",
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
 			"number": "65",
 			"epg_id": "1190"
+		},
+		"isVisible": 0
+	},
+	{
+		"logicalId": "e",
+		"name": "E!",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "75",
+			"epg_id": "405"
 		},
 		"isVisible": 0
 	},
@@ -678,7 +690,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "81",
+			"number": "80",
 			"epg_id": "5"
 		},
 		"isVisible": 0
@@ -690,7 +702,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "82",
+			"number": "81",
 			"epg_id": "2752"
 		},
 		"isVisible": 0
@@ -702,7 +714,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "83",
+			"number": "82",
 			"epg_id": "87"
 		},
 		"isVisible": 0
@@ -714,7 +726,7 @@
 		"subType": "other",
 		"configuration": {
 			"table": "channel",
-			"number": "84",
+			"number": "83",
 			"epg_id": "1167"
 		},
 		"isVisible": 0
@@ -1140,6 +1152,18 @@
 		"isVisible": 0
 	},
 	{
+		"logicalId": "mcm",
+		"name": "MCM",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "139",
+			"epg_id": "121"
+		},
+		"isVisible": 0
+	},
+	{
 		"logicalId": "mggTv",
 		"name": "MGG TV",
 		"type": "action",
@@ -1160,18 +1184,6 @@
 			"table": "channel",
 			"number": "141",
 			"epg_id": "2942"
-		},
-		"isVisible": 0
-	},
-	{
-		"logicalId": "mcm",
-		"name": "MCM",
-		"type": "action",
-		"subType": "other",
-		"configuration": {
-			"table": "channel",
-			"number": "142",
-			"epg_id": "121"
 		},
 		"isVisible": 0
 	},
