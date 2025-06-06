@@ -53,13 +53,29 @@ function tvByOrange_update()
 	tvByOrange::deamon_start();
 }
 
+if (!is_file(dirname(__FILE__) . '/../core/config/channel.json')) {
+	throw new Exception(__('Fichier channel.json non trouvé', __FILE__));
+}
+$cmdsArray = json_decode(file_get_contents(dirname(__FILE__) . '/../core/config/channel.json'), true);
 foreach (eqLogic::byType('tvByOrange') as $eqLogic) {
 	foreach (($eqLogic->getCmd('action')) as $cmd) {
-		if ($cmd->getLogicalId() == 'c8' || $cmd->getLogicalId() == 'nrj12') {
+		if ($cmd->getLogicalId() == 'c8' || $cmd->getLogicalId() == 'nrj12' || $cmd->getLogicalId() == 'canalPlusSeries' || $cmd->getLogicalId() == 'paramountChannel' || $cmd->getLogicalId() == 'paramountChannelDecale' || $cmd->getLogicalId() == 'eurochanne') {
 			$cmd->remove();
+		} else {
+			foreach ($cmdsArray as $cmdArray) {
+				if ($cmd->getLogicalId() == $cmdArray['logicalId']) {
+					if (isset($cmdArray['configuration'])) {
+						foreach ($cmdArray['configuration'] as $key => $value) {
+							$cmd->setConfiguration($key, $value);
+							$cmd->save();
+						}
+					}
+				}
+			}
 		}
 	}
 	$eqLogic->save();
+	tvByOrange::orderChannel($eqLogic->getId());
 	$eqLogic->postAjax();
 }
 
