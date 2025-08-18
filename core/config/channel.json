@@ -216,6 +216,18 @@
 		"isVisible": 0
 	},
 	{
+		"logicalId": "novo19",
+		"name": "NOVO19",
+		"type": "action",
+		"subType": "other",
+		"configuration": {
+			"table": "channel",
+			"number": "19",
+			"epg_id": "4138"
+		},
+		"isVisible": 0
+	},
+	{
 		"logicalId": "tf1SeriesFilms",
 		"name": "TF1 Séries Films",
 		"type": "action",
